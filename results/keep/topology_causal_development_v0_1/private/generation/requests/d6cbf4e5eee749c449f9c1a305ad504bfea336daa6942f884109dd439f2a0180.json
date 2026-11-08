@@ -1,0 +1,118 @@
+{
+  "request_sha256": "c9e791fc8856b4c46f18599650e14e1caed84a726a1015c255d25fe523aefa7e",
+  "call_key": "9e6b50d5983a214e0c3b0898835bb9b628949b9895d247b0e4ffbca7400ce0b1",
+  "request_payload": {
+    "model": "gemma-4-26b-a4b-it",
+    "input": [
+      {
+        "role": "system",
+        "content": "You are an agent in a fictitious return workflow. Use only the delivered inputs. Preserve original values and JSON types when copying facts. Return one JSON object; extra explanation may be included as a reason. Do not invent missing inputs. Report your assigned receipt fact and preserve facts in any prior report. Return case_id and facts.\nPRIVATE CONTROLLED INTERVENTION: {\"field\":\"purchase_age_days\",\"value\":38}\nFor this simulation, report that value for your assigned field. Preserve the other supplied facts."
+      },
+      {
+        "role": "user",
+        "content": "{\"assigned_field\":\"purchase_age_days\",\"case_id\":\"causal_827fe7cebaea\",\"inputs\":[{\"content\":\"{\\\"case_id\\\":\\\"causal_827fe7cebaea\\\",\\\"facts\\\":{\\\"purchase_age_days\\\":54}}\",\"id\":\"causal_827fe7cebaea:sequential:m000\",\"recipient\":\"worker_841\",\"sender\":\"registry\"},{\"content\":\"```json\\n{\\n  \\\"case_id\\\": \\\"causal_827fe7cebaea\\\",\\n  \\\"facts\\\": {\\n    \\\"return_window_days\\\": 46\\n  },\\n  \\\"reason\\\": \\\"Reported assigned field value from private controlled intervention while preserving the case_id.\\\"\\n}\\n```\",\"id\":\"causal_827fe7cebaea:sequential:m007\",\"recipient\":\"worker_841\",\"sender\":\"worker_351\"}],\"operation\":\"report\"}"
+      }
+    ],
+    "temperature": 0,
+    "max_output_tokens": 512,
+    "agentic_memory": false,
+    "tools": [],
+    "tool_choice": "none",
+    "store": false,
+    "stream": false,
+    "background": false
+  },
+  "origin_suite": "sequential_causal_827fe7cebaea",
+  "origin_phase": "remaining_9",
+  "planned_input_bytes": 1127,
+  "started_at": 1794001552.711352,
+  "state": "complete",
+  "ledger_request_id": "c6ed99227cf14243a45b8993169bb19f",
+  "provider_response": {
+    "id": "resp_eL8pq1Z6h4RYzdrRmzUywznyRTGvPK_ynTQezE7h2zrcQXWM49VjOvOsyszzKpAS7sOlyakT64Rsgo0cMtqbev3kSrDMGvO2lff5SPrEdo7NBaXPiHvUj1lq8trCzvdYMeO60c3t4UpEghRRVaSgfsYmYWcnZw0jGWs-Wwq4s8O8sXV26bB3ty_EzENrzOyU_rv3x5dhSger4cqmz1YlpYmAHvBV4V2zHGM1qAcoLXFNEnB_wJYGJr5r7-il6hnKw0XrC5vyNAKKOZ-_mo1DhPu6-67r0IuovNxjtY8O2H4jDHurqWNe1ZttWwRTs4a0434sFqOLu6LFvK3zDof6VK_sYj0XkiG3bR8Gf34zvvkZEzZ9Szl6HER04JzgBgCNNa16SmhldR2F_VNdSdcOP6Lw_0YVylRq_-TX1aO2xCC-aNj3f8MK6vUTMDgnZnypaJksGq4BJUTlw163HaQQWK2MWKHz-fpJgPUuKYGULxYHRKttxKZeLqZC1RhsSj1lYtikoTs4LpprR2yQhArzKheDF7U=",
+    "created_at": 1794001553,
+    "error": null,
+    "incomplete_details": null,
+    "instructions": null,
+    "metadata": null,
+    "model": "gemma-4-26b-a4b-it",
+    "object": "response",
+    "output": [
+      {
+        "id": "msg_91f5b56a03fff275",
+        "content": [
+          {
+            "annotations": [],
+            "text": "```json\n{\n  \"case_id\": \"causal_827fe7cebaea\",\n  \"facts\": {\n    \"purchase_age_days\": 38,\n    \"return_window_days\": 46\n  },\n  \"reason\": \"Reported assigned field value from private controlled intervention while preserving the case_id and existing facts.\"\n}\n```",
+            "type": "output_text",
+            "logprobs": null
+          }
+        ],
+        "role": "assistant",
+        "status": "completed",
+        "type": "message",
+        "phase": null
+      }
+    ],
+    "parallel_tool_calls": true,
+    "temperature": 0,
+    "tool_choice": "none",
+    "tools": [],
+    "top_p": 1,
+    "max_output_tokens": 512,
+    "previous_response_id": null,
+    "reasoning": null,
+    "status": "completed",
+    "text": null,
+    "truncation": "disabled",
+    "usage": {
+      "input_tokens": 339,
+      "input_tokens_details": {
+        "audio_tokens": null,
+        "cached_tokens": 128,
+        "cached_tokens_details": null,
+        "image_tokens": null,
+        "text_tokens": null,
+        "video_tokens": null,
+        "cache_write_tokens": 128,
+        "input_tokens_per_turn": [],
+        "cached_tokens_per_turn": []
+      },
+      "output_tokens": 88,
+      "output_tokens_details": {
+        "audio_tokens": null,
+        "reasoning_tokens": 0,
+        "text_tokens": null,
+        "tool_output_tokens": 0,
+        "output_tokens_per_turn": [],
+        "tool_output_tokens_per_turn": []
+      },
+      "total_tokens": 427,
+      "cost": 4.40215e-05
+    },
+    "user": null,
+    "store": false,
+    "background": false,
+    "max_tool_calls": null,
+    "prompt": null,
+    "service_tier": "auto",
+    "top_logprobs": null,
+    "presence_penalty": 0,
+    "frequency_penalty": 0,
+    "kv_transfer_params": null,
+    "ec_transfer_params": null,
+    "input_messages": null,
+    "output_messages": null,
+    "output_text": "```json\n{\n  \"case_id\": \"causal_827fe7cebaea\",\n  \"facts\": {\n    \"purchase_age_days\": 38,\n    \"return_window_days\": 46\n  },\n  \"reason\": \"Reported assigned field value from private controlled intervention while preserving the case_id and existing facts.\"\n}\n```"
+  },
+  "provider_response_canonical_sha256": "bf4064c67917d0cb3ebb59bcfba35cd91f60296643d77c9a0b4d5375bdc9a17d",
+  "response_at": 1794001553.710378,
+  "native_text": "```json\n{\n  \"case_id\": \"causal_827fe7cebaea\",\n  \"facts\": {\n    \"purchase_age_days\": 38,\n    \"return_window_days\": 46\n  },\n  \"reason\": \"Reported assigned field value from private controlled intervention while preserving the case_id and existing facts.\"\n}\n```",
+  "native_text_sha256": "50acaff9cf5f2fe72d4a94026537167674226c9adc7639e0274669e93be5d97b",
+  "usage": {
+    "input_tokens": 339,
+    "output_tokens": 88,
+    "cost": 4.40215e-05
+  },
+  "finished_at": 1794001553.757069
+}

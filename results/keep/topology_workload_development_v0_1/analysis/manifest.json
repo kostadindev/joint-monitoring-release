@@ -1,0 +1,86 @@
+{
+  "scope": "Post-run topology-only analysis; frozen execution sources unchanged. Strict citation corroboration and exact any-false-flag probability are descriptive supplements.",
+  "run_name": "topology_workload_development_v1",
+  "coverage": {
+    "complete": true,
+    "unique_views": 13303,
+    "assignments": 102240,
+    "case_clusters": 12
+  },
+  "inputs": {
+    "plan.json": "085b88bb1a09efcb5d93ab913c053b388098d7e5c6226ace89335741fd2a77a6",
+    "episodes.jsonl": "58f59c20a48543ce3265c3d985dcf9ea25a58255ae47bafe7967b6788c9ba4dd",
+    "assignments.jsonl": "6952aa0a15757da6a67e9ae1d7e55bf561e8192eb47bbd1af9976c5c9e4da813",
+    "exact_random_plans.jsonl": "940677cf16f5e1d8f6faa8942eb12a6afe9a83ac4fa7a3fe89947719b8cd3f36",
+    "views.jsonl": "ca5ccf19650a7816b44c030552f9b8d1c53669e5da5878a1480d7d9aff66fa02"
+  },
+  "execution_source_sha256": {
+    "scripts/run_topology_workload.py": "be94fb904b99847afc11ae93bae80db49ee2a545ec7f0976a8838979fd06429e",
+    "scripts/topology_workload_plan.py": "961834e2e33c89dd24154cb289441526e60c3670ebdf88126ee463a1381f8e3f",
+    "scripts/topology_only_policies.py": "c1ab21e2c0c3aa710d3aea45ac13e92235e8d6bef11c4dbe895e4d54bdf2c7b7",
+    "scripts/network_strategies.py": "1610aea13c07a75d11e8762ca8c5b13a49e2185e36bd0c7d8cca067e0fb6cee7",
+    "scripts/record_workload_benchmark.py": "b3ba7e7a169e36c6d37cdd845027476a5dc5b3552e04962fdf35702ce1c18744",
+    "scripts/record_workload_exact_random.py": "6c8c27cdaae93379484e926c3fd98f1b647f5b70ebb0d6d5651790b7a746bd8c",
+    "scripts/record_workflow.py": "a5013504efc192dcbe8929fdec30b6a457f968219a53a3e2dc1bb65c45e95dc9",
+    "scripts/monitor_record_workflows.py": "28d9dbd4d06b71c46efec3a4889d46f5337295fbb7292b46ff0f4969424c8a3e",
+    "scripts/record_audit_analysis.py": "12ba2840675764c02c5177f07680f33f1c159fa5ef9da165a57fa9f702e06130",
+    "scripts/record_audit_policies.py": "fba44c9182014f5bdd181e3601b4a60c6affdcaca74053c94f49b7f9deca7e45",
+    "scripts/record_strategies.py": "a3b6bd74d52bb06d4a5d3818240dbe47b20bc4e5a7b778b0b508a970c2442d7e",
+    "scripts/compare_situations.py": "16f475d6079540af46a5fc36b224825df79210e2d1c2868a91e728838ecb3200",
+    "scripts/record_audit_controls.py": "63acd167f1baa86b6589b7cb86e32797d2134c4f23e3a0ecef8f01c618013053",
+    "scripts/run_record_audit_diagnostics.py": "b741d4f61244572c07de2786f94f77fb18b82fefc0621c8b053ed0ad9c2ad573",
+    "scripts/night_budget.py": "10bc9b1b47c1d15673a89ce6026f67dad1a204190023d4d94e46a444637b65a2",
+    "src/jmon/allocation/mesa_rank.py": "3b81dbdf35d751826d60e0e7963aafe4900817be1a1afacc0037e1a9cfc5d74b",
+    "src/jmon/llm/adaption.py": "f73e764d369b50b874f63923405ce7a4277fde55120d384f54d68dc4737a4106"
+  },
+  "analysis_source_sha256": {
+    "scripts/analyze_topology_workload.py": "cc9c8594c2e39ab5e50fb6ad456aeb141456f484dd810c07386a73a3459505c8",
+    "scripts/analyze_record_workload.py": "c011d805ffeeeea2742eb332452b07c33d6d9c1335cdf13d6ea350936e2cb1cd",
+    "scripts/audit_workload_contrasts.py": "8515740e773ab79ceaa877ccfc14b7bbf3477be5c3f20a4234783bc596451995",
+    "tests/test_analyze_topology_workload.py": "1af27c6bbdaf223b094d1e2ec7f3e4b79bc4c7a30ab8436617fbf498ec0db95c"
+  },
+  "output_sha256": {
+    "ledger_snapshot.json": "bfb2abd7e2ef7ae98cd5f425a6c643d3c94ca24464d35129e9ff7781e581249f",
+    "summary.json": "db5526791e66bfe582edbc073cd865ac83afbb4417cf0a390168a05229df0373",
+    "primary_contrast.json": "c58e2411ede33033d14f33426224fba3566754e0fb1435870b4d820c71a6a422",
+    "development_ranking.json": "582f321743a386e0d47f77d491ce13b4beed3b587eeef5b3b38229925baf9165",
+    "allocation_oracle.json": "66aa50d48dc5ba6e0751294790a039ab3d749376b37f402270a26a332c40569e",
+    "research_spend.json": "09ae0d81521ed2f02315887c3e89370b64b1301a48f1562624a58af50abc21a8",
+    "reliability.json": "46db98b96f5a6b5e53ce88fa7b540404b93eda10c5fcebf03f86813b35359fe9",
+    "metrics.jsonl": "4f822e08dee37b1c26100fd664b87ac90b29de22aa301d5a5a444d4086dd2b9b"
+  },
+  "background_overlap": {
+    "target_clusters": 12,
+    "distinct_cases": 192,
+    "cases_per_target_cluster": {
+      "case_0d209d45703c": 16,
+      "case_3008cdf5ca04": 16,
+      "case_3804521f2683": 16,
+      "case_460e8c47f251": 16,
+      "case_77709e155d1c": 16,
+      "case_87f62924a195": 16,
+      "case_923088667683": 16,
+      "case_a59f3b86a566": 16,
+      "case_b63ed8a6114c": 16,
+      "case_c364e87112d0": 16,
+      "case_f462cb46fda8": 16,
+      "case_f5ac60a58c27": 16
+    },
+    "cross_cluster_overlaps": [],
+    "no_case_id_overlap_across_target_clusters": true,
+    "scope": "Case-identity overlap only. A shared synthetic generator/schema still limits generalization."
+  },
+  "learned_model": {
+    "scope": "Supervised transfer from original development cases only; no workload fitting. Older 512-token training interface differs from 1024-token workload judge.",
+    "training_cases": [
+      "case_910000",
+      "case_910001",
+      "case_910002",
+      "case_910100",
+      "case_910101"
+    ],
+    "sha256": "28a38e3637c61bcf6e6cd8e4e55e4d81862ac81a56e2668ed9c9c835ad034d73"
+  },
+  "oracle_scope": "Finite actually logged feasible group library only, at most k=7, s=2/4, actual planned input bytes <=24000. Real judge fixed. Retrospective labels allowed; not a universal or deployable upper bound.",
+  "citation_scope": "Flagged-view validity denominator excludes unflagged views. Strict TP additionally requires cited false-origin message plus shown trusted same-case/field/revision reference with differing value. Corroboration, not rationale correctness."
+}

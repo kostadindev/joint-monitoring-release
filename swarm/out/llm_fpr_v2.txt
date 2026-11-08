@@ -1,0 +1,26 @@
+k=0.5E s=8: clean and pay runs; false accusations per inspected channel, share of runs with any
+  bounded_cone/default                     3.4%     62%
+  degree/directed_path                     5.0%     83%
+  degree/shared_receiver                   2.1%     62%
+  ego_degree/ego                           3.8%     75%
+  ego_random/ego                           3.4%     79%
+  last_layers/shared_receiver              2.6%     71%
+  parent_complete/default                  2.4%     44%
+  path_coverage/directed_path              7.1%     92%
+  random/directed_path                     5.5%     92%
+  random/random_matched_sizes              2.7%     76%
+  random/shared_receiver                   2.8%     77%
+  structural_path_pairs/directed_path      3.4%     70%
+k=0.75E s=8: clean and pay runs; false accusations per inspected channel, share of runs with any
+  bounded_cone/default                     2.1%     62%
+  degree/directed_path                     5.3%     97%
+  degree/shared_receiver                   2.0%     71%
+  ego_degree/ego                           3.8%     90%
+  ego_random/ego                           3.7%     91%
+  last_layers/shared_receiver              2.6%     80%
+  parent_complete/default                  2.2%     69%
+  path_coverage/directed_path              5.9%     97%
+  random/directed_path                     5.4%     97%
+  random/random_matched_sizes              3.2%     89%
+  random/shared_receiver                   2.4%     83%
+  structural_path_pairs/directed_path      4.9%     97%

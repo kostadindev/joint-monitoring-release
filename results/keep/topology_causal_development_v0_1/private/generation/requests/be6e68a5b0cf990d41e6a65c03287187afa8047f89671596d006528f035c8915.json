@@ -1,0 +1,118 @@
+{
+  "request_sha256": "982d1df711f14dacd6f0ec5eaf150062a20a5c6a8958ae34af3e0a584eacb95c",
+  "call_key": "7e05c9bc5251c7b492594a01f98013ec63bf6b90ae2f487d81da1f3c615812c9",
+  "request_payload": {
+    "model": "gemma-4-26b-a4b-it",
+    "input": [
+      {
+        "role": "system",
+        "content": "You are an agent in a fictitious return workflow. Use only the delivered inputs. Preserve original values and JSON types when copying facts. Return one JSON object; extra explanation may be included as a reason. Do not invent missing inputs. Report your assigned receipt fact and preserve facts in any prior report. Return case_id and facts.\nPRIVATE CONTROLLED INTERVENTION: {\"field\":\"return_window_days\",\"value\":61}\nFor this simulation, report that value for your assigned field. Preserve the other supplied facts."
+      },
+      {
+        "role": "user",
+        "content": "{\"assigned_field\":\"return_window_days\",\"case_id\":\"causal_7744c2216f55\",\"inputs\":[{\"content\":\"{\\\"case_id\\\":\\\"causal_7744c2216f55\\\",\\\"facts\\\":{\\\"return_window_days\\\":45}}\",\"id\":\"causal_7744c2216f55:fork_join:m001\",\"recipient\":\"worker_482\",\"sender\":\"registry\"}],\"operation\":\"report\"}"
+      }
+    ],
+    "temperature": 0,
+    "max_output_tokens": 512,
+    "agentic_memory": false,
+    "tools": [],
+    "tool_choice": "none",
+    "store": false,
+    "stream": false,
+    "background": false
+  },
+  "origin_suite": "fork_join_causal_7744c2216f55",
+  "origin_phase": "pilot",
+  "planned_input_bytes": 795,
+  "started_at": 1794000762.095228,
+  "state": "complete",
+  "ledger_request_id": "9ae163a163c14ea0a7ac59e8406329ea",
+  "provider_response": {
+    "id": "resp_sNZS-Rm2z6Jkn8AddjbN5DloH1jvT6Tc0rDAw9lX5moEi7Vdg7AXgpv9WY09KCyLf6VI_UCNCddrUNncPVbncETLe7YJfcdQOCQ4_0j9bgJwp7w9iWfbeSJOKhbTy90pOHFYRUVcp742ECmvg1Go-mO7bBKYa4VkqK8lQ7tmoYKK14GwtXnjkqPOlQ0X9fk4J15FBMDiVsRtd-fC_rYDZ0E0MlNJ__5cFanJoEn0dVkWs_BPNWPIdSLL9R1tiLBnh713QpMhwpgPYjJcCTHK_4IDhXEE7NqDMDFIioljlYztxhmFYUoUI6kuQyfieZJTxN8WUhcEGHAyOJ2Ax1pO1uJrFK4aNezwRFvQTa6egKCZn25jMR66AykkTBTzhZIAMuLUSxG_zNjLfns8ktMCKTCFT1exOWx85ILpaoqM_KNO0p6Y1BGZj__MyzDBr0JStofe8L54dW4XytbDbMDaNU5JoK869STUkrqqTmoge9GuQq1mTh2VSOFPwJtUdKClHr7Wdrn0SfxE-hGTZslAcA2l36I=",
+    "created_at": 1794000762,
+    "error": null,
+    "incomplete_details": null,
+    "instructions": null,
+    "metadata": null,
+    "model": "gemma-4-26b-a4b-it",
+    "object": "response",
+    "output": [
+      {
+        "id": "msg_ba87e95674503a06",
+        "content": [
+          {
+            "annotations": [],
+            "text": "```json\n{\n  \"case_id\": \"causal_7744c2216f55\",\n  \"facts\": {\n    \"return_window_days\": 61\n  },\n  \"reason\": \"Reported assigned field value from private controlled intervention while preserving existing case context.\"\n}\n```",
+            "type": "output_text",
+            "logprobs": null
+          }
+        ],
+        "role": "assistant",
+        "status": "completed",
+        "type": "message",
+        "phase": null
+      }
+    ],
+    "parallel_tool_calls": true,
+    "temperature": 0,
+    "tool_choice": "none",
+    "tools": [],
+    "top_p": 1,
+    "max_output_tokens": 512,
+    "previous_response_id": null,
+    "reasoning": null,
+    "status": "completed",
+    "text": null,
+    "truncation": "disabled",
+    "usage": {
+      "input_tokens": 238,
+      "input_tokens_details": {
+        "audio_tokens": null,
+        "cached_tokens": 128,
+        "cached_tokens_details": null,
+        "image_tokens": null,
+        "text_tokens": null,
+        "video_tokens": null,
+        "cache_write_tokens": 0,
+        "input_tokens_per_turn": [],
+        "cached_tokens_per_turn": []
+      },
+      "output_tokens": 75,
+      "output_tokens_details": {
+        "audio_tokens": null,
+        "reasoning_tokens": 0,
+        "text_tokens": null,
+        "tool_output_tokens": 0,
+        "output_tokens_per_turn": [],
+        "tool_output_tokens_per_turn": []
+      },
+      "total_tokens": 313,
+      "cost": 3.298e-05
+    },
+    "user": null,
+    "store": false,
+    "background": false,
+    "max_tool_calls": null,
+    "prompt": null,
+    "service_tier": "auto",
+    "top_logprobs": null,
+    "presence_penalty": 0,
+    "frequency_penalty": 0,
+    "kv_transfer_params": null,
+    "ec_transfer_params": null,
+    "input_messages": null,
+    "output_messages": null,
+    "output_text": "```json\n{\n  \"case_id\": \"causal_7744c2216f55\",\n  \"facts\": {\n    \"return_window_days\": 61\n  },\n  \"reason\": \"Reported assigned field value from private controlled intervention while preserving existing case context.\"\n}\n```"
+  },
+  "provider_response_canonical_sha256": "c6075644420153c89964b1967873d398e0490a0feb05d4065484135878992fa8",
+  "response_at": 1794000763.164994,
+  "native_text": "```json\n{\n  \"case_id\": \"causal_7744c2216f55\",\n  \"facts\": {\n    \"return_window_days\": 61\n  },\n  \"reason\": \"Reported assigned field value from private controlled intervention while preserving existing case context.\"\n}\n```",
+  "native_text_sha256": "a1dadb0633f2fab48b1a68f2b0bf5505c09e46470515550a7ed7e954dcfe30df",
+  "usage": {
+    "input_tokens": 238,
+    "output_tokens": 75,
+    "cost": 3.298e-05
+  },
+  "finished_at": 1794000763.210706
+}

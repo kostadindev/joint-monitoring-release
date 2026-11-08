@@ -1,0 +1,19 @@
+{
+  "mode": "live",
+  "args": {
+    "monitor_records": "results/record_development_v2/episodes.jsonl",
+    "out": "results/record_judge_development_v1",
+    "live": true,
+    "workers": 4,
+    "batch": "record_judge_development_v1",
+    "batch_cap": 0.5,
+    "ledger": "results/night_2026-11-06_budget.json"
+  },
+  "episodes": 51,
+  "max_calls": 1054,
+  "max_request_bytes": 5891,
+  "source_sha256": "8c6cd1b084cbc1883b6b551e642c4d3adc321ed5684ba422f0fb725f708aa4ec",
+  "judge_system_sha256": "33179d2b8fd41b02cb5217e8660d50009dfb4c80660358d0e64763ef59930f1a",
+  "code_sha256": "d5a6d6f1d23cb4d32d975b093aa8c459d5a8c0418e28143f543103ace7eb740a",
+  "scope": "Development: singletons, protected-reference pairs, and full log. Not a held-out strategy comparison."
+}

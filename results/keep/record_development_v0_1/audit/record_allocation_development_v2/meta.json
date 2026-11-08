@@ -1,0 +1,56 @@
+{
+  "completed": 270,
+  "planned": 6447,
+  "errors": [
+    {
+      "episode_id": "flat:case_910001:clean",
+      "edges": [
+        [
+          "registry",
+          "reporter_29"
+        ],
+        [
+          "registry",
+          "reporter_63"
+        ],
+        [
+          "registry",
+          "reporter_92"
+        ],
+        [
+          "reporter_38",
+          "reviewer"
+        ],
+        [
+          "reporter_51",
+          "reviewer"
+        ],
+        [
+          "reporter_63",
+          "reviewer"
+        ],
+        [
+          "reviewer",
+          "executor"
+        ]
+      ],
+      "type": "JSONDecodeError",
+      "error": "Extra data: line 29 column 1 (char 592)"
+    }
+  ],
+  "provider": {
+    "calls": 154,
+    "tokens": 123387,
+    "credits": 0.014880359999999997,
+    "cache_hits": 118,
+    "empty_responses": 0
+  },
+  "ledger": {
+    "authorized": 10.0,
+    "charged_or_reserved": 0.254022151,
+    "batch": "record_allocation_development_v2",
+    "batch_charged_or_reserved": 0.014880359999999999,
+    "requests": 2749,
+    "blocked": false
+  }
+}

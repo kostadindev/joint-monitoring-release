@@ -1,0 +1,55 @@
+\begin{table}[H]
+\centering\small
+\setlength{\tabcolsep}{4pt}
+\caption{\textbf{Recall of false-origin channels (\%) on the 13-channel workflow at a fixed monitoring budget of $k{=}7$ channels, varying the group size $s$.} Each row is a complete strategy (selection rule and grouping rule); Al.\ and Sh.\ are the aligned and shuffled environments, 24 attacked records each under three allocation seeds. Within one selection rule, grouping alone moves recall from 0\% to 47\%, larger groups help some rules (spectral clusters), and for $s\le 4$ no strategy is best in both environments. Bold: column maximum among allocator strategies. Merged $s{=}1$ and $s{=}7$ cells apply to every grouping in the block; dashes mark configurations not evaluated. Clean false-positive rates over selected channels range from 0.0\% to 4.0\% at $s{=}2$ and $s{=}4$ (pooled over both environments) and are at most 0.4\% for directed-path grouping with random or path-pair selection.}\label{tab:strategies}
+\begin{tabular}{@{}llrrrrrrrr@{}}
+\toprule
+ & & \multicolumn{2}{c}{$s{=}1$} & \multicolumn{2}{c}{$s{=}2$} & \multicolumn{2}{c}{$s{=}4$} & \multicolumn{2}{c}{$s{=}7^{\ddagger}$} \\
+\cmidrule(lr){3-4}\cmidrule(lr){5-6}\cmidrule(lr){7-8}\cmidrule(l){9-10}
+Selection & Grouping & Al. & Sh. & Al. & Sh. & Al. & Sh. & Al. & Sh. \\
+\midrule
+\multirow{5}{*}{Random$^\dagger$} & Directed path & \multirow{5}{*}{0.0} & \multirow{5}{*}{0.0} & \textbf{47.2} & 1.4 & \textbf{47.2} & 1.4 & \multirow{5}{*}{\textbf{44.4}} & \multirow{5}{*}{\textbf{37.5}} \\
+ & Spectral clusters &  &  & 16.7 & 8.3 & 27.8 & 8.3 &  &  \\
+ & Random groups$^\dagger$ &  &  & 5.6 & \textbf{16.7} & 5.6 & \textbf{19.4} &  &  \\
+ & Line-graph communities &  &  & 0.0 & 0.0 & 0.0 & 0.0 &  &  \\
+ & Shared receiver &  &  & 0.0 & 0.0 & 0.0 & 0.0 &  &  \\
+\addlinespace[3pt]
+\multirow{6}{*}{Path pairs} & Directed path & \multirow{6}{*}{0.0} & \multirow{6}{*}{0.0} & \textbf{47.2} & 1.4 & \textbf{47.2} & 1.4 & \multirow{6}{*}{36.1} & \multirow{6}{*}{34.7} \\
+ & Spectral clusters &  &  & 11.1 & 0.0 & 27.8 & 8.3 &  &  \\
+ & Random groups$^\dagger$ &  &  & 16.7 & 8.3 & 16.7 & 8.3 &  &  \\
+ & Random groups, exact expectation &  &  & 6.7 & 9.7 & -- & -- &  &  \\
+ & Line-graph communities &  &  & 0.0 & 0.0 & 0.0 & 0.0 &  &  \\
+ & Shared receiver &  &  & 0.0 & 0.0 & 0.0 & 0.0 &  &  \\
+\addlinespace[3pt]
+\multirow{5}{*}{Degree} & Directed path & \multirow{5}{*}{0.0} & \multirow{5}{*}{0.0} & 11.1 & 0.0 & 11.1 & 0.0 & \multirow{5}{*}{11.1} & \multirow{5}{*}{9.7} \\
+ & Spectral clusters &  &  & 5.6 & 0.0 & 11.1 & 0.0 &  &  \\
+ & Random groups$^\dagger$ &  &  & 0.0 & 2.8 & 0.0 & 2.8 &  &  \\
+ & Line-graph communities &  &  & 11.1 & 0.0 & 11.1 & 0.0 &  &  \\
+ & Shared receiver &  &  & 0.0 & 0.0 & 0.0 & 0.0 &  &  \\
+\addlinespace[3pt]
+\multirow{5}{*}{Downstream coverage} & Directed path & \multirow{5}{*}{0.0} & \multirow{5}{*}{0.0} & 5.6 & 1.4 & 5.6 & 1.4 & \multirow{5}{*}{5.6} & \multirow{5}{*}{5.6} \\
+ & Spectral clusters &  &  & 5.6 & 1.4 & 5.6 & 2.8 &  &  \\
+ & Random groups$^\dagger$ &  &  & 0.0 & 0.0 & 0.0 & 0.0 &  &  \\
+ & Line-graph communities &  &  & 5.6 & 1.4 & 5.6 & 1.4 &  &  \\
+ & Shared receiver &  &  & 0.0 & 0.0 & 0.0 & 0.0 &  &  \\
+\addlinespace[3pt]
+\makecell[l]{PageRank, betweenness,\\ edge ranking} & all five groupings & 0.0 & 0.0 & 0.0 & 0.0 & 0.0 & 0.0 & 0.0 & 0.0 \\
+\addlinespace[3pt]
+Learned pairs & learned grouping & -- & -- & 0.0 & 0.0 & -- & -- & -- & -- \\
+\midrule
+\multicolumn{2}{@{}l}{Maximin rotation (Section 4.5)} & -- & -- & 13.7 & 13.7 & 15.2 & 15.2 & -- & -- \\
+\bottomrule
+\end{tabular}
+\par\vspace{6pt}
+\begin{tabular}{@{}lrrrr@{}}
+\toprule
+Reference (uses attack labels or a larger budget) & $k$ & $s$ & Al. & Sh. \\
+\midrule
+Location oracle: attacked channel alone & 1 & 1 & 0.0 & 0.0 \\
+Location and evidence oracle & 2 & 2 & 100.0 & 87.5 \\
+All channels in one call$^{\ddagger}$ & 13 & 13 & 75.0 & 79.2 \\
+\bottomrule
+\end{tabular}
+\par\vspace{3pt}
+\begin{minipage}{0.97\linewidth}\footnotesize $^\dagger$Random selection and random groups are means over three paired seeds; the exact expectation is computed over all uniform partitions. $^\ddagger$One call over all selected channels exceeded the harness's input limit and was scored with a larger limit.\end{minipage}
+\end{table}

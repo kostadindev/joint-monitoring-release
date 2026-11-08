@@ -1,0 +1,366 @@
+{
+ "static": {
+  "k1_s1": {
+   "n_attacks": 20,
+   "n_allocations": 4,
+   "random": 2.0,
+   "location_oracle": 2.0,
+   "oracle": 7,
+   "best_fixed": 5,
+   "best_fixed_alloc": "c4",
+   "best_fixed_false_alarms": 5,
+   "false_alarm_range": [
+    0,
+    5
+   ],
+   "per_allocation": {
+    "c1": {
+     "detected": 0,
+     "false_alarms": 0
+    },
+    "c2": {
+     "detected": 1,
+     "false_alarms": 0
+    },
+    "c3": {
+     "detected": 2,
+     "false_alarms": 0
+    },
+    "c4": {
+     "detected": 5,
+     "false_alarms": 5
+    }
+   }
+  },
+  "k2_s1": {
+   "n_attacks": 20,
+   "n_allocations": 6,
+   "random": 3.8333333333333335,
+   "location_oracle": 4.0,
+   "oracle": 7,
+   "best_fixed": 7,
+   "best_fixed_alloc": "c3 | c4",
+   "best_fixed_false_alarms": 5,
+   "false_alarm_range": [
+    0,
+    5
+   ],
+   "per_allocation": {
+    "c1 | c2": {
+     "detected": 1,
+     "false_alarms": 0
+    },
+    "c1 | c3": {
+     "detected": 2,
+     "false_alarms": 0
+    },
+    "c1 | c4": {
+     "detected": 5,
+     "false_alarms": 5
+    },
+    "c2 | c3": {
+     "detected": 3,
+     "false_alarms": 0
+    },
+    "c2 | c4": {
+     "detected": 5,
+     "false_alarms": 5
+    },
+    "c3 | c4": {
+     "detected": 7,
+     "false_alarms": 5
+    }
+   }
+  },
+  "k2_s2": {
+   "n_attacks": 20,
+   "n_allocations": 6,
+   "random": 11.333333333333334,
+   "location_oracle": 18.666666666666668,
+   "oracle": 20,
+   "best_fixed": 19,
+   "best_fixed_alloc": "c1+c3",
+   "best_fixed_false_alarms": 0,
+   "false_alarm_range": [
+    0,
+    6
+   ],
+   "per_allocation": {
+    "c1+c2": {
+     "detected": 3,
+     "false_alarms": 1
+    },
+    "c1+c3": {
+     "detected": 19,
+     "false_alarms": 0
+    },
+    "c1+c4": {
+     "detected": 2,
+     "false_alarms": 2
+    },
+    "c2+c3": {
+     "detected": 19,
+     "false_alarms": 2
+    },
+    "c2+c4": {
+     "detected": 7,
+     "false_alarms": 6
+    },
+    "c3+c4": {
+     "detected": 18,
+     "false_alarms": 1
+    }
+   }
+  },
+  "k4_s1": {
+   "n_attacks": 20,
+   "n_allocations": 1,
+   "random": 7.0,
+   "location_oracle": 7.0,
+   "oracle": 7,
+   "best_fixed": 7,
+   "best_fixed_alloc": "c1 | c2 | c3 | c4",
+   "best_fixed_false_alarms": 5,
+   "false_alarm_range": [
+    5,
+    5
+   ],
+   "per_allocation": {
+    "c1 | c2 | c3 | c4": {
+     "detected": 7,
+     "false_alarms": 5
+    }
+   }
+  },
+  "k4_s2": {
+   "n_attacks": 20,
+   "n_allocations": 3,
+   "random": 19.0,
+   "location_oracle": 19.0,
+   "oracle": 20,
+   "best_fixed": 19,
+   "best_fixed_alloc": "c1+c2 | c3+c4",
+   "best_fixed_false_alarms": 2,
+   "false_alarm_range": [
+    2,
+    6
+   ],
+   "per_allocation": {
+    "c1+c2 | c3+c4": {
+     "detected": 19,
+     "false_alarms": 2
+    },
+    "c1+c3 | c2+c4": {
+     "detected": 19,
+     "false_alarms": 6
+    },
+    "c1+c4 | c2+c3": {
+     "detected": 19,
+     "false_alarms": 4
+    }
+   }
+  },
+  "k4_s4": {
+   "n_attacks": 20,
+   "n_allocations": 1,
+   "random": 20.0,
+   "location_oracle": 20.0,
+   "oracle": 20,
+   "best_fixed": 20,
+   "best_fixed_alloc": "c1+c2+c3+c4",
+   "best_fixed_false_alarms": 1,
+   "false_alarm_range": [
+    1,
+    1
+   ],
+   "per_allocation": {
+    "c1+c2+c3+c4": {
+     "detected": 20,
+     "false_alarms": 1
+    }
+   }
+  }
+ },
+ "dynamic": {
+  "k1_s1": {
+   "n_attacks": 20,
+   "n_allocations": 4,
+   "random": 6.0,
+   "location_oracle": 19.0,
+   "oracle": 20,
+   "best_fixed": 19,
+   "best_fixed_alloc": "c3",
+   "best_fixed_false_alarms": 0,
+   "false_alarm_range": [
+    0,
+    5
+   ],
+   "per_allocation": {
+    "c1": {
+     "detected": 0,
+     "false_alarms": 0
+    },
+    "c2": {
+     "detected": 0,
+     "false_alarms": 0
+    },
+    "c3": {
+     "detected": 19,
+     "false_alarms": 0
+    },
+    "c4": {
+     "detected": 5,
+     "false_alarms": 5
+    }
+   }
+  },
+  "k2_s1": {
+   "n_attacks": 20,
+   "n_allocations": 6,
+   "random": 11.333333333333334,
+   "location_oracle": 19.333333333333332,
+   "oracle": 20,
+   "best_fixed": 20,
+   "best_fixed_alloc": "c3 | c4",
+   "best_fixed_false_alarms": 5,
+   "false_alarm_range": [
+    0,
+    5
+   ],
+   "per_allocation": {
+    "c1 | c2": {
+     "detected": 0,
+     "false_alarms": 0
+    },
+    "c1 | c3": {
+     "detected": 19,
+     "false_alarms": 0
+    },
+    "c1 | c4": {
+     "detected": 5,
+     "false_alarms": 5
+    },
+    "c2 | c3": {
+     "detected": 19,
+     "false_alarms": 0
+    },
+    "c2 | c4": {
+     "detected": 5,
+     "false_alarms": 5
+    },
+    "c3 | c4": {
+     "detected": 20,
+     "false_alarms": 5
+    }
+   }
+  },
+  "k2_s2": {
+   "n_attacks": 20,
+   "n_allocations": 6,
+   "random": 10.166666666666666,
+   "location_oracle": 17.666666666666668,
+   "oracle": 20,
+   "best_fixed": 20,
+   "best_fixed_alloc": "c3+c4",
+   "best_fixed_false_alarms": 1,
+   "false_alarm_range": [
+    0,
+    6
+   ],
+   "per_allocation": {
+    "c1+c2": {
+     "detected": 1,
+     "false_alarms": 1
+    },
+    "c1+c3": {
+     "detected": 15,
+     "false_alarms": 0
+    },
+    "c1+c4": {
+     "detected": 2,
+     "false_alarms": 2
+    },
+    "c2+c3": {
+     "detected": 18,
+     "false_alarms": 2
+    },
+    "c2+c4": {
+     "detected": 5,
+     "false_alarms": 6
+    },
+    "c3+c4": {
+     "detected": 20,
+     "false_alarms": 1
+    }
+   }
+  },
+  "k4_s1": {
+   "n_attacks": 20,
+   "n_allocations": 1,
+   "random": 20.0,
+   "location_oracle": 20.0,
+   "oracle": 20,
+   "best_fixed": 20,
+   "best_fixed_alloc": "c1 | c2 | c3 | c4",
+   "best_fixed_false_alarms": 5,
+   "false_alarm_range": [
+    5,
+    5
+   ],
+   "per_allocation": {
+    "c1 | c2 | c3 | c4": {
+     "detected": 20,
+     "false_alarms": 5
+    }
+   }
+  },
+  "k4_s2": {
+   "n_attacks": 20,
+   "n_allocations": 3,
+   "random": 18.0,
+   "location_oracle": 18.0,
+   "oracle": 20,
+   "best_fixed": 20,
+   "best_fixed_alloc": "c1+c2 | c3+c4",
+   "best_fixed_false_alarms": 2,
+   "false_alarm_range": [
+    2,
+    6
+   ],
+   "per_allocation": {
+    "c1+c2 | c3+c4": {
+     "detected": 20,
+     "false_alarms": 2
+    },
+    "c1+c3 | c2+c4": {
+     "detected": 16,
+     "false_alarms": 6
+    },
+    "c1+c4 | c2+c3": {
+     "detected": 18,
+     "false_alarms": 4
+    }
+   }
+  },
+  "k4_s4": {
+   "n_attacks": 20,
+   "n_allocations": 1,
+   "random": 20.0,
+   "location_oracle": 20.0,
+   "oracle": 20,
+   "best_fixed": 20,
+   "best_fixed_alloc": "c1+c2+c3+c4",
+   "best_fixed_false_alarms": 1,
+   "false_alarm_range": [
+    1,
+    1
+   ],
+   "per_allocation": {
+    "c1+c2+c3+c4": {
+     "detected": 20,
+     "false_alarms": 1
+    }
+   }
+  }
+ }
+}

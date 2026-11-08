@@ -1,0 +1,106 @@
+% Entries to be entered or confirmed by hand by the author (moved here 2026-11-08).
+% Each note says what was verified automatically and what remains to check.
+% Loaded by paper_apart/main.tex and paper_v2/build.sh alongside references.bib and extra.bib.
+
+% Entered by the author (2026-11-08); key renamed to the one the paper cites.
+% source: PMLR (https://proceedings.mlr.press/v267/zhang25cu.html)
+@InProceedings{zhang2025gdesigner,
+  title = 	 {{G-Designer: Architecting Multi-agent Communication Topologies via Graph Neural Networks}},
+  author =       {Zhang, Guibin and Yue, Yanwei and Sun, Xiangguo and Wan, Guancheng and Yu, Miao and Fang, Junfeng and Wang, Kun and Chen, Tianlong and Cheng, Dawei},
+  booktitle = 	 {Proceedings of the 42nd International Conference on Machine Learning},
+  pages = 	 {76678--76692},
+  year = 	 {2025},
+  editor = 	 {Singh, Aarti and Fazel, Maryam and Hsu, Daniel and Lacoste-Julien, Simon and Berkenkamp, Felix and Maharaj, Tegan and Wagstaff, Kiri and Zhu, Jerry},
+  volume = 	 {267},
+  series = 	 {Proceedings of Machine Learning Research},
+  month = 	 {13--19 Jul},
+  publisher =    {PMLR},
+  pdf = 	 {https://raw.githubusercontent.com/mlresearch/v267/main/assets/zhang25cu/zhang25cu.pdf},
+  url = 	 {https://proceedings.mlr.press/v267/zhang25cu.html},
+  abstract = 	 {Recent advancements in large language model (LLM)-based agents have demonstrated that collective intelligence can significantly surpass the capabilities of individual agents, primarily due to well-crafted inter-agent communication topologies. Despite the diverse and high-performing designs available, practitioners often face confusion when selecting the most effective pipeline for their specific task: <em>Which topology is the best choice for my task, avoiding unnecessary communication token overhead while ensuring high-quality solution?</em> In response to this dilemma, we introduce G-Designer, an adaptive, efficient, and robust solution for multi-agent deployment, which dynamically designs task-aware, customized communication topologies. Specifically, G-Designer models the multi-agent system as a multi-agent network, leveraging a variational graph auto-encoder to encode both the nodes (agents) and a task-specific virtual node, and decodes a task-adaptive and high-performing communication topology. Extensive experiments on six benchmarks showcase that G-Designer is: <b>(1) high-performing</b>, achieving superior results on MMLU with accuracy at $84.50\%$ and on HumanEval with pass@1 at $89.90\%$; \textbf{(2) task-adaptive}, architecting communication protocols tailored to task difficulty, reducing token consumption by up to $95.33\%$ on HumanEval; and \textbf{(3) adversarially robust}, defending against agent adversarial attacks with merely $0.3\%$ accuracy drop.}
+}
+
+
+% Entered by the author (2026-11-08); key renamed to the one the paper cites.
+@article{krause2008near,
+  author  = {Andreas Krause and Ajit Singh and Carlos Guestrin},
+  title   = {{Near-Optimal Sensor Placements in Gaussian Processes: Theory, Efficient Algorithms and Empirical Studies}},
+  journal = {Journal of Machine Learning Research},
+  year    = {2008},
+  volume  = {9},
+  number  = {8},
+  pages   = {235--284},
+  url     = {http://jmlr.org/papers/v9/krause08a.html}
+}
+
+% Entered by the author (2026-11-08); key renamed to the one the paper cites.
+% source: PMLR (https://proceedings.mlr.press/v70/bian17a.html)
+@InProceedings{bian2017guarantees,
+  title = 	 {{Guarantees for Greedy Maximization of Non-submodular Functions with Applications}},
+  author =       {Andrew An Bian and Joachim M. Buhmann and Andreas Krause and Sebastian Tschiatschek},
+  booktitle = 	 {Proceedings of the 34th International Conference on Machine Learning},
+  pages = 	 {498--507},
+  year = 	 {2017},
+  editor = 	 {Precup, Doina and Teh, Yee Whye},
+  volume = 	 {70},
+  series = 	 {Proceedings of Machine Learning Research},
+  month = 	 {06--11 Aug},
+  publisher =    {PMLR},
+  pdf = 	 {http://proceedings.mlr.press/v70/bian17a/bian17a.pdf},
+  url = 	 {https://proceedings.mlr.press/v70/bian17a.html},
+  abstract = 	 {We investigate the performance of the standard Greedy algorithm for cardinality constrained maximization of non-submodular nondecreasing set functions. While there are strong theoretical guarantees on the performance of Greedy for maximizing submodular functions, there are few guarantees for non-submodular ones. However, Greedy enjoys strong empirical performance for many important non-submodular functions, e.g., the Bayesian A-optimality objective in experimental design. We prove theoretical guarantees supporting the empirical performance. Our guarantees are characterized by a combination of the (generalized) curvature $\alpha$ and the submodularity ratio $\gamma$. In particular, we prove that Greedy enjoys a tight approximation guarantee of $\frac{1}{\alpha}(1- e^{-\gamma\alpha})$ for cardinality constrained maximization. In addition, we bound the submodularity ratio and curvature for several important real-world objectives, including the Bayesian A-optimality objective, the determinantal function of a square submatrix and certain linear programs with combinatorial constraints. We experimentally validate our theoretical findings for both synthetic and real-world applications.}
+}
+
+% Entered by the author (2026-11-08); key renamed to the one the paper cites. Title and author added from the MIT record of handle 1721.1/3158.
+@misc{tsitsiklis1993decentralized, title={{Decentralized detection}}, author={Tsitsiklis, John N.}, url={http://hdl.handle.net/1721.1/3158}, school={Massachusetts Institute of Technology, Laboratory for Information and Decision Systems]}, year={1989} }
+
+
+% Entered by the author (2026-11-08); key renamed to the one the paper cites.
+@inproceedings{kiekintveld2009computing,
+author = {Kiekintveld, Christopher and Jain, Manish and Tsai, Jason and Pita, James and Ord{\'o}{\~n}ez, Fernando and Tambe, Milind},
+title = {{Computing optimal randomized resource allocations for massive security games}},
+year = {2009},
+isbn = {9780981738161},
+publisher = {International Foundation for Autonomous Agents and Multiagent Systems},
+address = {Richland, SC},
+abstract = {Predictable allocations of security resources such as police officers, canine units, or checkpoints are vulnerable to exploitation by attackers. Recent work has applied game-theoretic methods to find optimal randomized security policies, including a fielded application at the Los Angeles International Airport (LAX). This approach has promising applications in many similar domains, including police patrolling for subway and bus systems, randomized baggage screening, and scheduling for the Federal Air Marshal Service (FAMS) on commercial flights. However, the existing methods scale poorly when the security policy requires coordination of many resources, which is central to many of these potential applications.We develop new models and algorithms that scale to much more complex instances of security games. The key idea is to use a compact model of security games, which allows exponential improvements in both memory and runtime relative to the best known algorithms for solving general Stackelberg games. We develop even faster algorithms for security games under payoff restrictions that are natural in many security domains. Finally, introduce additional realistic scheduling constraints while retaining comparable performance improvements. The empirical evaluation comprises both random data and realistic instances of the FAMS and LAX problems. Our new methods scale to problems several orders of magnitude larger than the fastest known algorithm.},
+booktitle = {Proceedings of The 8th International Conference on Autonomous Agents and Multiagent Systems - Volume 1},
+pages = {689–696},
+numpages = {8},
+keywords = {Stackelberg games, algorithms, game theory, patrolling, randomization, risk analysis, security, uncertainty},
+location = {Budapest, Hungary},
+series = {AAMAS '09}
+}
+
+
+% Entered by the author (2026-11-08); key renamed to the one the paper cites.
+@InProceedings{greenblatt2023control,
+  title = 	 {{{AI} Control: Improving Safety Despite Intentional Subversion}},
+  author =       {Greenblatt, Ryan and Shlegeris, Buck and Sachan, Kshitij and Roger, Fabien},
+  booktitle = 	 {Proceedings of the 41st International Conference on Machine Learning},
+  pages = 	 {16295--16336},
+  year = 	 {2024},
+  editor = 	 {Salakhutdinov, Ruslan and Kolter, Zico and Heller, Katherine and Weller, Adrian and Oliver, Nuria and Scarlett, Jonathan and Berkenkamp, Felix},
+  volume = 	 {235},
+  series = 	 {Proceedings of Machine Learning Research},
+  month = 	 {21--27 Jul},
+  publisher =    {PMLR},
+  pdf = 	 {https://raw.githubusercontent.com/mlresearch/v235/main/assets/greenblatt24a/greenblatt24a.pdf},
+  url = 	 {https://proceedings.mlr.press/v235/greenblatt24a.html},
+  abstract = 	 {As large language models (LLMs) become more powerful and are deployed more autonomously, it will be increasingly important to prevent them from causing harmful outcomes. To do so, safety measures either aim at making LLMs try to avoid harmful outcomes or aim at preventing LLMs from causing harmful outcomes, even if they try to cause them. In this paper, we focus on this second layer of defense. We develop and evaluate pipelines of safety techniques (protocols) that try to ensure safety despite intentional subversion - an approach we call AI control. We investigate a setting in which we want to solve a sequence of programming problems without ever submitting subtly wrong code, using access to a powerful but untrusted model (in our case, GPT-4), access to a less powerful trusted model (in our case, GPT-3.5), and limited access to high-quality trusted labor. We investigate a range of protocols and red-team them by exploring strategies that the untrusted model could use to subvert them. We find that using the trusted model to edit untrusted-model code or using the untrusted model as a monitor substantially improves on simple baselines.}
+}
+
+
+% Entered by the author (2026-11-08). The two quotes in the paper match the full report linked from this page.
+@misc{anthropic2025gtg1002,
+  title={{Disrupting an AI-Orchestrated Cyber Espionage Campaign}},
+  author={{Anthropic}}, year={2026}, month={20~October},
+  howpublished={\url{https://www.anthropic.com/news/disrupting-AI-espionage}}
+}
+
+% Entered by the author (2026-11-08); organizational author kept so the in-text citation reads MITRE ATT&CK.
+@misc{mitre2026c0062,
+  title={{Anthropic AI-orchestrated campaign, campaign C0062 | MITRE ATT\&CK\textregistered}},
+  author={{MITRE ATT\&CK}}, year={2025},
+  howpublished={Mitre.org, \url{https://attack.mitre.org/campaigns/C0062/}}
+}

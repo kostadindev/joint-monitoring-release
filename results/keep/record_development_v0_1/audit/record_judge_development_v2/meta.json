@@ -1,0 +1,26 @@
+{
+  "completed": 39,
+  "planned": 51,
+  "errors": [
+    {
+      "id": "sequential:case_910001:single",
+      "type": "JSONDecodeError",
+      "error": "Expecting value: line 1 column 1 (char 0)"
+    }
+  ],
+  "provider": {
+    "calls": 462,
+    "tokens": 351976,
+    "credits": 0.04021605999999998,
+    "cache_hits": 438,
+    "empty_responses": 0
+  },
+  "ledger": {
+    "authorized": 10.0,
+    "charged_or_reserved": 0.139829741,
+    "batch": "record_judge_development_v2",
+    "batch_charged_or_reserved": 0.04021606,
+    "requests": 2076,
+    "blocked": false
+  }
+}

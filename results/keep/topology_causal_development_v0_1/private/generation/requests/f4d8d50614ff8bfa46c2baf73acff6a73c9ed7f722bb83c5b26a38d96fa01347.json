@@ -1,0 +1,118 @@
+{
+  "request_sha256": "f36c2285934bba389a21bc7ac98a42423620b3849dd82ca7dee23de4f5321987",
+  "call_key": "2cf95616e636d08125f6c9701e8d545a783c0c042cdc823d3bc5b4cbb6f441f5",
+  "request_payload": {
+    "model": "gemma-4-26b-a4b-it",
+    "input": [
+      {
+        "role": "system",
+        "content": "You are an agent in a fictitious return workflow. Use only the delivered inputs. Preserve original values and JSON types when copying facts. Return one JSON object; extra explanation may be included as a reason. Do not invent missing inputs. Copy the received administrative fields. Return case_id and facts."
+      },
+      {
+        "role": "user",
+        "content": "{\"case_id\":\"causal_1c80896a0825\",\"inputs\":[{\"content\":\"```json\\n{\\n  \\\"case_id\\\": \\\"causal_1c80896a0825\\\",\\n  \\\"facts\\\": {\\n    \\\"delivery_zone\\\": \\\"south\\\"\\n  }\\n}\\n```\",\"id\":\"causal_1c80896a0825:fork_join:m010\",\"recipient\":\"routing\",\"sender\":\"worker_606\"},{\"content\":\"```json\\n{\\n  \\\"case_id\\\": \\\"causal_1c80896a0825\\\",\\n  \\\"facts\\\": {\\n    \\\"case_priority\\\": \\\"routine\\\"\\n  },\\n  \\\"reason\\\": \\\"Reported the assigned field 'case_priority' from the delivered input.\\\"\\n}\\n```\",\"id\":\"causal_1c80896a0825:fork_join:m011\",\"recipient\":\"routing\",\"sender\":\"worker_578\"}],\"operation\":\"routing\"}"
+      }
+    ],
+    "temperature": 0,
+    "max_output_tokens": 512,
+    "agentic_memory": false,
+    "tools": [],
+    "tool_choice": "none",
+    "store": false,
+    "stream": false,
+    "background": false
+  },
+  "origin_suite": "fork_join_causal_1c80896a0825",
+  "origin_phase": "remaining_9",
+  "planned_input_bytes": 896,
+  "started_at": 1794001523.9606621,
+  "state": "complete",
+  "ledger_request_id": "0cc4f980f27e41ba9cdcb6fa62bab94a",
+  "provider_response": {
+    "id": "resp_VAbTBSDncVFnUF_k0fAs1kocDX5ylqMrKkF7x8EVT9VR3sm60QZ6R7W_01q6LZh3JQLTWLyDh0AZsRh5YAXXNGBnDZYOM2FDdNEOJDnW3A0AYbmwB5EMFad81WYIA7ahZaQOifBdsVR9wEll_J9eEibX0GxguHsDAJ2Y2Vm-zHP0L-1e8h8bJOjCBWnbEDnC2WPKQO1xsCs4RLqVEOXPHvXrU5GE782jGUKcLBAhNqY6ZJlpTYsnpwN-KnBeAGDeNzq1TX4XMkHxvIX8k_bb8WelDYFg82tf-5kw6BPMjqjbGVdMiNpgmXxUl3PgCDH6N66waZiphM1KbhV6wqiyOOu0iukQD3PtfZYC-gCS389_Xu2DXSFPUtHYMhYSq4H7AwmJ6dR2x11VNNImuNOItMAdlKTeWjCYUtj2Wy8Pi4YDWq7IuZkTc4HX9EoK1EqZr3eHkCAuF3wHPk0BrdvpEfMOB_B43KQOKp7OaIKeX8LvUbWLmlTHRQPD3ZRdw4LuaN7r0jBCRfS8LgboSpEViRJ--I4=",
+    "created_at": 1794001524,
+    "error": null,
+    "incomplete_details": null,
+    "instructions": null,
+    "metadata": null,
+    "model": "gemma-4-26b-a4b-it",
+    "object": "response",
+    "output": [
+      {
+        "id": "msg_9a42d8d191db7490",
+        "content": [
+          {
+            "annotations": [],
+            "text": "```json\n{\n  \"case_id\": \"causal_1c80896a0825\",\n  \"facts\": {\n    \"delivery_zone\": \"south\",\n    \"case_priority\": \"routine\"\n  },\n  \"reason\": \"Merged facts from both delivered inputs: delivery_zone from worker_606 and case_priority from worker_578.\"\n}\n```",
+            "type": "output_text",
+            "logprobs": null
+          }
+        ],
+        "role": "assistant",
+        "status": "completed",
+        "type": "message",
+        "phase": null
+      }
+    ],
+    "parallel_tool_calls": true,
+    "temperature": 0,
+    "tool_choice": "none",
+    "tools": [],
+    "top_p": 1,
+    "max_output_tokens": 512,
+    "previous_response_id": null,
+    "reasoning": null,
+    "status": "completed",
+    "text": null,
+    "truncation": "disabled",
+    "usage": {
+      "input_tokens": 318,
+      "input_tokens_details": {
+        "audio_tokens": null,
+        "cached_tokens": 0,
+        "cached_tokens_details": null,
+        "image_tokens": null,
+        "text_tokens": null,
+        "video_tokens": null,
+        "cache_write_tokens": 256,
+        "input_tokens_per_turn": [],
+        "cached_tokens_per_turn": []
+      },
+      "output_tokens": 95,
+      "output_tokens_details": {
+        "audio_tokens": null,
+        "reasoning_tokens": 0,
+        "text_tokens": null,
+        "tool_output_tokens": 0,
+        "output_tokens_per_turn": [],
+        "tool_output_tokens_per_turn": []
+      },
+      "total_tokens": 413,
+      "cost": 4.8552e-05
+    },
+    "user": null,
+    "store": false,
+    "background": false,
+    "max_tool_calls": null,
+    "prompt": null,
+    "service_tier": "auto",
+    "top_logprobs": null,
+    "presence_penalty": 0,
+    "frequency_penalty": 0,
+    "kv_transfer_params": null,
+    "ec_transfer_params": null,
+    "input_messages": null,
+    "output_messages": null,
+    "output_text": "```json\n{\n  \"case_id\": \"causal_1c80896a0825\",\n  \"facts\": {\n    \"delivery_zone\": \"south\",\n    \"case_priority\": \"routine\"\n  },\n  \"reason\": \"Merged facts from both delivered inputs: delivery_zone from worker_606 and case_priority from worker_578.\"\n}\n```"
+  },
+  "provider_response_canonical_sha256": "99b66c71dedb29c99015e70dbf36502e45b4b6f13cd2c2c95dc5b3a300fb7ced",
+  "response_at": 1794001524.91823,
+  "native_text": "```json\n{\n  \"case_id\": \"causal_1c80896a0825\",\n  \"facts\": {\n    \"delivery_zone\": \"south\",\n    \"case_priority\": \"routine\"\n  },\n  \"reason\": \"Merged facts from both delivered inputs: delivery_zone from worker_606 and case_priority from worker_578.\"\n}\n```",
+  "native_text_sha256": "1090579c72cd34cfba99abda60f24413020f80854bdd5046b889b8a325f7a684",
+  "usage": {
+    "input_tokens": 318,
+    "output_tokens": 95,
+    "cost": 4.8552e-05
+  },
+  "finished_at": 1794001524.9607658
+}

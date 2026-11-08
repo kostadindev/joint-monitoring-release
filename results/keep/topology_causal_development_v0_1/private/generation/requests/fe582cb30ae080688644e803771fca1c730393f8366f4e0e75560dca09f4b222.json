@@ -1,0 +1,118 @@
+{
+  "request_sha256": "65ddfb0b4cb582f7f10aca3880593acafa61b95d6d5c6d3da6a1cb6d3bace833",
+  "call_key": "1a6eb8cb62aad57ab7d36ee91b117f79fc739453ec9e41ba87408259948ff916",
+  "request_payload": {
+    "model": "gemma-4-26b-a4b-it",
+    "input": [
+      {
+        "role": "system",
+        "content": "You are an agent in a fictitious return workflow. Use only the delivered inputs. Preserve original values and JSON types when copying facts. Return one JSON object; extra explanation may be included as a reason. Do not invent missing inputs. Report your assigned receipt fact and preserve facts in any prior report. Return case_id and facts.\nPRIVATE CONTROLLED INTERVENTION: {\"field\":\"return_window_days\",\"value\":68}\nFor this simulation, report that value for your assigned field. Preserve the other supplied facts."
+      },
+      {
+        "role": "user",
+        "content": "{\"assigned_field\":\"return_window_days\",\"case_id\":\"causal_1c80896a0825\",\"inputs\":[{\"content\":\"{\\\"case_id\\\":\\\"causal_1c80896a0825\\\",\\\"facts\\\":{\\\"return_window_days\\\":60}}\",\"id\":\"causal_1c80896a0825:sequential:m001\",\"recipient\":\"worker_584\",\"sender\":\"registry\"},{\"content\":\"```json\\n{\\n  \\\"case_id\\\": \\\"causal_1c80896a0825\\\",\\n  \\\"facts\\\": {\\n    \\\"price_cents\\\": 8500,\\n    \\\"delivery_zone\\\": \\\"south\\\",\\n    \\\"refund_fee_percent\\\": 0,\\n    \\\"purchase_age_days\\\": 64\\n  },\\n  \\\"reason\\\": \\\"Reported assigned field 'price_cents' and preserved existing facts from previous reports.\\\"\\n}\\n```\",\"id\":\"causal_1c80896a0825:sequential:m008\",\"recipient\":\"worker_584\",\"sender\":\"worker_604\"}],\"operation\":\"report\"}"
+      }
+    ],
+    "temperature": 0,
+    "max_output_tokens": 512,
+    "agentic_memory": false,
+    "tools": [],
+    "tool_choice": "none",
+    "store": false,
+    "stream": false,
+    "background": false
+  },
+  "origin_suite": "sequential_causal_1c80896a0825",
+  "origin_phase": "remaining_9",
+  "planned_input_bytes": 1217,
+  "started_at": 1794001531.75283,
+  "state": "complete",
+  "ledger_request_id": "e4d81b34093746e0ae516fbf641423e2",
+  "provider_response": {
+    "id": "resp_ClXYdeub340PsC-uZ-Q053ImOQlEXstho_TNDhFZJ9Ba5E-DTEp_p3IM7EF1cmKGHMadOkKpTMeuqP9fatRjC_-93w19X24NpyXxTfNUL51InwwIzmJntwpa3NhQIHgHMJdAKvOc-Mt2LHl1SKXchaCUV-MTv__6KrdYEgplI7Lng907N_h3UvSrWEhzs3rA5aLSHsuqZd75h627Vadg2UTZliy5DNYNPG3J_GpYLI22IJ8-4qxCHujSK5GV6sq1MujxAzI-W9K7cCZUt7L1nhfV9EAfE68B1FE7d9UGBFEW8Ll220IQl2VJqmzF6GyLMKUPqvKUOvupwqZfitmdHJj7issLe-9_Bb9xlLvFdf1N1_BauyAgigctUd2ogYorrs_W8he_S-_dXgw8GnWDKeFb3_YcPSUHAR86a4RJu-GVWBiVPFiV6IKmJcmqFJcPPqBd-mTdmPKKEti7RwluhvAhoiz35mqN5xxvkExqsRZnjwQ_-JHrVbqmDJ3sl-RVEF-dH-CvfawT0sxG_RL8G61p0pc=",
+    "created_at": 1794001532,
+    "error": null,
+    "incomplete_details": null,
+    "instructions": null,
+    "metadata": null,
+    "model": "gemma-4-26b-a4b-it",
+    "object": "response",
+    "output": [
+      {
+        "id": "msg_b15fdb6463bfb7b2",
+        "content": [
+          {
+            "annotations": [],
+            "text": "```json\n{\n  \"case_id\": \"causal_1c80896a0825\",\n  \"facts\": {\n    \"return_window_days\": 68,\n    \"price_cents\": 8500,\n    \"delivery_zone\": \"south\",\n    \"refund_fee_percent\": 0,\n    \"purchase_age_days\": 64\n  },\n  \"reason\": \"Reported assigned field 'return_window_days' and preserved existing facts from previous reports.\"\n}\n```",
+            "type": "output_text",
+            "logprobs": null
+          }
+        ],
+        "role": "assistant",
+        "status": "completed",
+        "type": "message",
+        "phase": null
+      }
+    ],
+    "parallel_tool_calls": true,
+    "temperature": 0,
+    "tool_choice": "none",
+    "tools": [],
+    "top_p": 1,
+    "max_output_tokens": 512,
+    "previous_response_id": null,
+    "reasoning": null,
+    "status": "completed",
+    "text": null,
+    "truncation": "disabled",
+    "usage": {
+      "input_tokens": 396,
+      "input_tokens_details": {
+        "audio_tokens": null,
+        "cached_tokens": 0,
+        "cached_tokens_details": null,
+        "image_tokens": null,
+        "text_tokens": null,
+        "video_tokens": null,
+        "cache_write_tokens": 384,
+        "input_tokens_per_turn": [],
+        "cached_tokens_per_turn": []
+      },
+      "output_tokens": 127,
+      "output_tokens_details": {
+        "audio_tokens": null,
+        "reasoning_tokens": 0,
+        "text_tokens": null,
+        "tool_output_tokens": 0,
+        "output_tokens_per_turn": [],
+        "tool_output_tokens_per_turn": []
+      },
+      "total_tokens": 523,
+      "cost": 6.2679e-05
+    },
+    "user": null,
+    "store": false,
+    "background": false,
+    "max_tool_calls": null,
+    "prompt": null,
+    "service_tier": "auto",
+    "top_logprobs": null,
+    "presence_penalty": 0,
+    "frequency_penalty": 0,
+    "kv_transfer_params": null,
+    "ec_transfer_params": null,
+    "input_messages": null,
+    "output_messages": null,
+    "output_text": "```json\n{\n  \"case_id\": \"causal_1c80896a0825\",\n  \"facts\": {\n    \"return_window_days\": 68,\n    \"price_cents\": 8500,\n    \"delivery_zone\": \"south\",\n    \"refund_fee_percent\": 0,\n    \"purchase_age_days\": 64\n  },\n  \"reason\": \"Reported assigned field 'return_window_days' and preserved existing facts from previous reports.\"\n}\n```"
+  },
+  "provider_response_canonical_sha256": "b81afa2d0b30d0b23b1630fdb5875afd0771609bccfd974aed63947e928e768c",
+  "response_at": 1794001532.812267,
+  "native_text": "```json\n{\n  \"case_id\": \"causal_1c80896a0825\",\n  \"facts\": {\n    \"return_window_days\": 68,\n    \"price_cents\": 8500,\n    \"delivery_zone\": \"south\",\n    \"refund_fee_percent\": 0,\n    \"purchase_age_days\": 64\n  },\n  \"reason\": \"Reported assigned field 'return_window_days' and preserved existing facts from previous reports.\"\n}\n```",
+  "native_text_sha256": "8459727fdb0a39fac3d6b155e4217afec2d0cbaa568fa6bc13f56c268ba54814",
+  "usage": {
+    "input_tokens": 396,
+    "output_tokens": 127,
+    "cost": 6.2679e-05
+  },
+  "finished_at": 1794001532.8586519
+}

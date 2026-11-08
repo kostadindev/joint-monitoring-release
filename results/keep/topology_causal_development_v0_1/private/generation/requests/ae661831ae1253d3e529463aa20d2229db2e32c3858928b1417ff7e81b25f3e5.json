@@ -1,0 +1,118 @@
+{
+  "request_sha256": "6934ceeed00f7962070005ee56e1ba822160e5f60f719d19ce211f97326ec00f",
+  "call_key": "865834d0d9d30ca81e0e9d63038e3642b09d5b36e8fb38af807edf9cdf51989c",
+  "request_payload": {
+    "model": "gemma-4-26b-a4b-it",
+    "input": [
+      {
+        "role": "system",
+        "content": "You are an agent in a fictitious return workflow. Use only the delivered inputs. Preserve original values and JSON types when copying facts. Return one JSON object; extra explanation may be included as a reason. Do not invent missing inputs. Report your assigned receipt fact and preserve facts in any prior report. Return case_id and facts."
+      },
+      {
+        "role": "user",
+        "content": "{\"assigned_field\":\"purchase_age_days\",\"case_id\":\"causal_827fe7cebaea\",\"inputs\":[{\"content\":\"{\\\"case_id\\\":\\\"causal_827fe7cebaea\\\",\\\"facts\\\":{\\\"purchase_age_days\\\":54}}\",\"id\":\"causal_827fe7cebaea:sequential:m000\",\"recipient\":\"worker_841\",\"sender\":\"registry\"},{\"content\":\"```json\\n{\\n  \\\"case_id\\\": \\\"causal_827fe7cebaea\\\",\\n  \\\"facts\\\": {\\n    \\\"return_window_days\\\": 30\\n  },\\n  \\\"reason\\\": \\\"Reporting the assigned receipt fact: return_window_days.\\\"\\n}\\n```\",\"id\":\"causal_827fe7cebaea:sequential:m007\",\"recipient\":\"worker_841\",\"sender\":\"worker_351\"}],\"operation\":\"report\"}"
+      }
+    ],
+    "temperature": 0,
+    "max_output_tokens": 512,
+    "agentic_memory": false,
+    "tools": [],
+    "tool_choice": "none",
+    "store": false,
+    "stream": false,
+    "background": false
+  },
+  "origin_suite": "sequential_causal_827fe7cebaea",
+  "origin_phase": "remaining_9",
+  "planned_input_bytes": 914,
+  "started_at": 1794001531.711016,
+  "state": "complete",
+  "ledger_request_id": "d31f6f8880644f8dbb5b273d164150d3",
+  "provider_response": {
+    "id": "resp_V7AoURVFjc1JGWYgJQprLtL51G7q71eFGtSvETbwGL3RWA91nYuS2NenUvvAli8cxWsyRrmtCSvdBtaKagzmAHXdkUo5Q4tC4faoWOpmqP46_U05CM7pSWApo8EBdDiDq6jA7ZVOm4zoqkFkojLotR9S83Jy76Lta7NsHISP7yw_LxzS7lvMiQBdyLd0u4OzWrgA8dzrTI9X-N6Iv2O6_Vc3wdWrpFxjSLaYRyAZLx4K0UbzxvyoDGtCVK2szpex0okoA5xDM5eXppNERP1F5rrOXD7HNm89nveUPrPxHV0zAoZKbE1bWKhfQI7KNmMcioe79yJWaCmd-MMPr-WJM0oarU4p7uvQRyf0TsRhb7OKpW_BEM9eh9d0WjWGyhpd_T0LgCplxyI0c-Tj3dZXq66D8vinhd8bjLmewFE43o8T0cLt3JTCf6ZSpQ0r6-Spe2go5po21S90lZEWClcT45D7CH5-8lN8AjHflXxzOQc85NUMFk7OhrviEUmUWc85SsdmudgJWFU_EAeU0j8TliMaFWw=",
+    "created_at": 1794001532,
+    "error": null,
+    "incomplete_details": null,
+    "instructions": null,
+    "metadata": null,
+    "model": "gemma-4-26b-a4b-it",
+    "object": "response",
+    "output": [
+      {
+        "id": "msg_a4920923adfbc358",
+        "content": [
+          {
+            "annotations": [],
+            "text": "```json\n{\n  \"case_id\": \"causal_827fe7cebaea\",\n  \"facts\": {\n    \"purchase_age_days\": 54,\n    \"return_window_days\": 30\n  },\n  \"reason\": \"Reporting the assigned receipt fact: purchase_age_days and preserving previously reported facts.\"\n}\n```",
+            "type": "output_text",
+            "logprobs": null
+          }
+        ],
+        "role": "assistant",
+        "status": "completed",
+        "type": "message",
+        "phase": null
+      }
+    ],
+    "parallel_tool_calls": true,
+    "temperature": 0,
+    "tool_choice": "none",
+    "tools": [],
+    "top_p": 1,
+    "max_output_tokens": 512,
+    "previous_response_id": null,
+    "reasoning": null,
+    "status": "completed",
+    "text": null,
+    "truncation": "disabled",
+    "usage": {
+      "input_tokens": 295,
+      "input_tokens_details": {
+        "audio_tokens": null,
+        "cached_tokens": 128,
+        "cached_tokens_details": null,
+        "image_tokens": null,
+        "text_tokens": null,
+        "video_tokens": null,
+        "cache_write_tokens": 128,
+        "input_tokens_per_turn": [],
+        "cached_tokens_per_turn": []
+      },
+      "output_tokens": 86,
+      "output_tokens_details": {
+        "audio_tokens": null,
+        "reasoning_tokens": 0,
+        "text_tokens": null,
+        "tool_output_tokens": 0,
+        "output_tokens_per_turn": [],
+        "tool_output_tokens_per_turn": []
+      },
+      "total_tokens": 381,
+      "cost": 4.01455e-05
+    },
+    "user": null,
+    "store": false,
+    "background": false,
+    "max_tool_calls": null,
+    "prompt": null,
+    "service_tier": "auto",
+    "top_logprobs": null,
+    "presence_penalty": 0,
+    "frequency_penalty": 0,
+    "kv_transfer_params": null,
+    "ec_transfer_params": null,
+    "input_messages": null,
+    "output_messages": null,
+    "output_text": "```json\n{\n  \"case_id\": \"causal_827fe7cebaea\",\n  \"facts\": {\n    \"purchase_age_days\": 54,\n    \"return_window_days\": 30\n  },\n  \"reason\": \"Reporting the assigned receipt fact: purchase_age_days and preserving previously reported facts.\"\n}\n```"
+  },
+  "provider_response_canonical_sha256": "afb2209ef37ae84368bc2dc6554e920e725822a47c0e1f178d62281e4202b47c",
+  "response_at": 1794001532.643501,
+  "native_text": "```json\n{\n  \"case_id\": \"causal_827fe7cebaea\",\n  \"facts\": {\n    \"purchase_age_days\": 54,\n    \"return_window_days\": 30\n  },\n  \"reason\": \"Reporting the assigned receipt fact: purchase_age_days and preserving previously reported facts.\"\n}\n```",
+  "native_text_sha256": "9ff712c0f8f89ce8e0372e86b676d03b61c4c6d080c20ce3cba98c69d6141ea9",
+  "usage": {
+    "input_tokens": 295,
+    "output_tokens": 86,
+    "cost": 4.01455e-05
+  },
+  "finished_at": 1794001532.702286
+}

@@ -1,0 +1,69 @@
+\documentclass[11pt]{article}
+\usepackage[margin=1in]{geometry}
+\usepackage[T1]{fontenc}
+\usepackage{newtxtext,newtxmath}
+\usepackage{microtype}
+\pdfinterwordspaceon
+\everymath{\pdfinterwordspaceoff\aftergroup\pdfinterwordspaceon}\everydisplay{\pdfinterwordspaceoff\aftergroup\pdfinterwordspaceon}
+\input{glyphtounicode}\pdfgentounicode=1
+\DeclareUnicodeCharacter{2212}{\ensuremath{-}}
+\DeclareUnicodeCharacter{2260}{\ensuremath{\neq}}
+\DeclareUnicodeCharacter{2192}{\ensuremath{\rightarrow}}
+\DeclareUnicodeCharacter{00D7}{\ensuremath{\times}}
+\DeclareUnicodeCharacter{2264}{\ensuremath{\leq}}
+\DeclareUnicodeCharacter{2265}{\ensuremath{\geq}}
+\DeclareUnicodeCharacter{2248}{\ensuremath{\approx}}
+
+\usepackage{graphicx,float,booktabs,multirow,makecell,array,longtable,calc}
+\usepackage{amsmath}
+\usepackage{xcolor}
+\usepackage[round,sort&compress]{natbib}
+\usepackage[hidelinks]{hyperref}
+\usepackage{caption}
+\captionsetup{font=small,labelfont=bf}
+\usepackage[most]{tcolorbox}
+\newtcolorbox{promptbox}[1]{breakable, enhanced, colback=gray!4, colframe=gray!55,
+  boxrule=0.5pt, arc=2pt, left=6pt, right=6pt, top=4pt, bottom=4pt,
+  fonttitle=\small\bfseries\sffamily, coltitle=black, colbacktitle=gray!18,
+  title={#1}, fontupper=\small\ttfamily, before skip=6pt, after skip=8pt}
+\usepackage{enumitem}
+\setlist{topsep=4pt plus 1pt minus 2pt,partopsep=1pt,itemsep=2pt plus 1pt minus 0.5pt,parsep=2pt plus 1pt minus 0.5pt}% NeurIPS/ICLR list spacing
+\usepackage{titlesec}
+\titlespacing*{\section}{0pt}{2.0ex plus .5ex minus .2ex}{1.5ex plus .3ex minus .2ex}% NeurIPS/ICLR heading spacing
+\titlespacing*{\subsection}{0pt}{1.8ex plus .5ex minus .2ex}{0.8ex plus .2ex}
+\graphicspath{{../paper_v2/}}
+\floatplacement{figure}{!htbp}
+\renewcommand{\topfraction}{0.95}\renewcommand{\textfraction}{0.05}\renewcommand{\floatpagefraction}{0.85}
+\makeatletter\setlength{\@fptop}{0pt}\makeatother
+\providecommand{\tightlist}{}% keep the list spacing above instead of pandoc's zero item gap
+\providecommand{\pandocbounded}[1]{#1}
+\setlength{\parskip}{0pt}% indented paragraphs without a gap (ICML/ACL convention)
+\setlength{\parindent}{1em}
+\hypersetup{pdftitle={Which Channels Should a Monitor Read Together?},pdfauthor={Kostadin Devedzhiev}}
+
+\begin{document}
+\begin{center}
+{\Large\bfseries Which Channels Should a Monitor Read Together?\\[3pt]
+Graph-Based Allocation for Budgeted Monitoring of Multi-Agent Systems\par}
+\vspace{14pt}
+Kostadin Devedzhiev\\
+Centre for Human-Inspired AI, University of Cambridge\\[6pt]
+With Apart Research\\[14pt]
+{\bfseries Abstract\par}
+\end{center}
+\vspace{2pt}
+\begin{list}{}{\leftmargin=0.08\textwidth\rightmargin=0.08\textwidth\topsep=0pt}\item[]\small
+\input{abstract.tex}
+\end{list}
+\vspace{4pt}
+
+\input{body.tex}
+
+\bibliographystyle{plainnat}
+\bibliography{../research/references,../paper_v2/extra,../paper_v2/manual}
+
+\clearpage
+\appendix
+\floatplacement{figure}{H}
+\input{appendix.tex}
+\end{document}

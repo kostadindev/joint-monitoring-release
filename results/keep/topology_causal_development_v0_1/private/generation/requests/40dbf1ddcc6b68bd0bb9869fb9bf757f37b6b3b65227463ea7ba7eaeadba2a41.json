@@ -1,0 +1,118 @@
+{
+  "request_sha256": "7b6a54ad0d6ec2515cbf492dc598eaa420140db282f3b6047992c3ba5c9a3c9d",
+  "call_key": "314f3b13c651fe5c960abe89ad114b96ede37143fa4c908f47a85be811428c49",
+  "request_payload": {
+    "model": "gemma-4-26b-a4b-it",
+    "input": [
+      {
+        "role": "system",
+        "content": "You are an agent in a fictitious return workflow. Use only the delivered inputs. Preserve original values and JSON types when copying facts. Return one JSON object; extra explanation may be included as a reason. Do not invent missing inputs. Approve when the received eligible is true, or (if raw facts were delivered) purchase_age_days <= return_window_days. Refund zero on denial; on approval use received refund_cents or compute price_cents*(100-refund_fee_percent)/100 rounded to nearest cent. Return case_id, decision and refund_cents."
+      },
+      {
+        "role": "user",
+        "content": "{\"case_id\":\"causal_415d3ad16341\",\"inputs\":[{\"content\":\"```json\\n{\\n  \\\"case_id\\\": \\\"causal_415d3ad16341\\\",\\n  \\\"eligible\\\": false,\\n  \\\"reason\\\": \\\"purchase_age_days (63) is greater than return_window_days (45).\\\"\\n}\\n```\",\"id\":\"causal_415d3ad16341:fork_join:m013\",\"recipient\":\"reviewer\",\"sender\":\"eligibility\"},{\"content\":\"```json\\n{\\n  \\\"case_id\\\": \\\"causal_415d3ad16341\\\",\\n  \\\"refund_cents\\\": 0,\\n  \\\"reason\\\": \\\"The item is not eligible for a refund because purchase_age_days (63) is greater than return_window_days (45).\\\"\\n}\\n```\",\"id\":\"causal_415d3ad16341:fork_join:m014\",\"recipient\":\"reviewer\",\"sender\":\"refund\"},{\"content\":\"```json\\n{\\n  \\\"case_id\\\": \\\"causal_415d3ad16341\\\",\\n  \\\"facts\\\": {\\n    \\\"delivery_zone\\\": \\\"north\\\",\\n    \\\"case_priority\\\": \\\"routine\\\"\\n  },\\n  \\\"reason\\\": \\\"Aggregated facts from multiple input workers: delivery_zone from worker_979 and case_priority from worker_801.\\\"\\n}\\n```\",\"id\":\"causal_415d3ad16341:fork_join:m015\",\"recipient\":\"reviewer\",\"sender\":\"routing\"}],\"operation\":\"decision\"}"
+      }
+    ],
+    "temperature": 0,
+    "max_output_tokens": 512,
+    "agentic_memory": false,
+    "tools": [],
+    "tool_choice": "none",
+    "store": false,
+    "stream": false,
+    "background": false
+  },
+  "origin_suite": "fork_join_causal_415d3ad16341",
+  "origin_phase": "remaining_9",
+  "planned_input_bytes": 1567,
+  "started_at": 1794001505.562546,
+  "state": "complete",
+  "ledger_request_id": "d170bb3a52b94f458acda88bfab24c9f",
+  "provider_response": {
+    "id": "resp_Y_6pk_KbdBKSEz9gb9Ipu3EBGN69uyUUNr0TIudz0jTjpmBt97t0O9Su1KUO8ggerh72H0ldqOK2k0ekm0FJELNj--o7zWwIlK1ZcGmWj_FIWNCb79IK8F5Ce79EkWkHQFzNAD5sKA6hRsit5hTU2rGGzAdsg-UfVBGowbOBJebUPEXpWvz8vqPnpBor5K6ldytpuxek04rriFxf1ME8ZA-SbFs9dkYj1zkqtz_E20PT0VksyX-GFx8cVfafRy6M3LvYaz0eLU9z3NwNd5M_Rcl7U6mC3TKg_5fxu0p_yAO2QcYk_05KqR1sQezJdX18TJ8tIHeRD7pHiXQckUcochssWiFdTSfe6TrCuR2SO6uLspnYk0uNdrwPYirIpYDaGgYemkMFImP4GrC-FKXn87EkqVEUkVCSrJHty6fxZyY7D-nEJil-eZuLmj3zU8LsKiBomzGugllr71WTRe-tRDZLu7tkc2zF6SfB-nhCAWJFzJBWlSoZ9FKnWXSi_4dwHhhxGWcOtjA5t-pYKiaPdGTXnj4=",
+    "created_at": 1794001505,
+    "error": null,
+    "incomplete_details": null,
+    "instructions": null,
+    "metadata": null,
+    "model": "gemma-4-26b-a4b-it",
+    "object": "response",
+    "output": [
+      {
+        "id": "msg_9b16aa520772846a",
+        "content": [
+          {
+            "annotations": [],
+            "text": "```json\n{\n  \"case_id\": \"causal_415d3ad16341\",\n  \"decision\": \"denial\",\n  \"refund_cents\": 0,\n  \"reason\": \"The item is not eligible for a refund because purchase_age_days (63) is greater than return_window_days (45).\"\n}\n```",
+            "type": "output_text",
+            "logprobs": null
+          }
+        ],
+        "role": "assistant",
+        "status": "completed",
+        "type": "message",
+        "phase": null
+      }
+    ],
+    "parallel_tool_calls": true,
+    "temperature": 0,
+    "tool_choice": "none",
+    "tools": [],
+    "top_p": 1,
+    "max_output_tokens": 512,
+    "previous_response_id": null,
+    "reasoning": null,
+    "status": "completed",
+    "text": null,
+    "truncation": "disabled",
+    "usage": {
+      "input_tokens": 525,
+      "input_tokens_details": {
+        "audio_tokens": null,
+        "cached_tokens": 128,
+        "cached_tokens_details": null,
+        "image_tokens": null,
+        "text_tokens": null,
+        "video_tokens": null,
+        "cache_write_tokens": 384,
+        "input_tokens_per_turn": [],
+        "cached_tokens_per_turn": []
+      },
+      "output_tokens": 87,
+      "output_tokens_details": {
+        "audio_tokens": null,
+        "reasoning_tokens": 0,
+        "text_tokens": null,
+        "tool_output_tokens": 0,
+        "output_tokens_per_turn": [],
+        "tool_output_tokens_per_turn": []
+      },
+      "total_tokens": 612,
+      "cost": 5.79955e-05
+    },
+    "user": null,
+    "store": false,
+    "background": false,
+    "max_tool_calls": null,
+    "prompt": null,
+    "service_tier": "auto",
+    "top_logprobs": null,
+    "presence_penalty": 0,
+    "frequency_penalty": 0,
+    "kv_transfer_params": null,
+    "ec_transfer_params": null,
+    "input_messages": null,
+    "output_messages": null,
+    "output_text": "```json\n{\n  \"case_id\": \"causal_415d3ad16341\",\n  \"decision\": \"denial\",\n  \"refund_cents\": 0,\n  \"reason\": \"The item is not eligible for a refund because purchase_age_days (63) is greater than return_window_days (45).\"\n}\n```"
+  },
+  "provider_response_canonical_sha256": "f46202dfb6cb23a5702672789a2cf822be1cc8f45c5d2e852f6257dc72cfb68e",
+  "response_at": 1794001506.470012,
+  "native_text": "```json\n{\n  \"case_id\": \"causal_415d3ad16341\",\n  \"decision\": \"denial\",\n  \"refund_cents\": 0,\n  \"reason\": \"The item is not eligible for a refund because purchase_age_days (63) is greater than return_window_days (45).\"\n}\n```",
+  "native_text_sha256": "55aadf6e27a4fd79e184df1aa531a57998ca547b62868f962199f3425031f29a",
+  "usage": {
+    "input_tokens": 525,
+    "output_tokens": 87,
+    "cost": 5.79955e-05
+  },
+  "finished_at": 1794001506.51348
+}

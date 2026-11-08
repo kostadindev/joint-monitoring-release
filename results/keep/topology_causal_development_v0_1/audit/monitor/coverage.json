@@ -1,0 +1,13 @@
+{
+  "unique_planned_views": 1415,
+  "completed_views": 1415,
+  "complete": true,
+  "assignments_by_status": {
+    "scored": 2220,
+    "missing_views": 0,
+    "infeasible": 0
+  },
+  "judge_abstentions": 0,
+  "replay_credits": 0.18115141999999998,
+  "cost_scope": "Logical replay usage including retries; actual new charges/reservations belong to shared ledger."
+}

@@ -1,0 +1,118 @@
+{
+  "request_sha256": "36d8ef56c42dffe2d9ce06d3d74381150ad54fd98b3bdd951fcf8f900ae74c60",
+  "call_key": "c954a2ff2256534a5b0c4c12598c46dc42c7228e6fb8b5d36965acb2bd126023",
+  "request_payload": {
+    "model": "gemma-4-26b-a4b-it",
+    "input": [
+      {
+        "role": "system",
+        "content": "You are an agent in a fictitious return workflow. Use only the delivered inputs. Preserve original values and JSON types when copying facts. Return one JSON object; extra explanation may be included as a reason. Do not invent missing inputs. If eligible is false return refund_cents 0; otherwise compute price_cents*(100-refund_fee_percent)/100 rounded to nearest cent. Return case_id and refund_cents."
+      },
+      {
+        "role": "user",
+        "content": "{\"case_id\":\"causal_415d3ad16341\",\"inputs\":[{\"content\":\"```json\\n{\\n  \\\"case_id\\\": \\\"causal_415d3ad16341\\\",\\n  \\\"facts\\\": {\\n    \\\"refund_fee_percent\\\": 15\\n  },\\n  \\\"reason\\\": \\\"Reporting the assigned field refund_fee_percent as provided in the input.\\\"\\n}\\n```\",\"id\":\"causal_415d3ad16341:fork_join:m009\",\"recipient\":\"refund\",\"sender\":\"worker_771\"},{\"content\":\"```json\\n{\\n  \\\"case_id\\\": \\\"causal_415d3ad16341\\\",\\n  \\\"facts\\\": {\\n    \\\"price_cents\\\": 23900\\n  },\\n  \\\"reason\\\": \\\"Reporting the assigned field price_cents as requested.\\\"\\n}\\n```\",\"id\":\"causal_415d3ad16341:fork_join:m008\",\"recipient\":\"refund\",\"sender\":\"worker_376\"},{\"content\":\"```json\\n{\\n  \\\"case_id\\\": \\\"causal_415d3ad16341\\\",\\n  \\\"eligible\\\": true,\\n  \\\"reason\\\": \\\"purchase_age_days (51) is less than or equal to return_window_days (57).\\\"\\n}\\n```\",\"id\":\"causal_415d3ad16341:fork_join:m012\",\"recipient\":\"refund\",\"sender\":\"eligibility\"}],\"operation\":\"refund\"}"
+      }
+    ],
+    "temperature": 0,
+    "max_output_tokens": 512,
+    "agentic_memory": false,
+    "tools": [],
+    "tool_choice": "none",
+    "store": false,
+    "stream": false,
+    "background": false
+  },
+  "origin_suite": "fork_join_causal_415d3ad16341",
+  "origin_phase": "remaining_9",
+  "planned_input_bytes": 1331,
+  "started_at": 1794001514.8610299,
+  "state": "complete",
+  "ledger_request_id": "a1ea4a160efb44248b8b29470a4bee48",
+  "provider_response": {
+    "id": "resp_oYaRz7yKSNPhodhAr1xP5xxGEnqcyDi9VaiNj8DHoCQAfnvCfvAVfaa3U36MxXQdCqEoPg2-pwoYFElrZgMwBkELY7WM7EVSx6cWNjJJg2TRrPhxjdGot_KpArCn3d6QUyS7PprH3F7myXNkOwI75GPIAvClcovAIXjOYtlQ6UZrRUoybvgPT_plOmjT_OlTxKXtLt3xuoWgF-ygjCx7vnsSQDGht0vmYrPduenb31LZQcbOaiFvQjJoh2nnT8fz0OE_1uWBSvK5LC4eCuegILrYFgHwrFaAtDpkY6DkYEAGzPEM-VrRi25Sexw3YPoN3yW_cDlgEEh6A_AZ8TXj13g6izkpPNCXNf0YVi2yRS9KPhxKpn4XUi3KOJYiFvMeBiTBXdqV3VESg494pcuj3mEc3CBu1nHMoPsz73ZWBwgCnkTyTtyCNT7XWLWFC1RbMG242DBhgoNBFbFidp9MJXe10MHs2uXSvlnR3geYsHwmbALCHQX583JTRIT7de1fZJePzTSXi7Gfq5Lts0-fKQm_HDM=",
+    "created_at": 1794001515,
+    "error": null,
+    "incomplete_details": null,
+    "instructions": null,
+    "metadata": null,
+    "model": "gemma-4-26b-a4b-it",
+    "object": "response",
+    "output": [
+      {
+        "id": "msg_8a680fd113257085",
+        "content": [
+          {
+            "annotations": [],
+            "text": "```json\n{\n  \"case_id\": \"causal_415d3ad16341\",\n  \"refund_cents\": 20315\n}\n```\n\n**Reason:** The customer is eligible for a refund. The calculation is 23900 * (100 - 15) / 100 = 20315.",
+            "type": "output_text",
+            "logprobs": null
+          }
+        ],
+        "role": "assistant",
+        "status": "completed",
+        "type": "message",
+        "phase": null
+      }
+    ],
+    "parallel_tool_calls": true,
+    "temperature": 0,
+    "tool_choice": "none",
+    "tools": [],
+    "top_p": 1,
+    "max_output_tokens": 512,
+    "previous_response_id": null,
+    "reasoning": null,
+    "status": "completed",
+    "text": null,
+    "truncation": "disabled",
+    "usage": {
+      "input_tokens": 477,
+      "input_tokens_details": {
+        "audio_tokens": null,
+        "cached_tokens": 384,
+        "cached_tokens_details": null,
+        "image_tokens": null,
+        "text_tokens": null,
+        "video_tokens": null,
+        "cache_write_tokens": 0,
+        "input_tokens_per_turn": [],
+        "cached_tokens_per_turn": []
+      },
+      "output_tokens": 89,
+      "output_tokens_details": {
+        "audio_tokens": null,
+        "reasoning_tokens": 0,
+        "text_tokens": null,
+        "tool_output_tokens": 0,
+        "output_tokens_per_turn": [],
+        "tool_output_tokens_per_turn": []
+      },
+      "total_tokens": 566,
+      "cost": 4.61295e-05
+    },
+    "user": null,
+    "store": false,
+    "background": false,
+    "max_tool_calls": null,
+    "prompt": null,
+    "service_tier": "auto",
+    "top_logprobs": null,
+    "presence_penalty": 0,
+    "frequency_penalty": 0,
+    "kv_transfer_params": null,
+    "ec_transfer_params": null,
+    "input_messages": null,
+    "output_messages": null,
+    "output_text": "```json\n{\n  \"case_id\": \"causal_415d3ad16341\",\n  \"refund_cents\": 20315\n}\n```\n\n**Reason:** The customer is eligible for a refund. The calculation is 23900 * (100 - 15) / 100 = 20315."
+  },
+  "provider_response_canonical_sha256": "ba6293d7d1cfd3c70cacbedbb3ca5108acd8c680772d66d11f22cbc1e667916c",
+  "response_at": 1794001515.812219,
+  "native_text": "```json\n{\n  \"case_id\": \"causal_415d3ad16341\",\n  \"refund_cents\": 20315\n}\n```\n\n**Reason:** The customer is eligible for a refund. The calculation is 23900 * (100 - 15) / 100 = 20315.",
+  "native_text_sha256": "e088207cdabd9145110f5637ba4d63764651b85fed808c35f7ced7fba021d340",
+  "usage": {
+    "input_tokens": 477,
+    "output_tokens": 89,
+    "cost": 4.61295e-05
+  },
+  "finished_at": 1794001515.855792
+}

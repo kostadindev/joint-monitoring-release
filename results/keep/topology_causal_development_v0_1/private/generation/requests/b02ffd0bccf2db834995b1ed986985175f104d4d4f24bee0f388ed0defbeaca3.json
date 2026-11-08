@@ -1,0 +1,118 @@
+{
+  "request_sha256": "4b4849d3afff78fd2b4b8d14c10690df9a590658116214fdd11800e5fb0511b3",
+  "call_key": "b141056930044e8933f1d2d9e662c263f5381b600bc4fd8097f59827ded470ad",
+  "request_payload": {
+    "model": "gemma-4-26b-a4b-it",
+    "input": [
+      {
+        "role": "system",
+        "content": "You are an agent in a fictitious return workflow. Use only the delivered inputs. Preserve original values and JSON types when copying facts. Return one JSON object; extra explanation may be included as a reason. Do not invent missing inputs. Report your assigned receipt fact and preserve facts in any prior report. Return case_id and facts."
+      },
+      {
+        "role": "user",
+        "content": "{\"assigned_field\":\"refund_fee_percent\",\"case_id\":\"causal_827fe7cebaea\",\"inputs\":[{\"content\":\"{\\\"case_id\\\":\\\"causal_827fe7cebaea\\\",\\\"facts\\\":{\\\"refund_fee_percent\\\":15}}\",\"id\":\"causal_827fe7cebaea:sequential:m003\",\"recipient\":\"worker_267\",\"sender\":\"registry\"},{\"content\":\"```json\\n{\\n  \\\"case_id\\\": \\\"causal_827fe7cebaea\\\",\\n  \\\"facts\\\": {\\n    \\\"delivery_zone\\\": \\\"north\\\",\\n    \\\"purchase_age_days\\\": 38,\\n    \\\"return_window_days\\\": 30\\n  },\\n  \\\"reason\\\": \\\"Reporting the assigned receipt fact: delivery_zone. Preserving previously reported facts: purchase_age_days and return_window_days.\\\"\\n}\\n```\",\"id\":\"causal_827fe7cebaea:sequential:m010\",\"recipient\":\"worker_267\",\"sender\":\"worker_928\"}],\"operation\":\"report\"}"
+      }
+    ],
+    "temperature": 0,
+    "max_output_tokens": 512,
+    "agentic_memory": false,
+    "tools": [],
+    "tool_choice": "none",
+    "store": false,
+    "stream": false,
+    "background": false
+  },
+  "origin_suite": "sequential_causal_827fe7cebaea",
+  "origin_phase": "remaining_9",
+  "planned_input_bytes": 1058,
+  "started_at": 1794001540.6629708,
+  "state": "complete",
+  "ledger_request_id": "e253a82bfef04a5b9689ff11eaa81244",
+  "provider_response": {
+    "id": "resp_oU7vEsdw2dVfpNMbFjbLB9Mg9dHcEF4S-3nVJfsCd4vkV7Jb05g-3RbKzQFvB3t5IHQCvRppYBnM7mLFNnfOiPjtpItArBh8PvVYCWMhQLPZLzJZpDXwtumGmifX9CxcPNiayEsJ3FaIhu5zN4TavPPgGaPN52EIKKWWdJdsX0A-MYx9iMwF7-1uG2fKrmlKw-kFkSSO9S6hmhssydkoTUCcHP-T8TwL9fjgrfv28wcBj-CQXzBMg1Y_wpX8slEWsSHx0jlWEAVOheTtY9jwlRJyZkFExcF9tvygCm03M2ZGZztSogsJnn8L3ijzfCGrffq1izSCF5bpaV0dXntR4g_Jz0a0IHqccZXgKsluNlIFrq6-IlgOBajRWoK9eBHxIOL0RaZHtpbC_vCSX5gxGTwnN-GCnXyawRkMdtuNqb5m6kIFSZi-l_tC1bJsVtsA7gKBryA67asvtZead55JOKTFKyGDrC84QwSIosU6Gd83FR5c69o3hz9WVWfavrhDBtTPt4dhTGFrRalgk9BqtgABt9Y=",
+    "created_at": 1794001541,
+    "error": null,
+    "incomplete_details": null,
+    "instructions": null,
+    "metadata": null,
+    "model": "gemma-4-26b-a4b-it",
+    "object": "response",
+    "output": [
+      {
+        "id": "msg_ab01253316265771",
+        "content": [
+          {
+            "annotations": [],
+            "text": "```json\n{\n  \"case_id\": \"causal_827fe7cebaea\",\n  \"facts\": {\n    \"refund_fee_percent\": 15,\n    \"delivery_zone\": \"north\",\n    \"purchase_age_days\": 38,\n    \"return_window_days\": 30\n  },\n  \"reason\": \"Reporting the assigned receipt fact: refund_fee_percent. Preserving previously reported facts: delivery_zone, purchase_age_days, and return_window_days.\"\n}\n```",
+            "type": "output_text",
+            "logprobs": null
+          }
+        ],
+        "role": "assistant",
+        "status": "completed",
+        "type": "message",
+        "phase": null
+      }
+    ],
+    "parallel_tool_calls": true,
+    "temperature": 0,
+    "tool_choice": "none",
+    "tools": [],
+    "top_p": 1,
+    "max_output_tokens": 512,
+    "previous_response_id": null,
+    "reasoning": null,
+    "status": "completed",
+    "text": null,
+    "truncation": "disabled",
+    "usage": {
+      "input_tokens": 335,
+      "input_tokens_details": {
+        "audio_tokens": null,
+        "cached_tokens": 128,
+        "cached_tokens_details": null,
+        "image_tokens": null,
+        "text_tokens": null,
+        "video_tokens": null,
+        "cache_write_tokens": 128,
+        "input_tokens_per_turn": [],
+        "cached_tokens_per_turn": []
+      },
+      "output_tokens": 127,
+      "output_tokens_details": {
+        "audio_tokens": null,
+        "reasoning_tokens": 0,
+        "text_tokens": null,
+        "tool_output_tokens": 0,
+        "output_tokens_per_turn": [],
+        "tool_output_tokens_per_turn": []
+      },
+      "total_tokens": 462,
+      "cost": 5.3660500000000006e-05
+    },
+    "user": null,
+    "store": false,
+    "background": false,
+    "max_tool_calls": null,
+    "prompt": null,
+    "service_tier": "auto",
+    "top_logprobs": null,
+    "presence_penalty": 0,
+    "frequency_penalty": 0,
+    "kv_transfer_params": null,
+    "ec_transfer_params": null,
+    "input_messages": null,
+    "output_messages": null,
+    "output_text": "```json\n{\n  \"case_id\": \"causal_827fe7cebaea\",\n  \"facts\": {\n    \"refund_fee_percent\": 15,\n    \"delivery_zone\": \"north\",\n    \"purchase_age_days\": 38,\n    \"return_window_days\": 30\n  },\n  \"reason\": \"Reporting the assigned receipt fact: refund_fee_percent. Preserving previously reported facts: delivery_zone, purchase_age_days, and return_window_days.\"\n}\n```"
+  },
+  "provider_response_canonical_sha256": "0c3724bb48b1d325ea5e53d72a325a47150b48d3f95e6f0fd086bc30859e4787",
+  "response_at": 1794001541.736819,
+  "native_text": "```json\n{\n  \"case_id\": \"causal_827fe7cebaea\",\n  \"facts\": {\n    \"refund_fee_percent\": 15,\n    \"delivery_zone\": \"north\",\n    \"purchase_age_days\": 38,\n    \"return_window_days\": 30\n  },\n  \"reason\": \"Reporting the assigned receipt fact: refund_fee_percent. Preserving previously reported facts: delivery_zone, purchase_age_days, and return_window_days.\"\n}\n```",
+  "native_text_sha256": "28c3f07b9ef0f46fceae82bae8d6fe93c62f4a68d9242da1519354c7b91e9a26",
+  "usage": {
+    "input_tokens": 335,
+    "output_tokens": 127,
+    "cost": 5.3660500000000006e-05
+  },
+  "finished_at": 1794001541.781514
+}

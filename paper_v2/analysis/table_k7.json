@@ -1,0 +1,527 @@
+{
+ "rows": [
+  {
+   "sel_key": "structural_path_pairs",
+   "selection": "Path pairs",
+   "s1": [
+    0.0,
+    0.0
+   ],
+   "s7": [
+    36.1,
+    34.7
+   ],
+   "groupings": [
+    {
+     "grouping": "Directed path",
+     "s2": [
+      47.2,
+      1.4
+     ],
+     "s4": [
+      47.2,
+      1.4
+     ]
+    },
+    {
+     "grouping": "Spectral clusters",
+     "s2": [
+      11.1,
+      0.0
+     ],
+     "s4": [
+      27.8,
+      8.3
+     ]
+    },
+    {
+     "grouping": "Random groups$^\\dagger$",
+     "s2": [
+      16.7,
+      8.3
+     ],
+     "s4": [
+      16.7,
+      8.3
+     ]
+    },
+    {
+     "grouping": "Random groups, exact expectation",
+     "s2": [
+      6.7,
+      9.7
+     ],
+     "s4": null
+    },
+    {
+     "grouping": "Line-graph communities",
+     "s2": [
+      0.0,
+      0.0
+     ],
+     "s4": [
+      0.0,
+      0.0
+     ]
+    },
+    {
+     "grouping": "Shared receiver",
+     "s2": [
+      0.0,
+      0.0
+     ],
+     "s4": [
+      0.0,
+      0.0
+     ]
+    }
+   ]
+  },
+  {
+   "sel_key": "random",
+   "selection": "Random$^\\dagger$",
+   "s1": [
+    0.0,
+    0.0
+   ],
+   "s7": [
+    44.4,
+    37.5
+   ],
+   "groupings": [
+    {
+     "grouping": "Directed path",
+     "s2": [
+      47.2,
+      1.4
+     ],
+     "s4": [
+      47.2,
+      1.4
+     ]
+    },
+    {
+     "grouping": "Spectral clusters",
+     "s2": [
+      16.7,
+      8.3
+     ],
+     "s4": [
+      27.8,
+      8.3
+     ]
+    },
+    {
+     "grouping": "Random groups$^\\dagger$",
+     "s2": [
+      5.6,
+      16.7
+     ],
+     "s4": [
+      5.6,
+      19.4
+     ]
+    },
+    {
+     "grouping": "Line-graph communities",
+     "s2": [
+      0.0,
+      0.0
+     ],
+     "s4": [
+      0.0,
+      0.0
+     ]
+    },
+    {
+     "grouping": "Shared receiver",
+     "s2": [
+      0.0,
+      0.0
+     ],
+     "s4": [
+      0.0,
+      0.0
+     ]
+    }
+   ]
+  },
+  {
+   "sel_key": "degree",
+   "selection": "Degree",
+   "s1": [
+    0.0,
+    0.0
+   ],
+   "s7": [
+    11.1,
+    9.7
+   ],
+   "groupings": [
+    {
+     "grouping": "Directed path",
+     "s2": [
+      11.1,
+      0.0
+     ],
+     "s4": [
+      11.1,
+      0.0
+     ]
+    },
+    {
+     "grouping": "Spectral clusters",
+     "s2": [
+      5.6,
+      0.0
+     ],
+     "s4": [
+      11.1,
+      0.0
+     ]
+    },
+    {
+     "grouping": "Random groups$^\\dagger$",
+     "s2": [
+      0.0,
+      2.8
+     ],
+     "s4": [
+      0.0,
+      2.8
+     ]
+    },
+    {
+     "grouping": "Line-graph communities",
+     "s2": [
+      11.1,
+      0.0
+     ],
+     "s4": [
+      11.1,
+      0.0
+     ]
+    },
+    {
+     "grouping": "Shared receiver",
+     "s2": [
+      0.0,
+      0.0
+     ],
+     "s4": [
+      0.0,
+      0.0
+     ]
+    }
+   ]
+  },
+  {
+   "sel_key": "downstream_coverage",
+   "selection": "Downstream coverage",
+   "s1": [
+    0.0,
+    0.0
+   ],
+   "s7": [
+    5.6,
+    5.6
+   ],
+   "groupings": [
+    {
+     "grouping": "Directed path",
+     "s2": [
+      5.6,
+      1.4
+     ],
+     "s4": [
+      5.6,
+      1.4
+     ]
+    },
+    {
+     "grouping": "Spectral clusters",
+     "s2": [
+      5.6,
+      1.4
+     ],
+     "s4": [
+      5.6,
+      2.8
+     ]
+    },
+    {
+     "grouping": "Random groups$^\\dagger$",
+     "s2": [
+      0.0,
+      0.0
+     ],
+     "s4": [
+      0.0,
+      0.0
+     ]
+    },
+    {
+     "grouping": "Line-graph communities",
+     "s2": [
+      5.6,
+      1.4
+     ],
+     "s4": [
+      5.6,
+      1.4
+     ]
+    },
+    {
+     "grouping": "Shared receiver",
+     "s2": [
+      0.0,
+      0.0
+     ],
+     "s4": [
+      0.0,
+      0.0
+     ]
+    }
+   ]
+  },
+  {
+   "sel_key": "pagerank",
+   "selection": "PageRank",
+   "s1": [
+    0.0,
+    0.0
+   ],
+   "s7": [
+    0.0,
+    0.0
+   ],
+   "groupings": [
+    {
+     "grouping": "Directed path",
+     "s2": [
+      0.0,
+      0.0
+     ],
+     "s4": [
+      0.0,
+      0.0
+     ]
+    },
+    {
+     "grouping": "Spectral clusters",
+     "s2": [
+      0.0,
+      0.0
+     ],
+     "s4": [
+      0.0,
+      0.0
+     ]
+    },
+    {
+     "grouping": "Random groups$^\\dagger$",
+     "s2": [
+      0.0,
+      0.0
+     ],
+     "s4": [
+      0.0,
+      0.0
+     ]
+    },
+    {
+     "grouping": "Line-graph communities",
+     "s2": [
+      0.0,
+      0.0
+     ],
+     "s4": [
+      0.0,
+      0.0
+     ]
+    },
+    {
+     "grouping": "Shared receiver",
+     "s2": [
+      0.0,
+      0.0
+     ],
+     "s4": [
+      0.0,
+      0.0
+     ]
+    }
+   ]
+  },
+  {
+   "sel_key": "betweenness",
+   "selection": "Betweenness",
+   "s1": [
+    0.0,
+    0.0
+   ],
+   "s7": [
+    0.0,
+    0.0
+   ],
+   "groupings": [
+    {
+     "grouping": "Directed path",
+     "s2": [
+      0.0,
+      0.0
+     ],
+     "s4": [
+      0.0,
+      0.0
+     ]
+    },
+    {
+     "grouping": "Spectral clusters",
+     "s2": [
+      0.0,
+      0.0
+     ],
+     "s4": [
+      0.0,
+      0.0
+     ]
+    },
+    {
+     "grouping": "Random groups$^\\dagger$",
+     "s2": [
+      0.0,
+      0.0
+     ],
+     "s4": [
+      0.0,
+      0.0
+     ]
+    },
+    {
+     "grouping": "Line-graph communities",
+     "s2": [
+      0.0,
+      0.0
+     ],
+     "s4": [
+      0.0,
+      0.0
+     ]
+    },
+    {
+     "grouping": "Shared receiver",
+     "s2": [
+      0.0,
+      0.0
+     ],
+     "s4": [
+      0.0,
+      0.0
+     ]
+    }
+   ]
+  },
+  {
+   "sel_key": "mesa_static",
+   "selection": "edge ranking",
+   "s1": [
+    0.0,
+    0.0
+   ],
+   "s7": [
+    0.0,
+    0.0
+   ],
+   "groupings": [
+    {
+     "grouping": "Directed path",
+     "s2": [
+      0.0,
+      0.0
+     ],
+     "s4": [
+      0.0,
+      0.0
+     ]
+    },
+    {
+     "grouping": "Spectral clusters",
+     "s2": [
+      0.0,
+      0.0
+     ],
+     "s4": [
+      0.0,
+      0.0
+     ]
+    },
+    {
+     "grouping": "Random groups$^\\dagger$",
+     "s2": [
+      0.0,
+      0.0
+     ],
+     "s4": [
+      0.0,
+      0.0
+     ]
+    },
+    {
+     "grouping": "Line-graph communities",
+     "s2": [
+      0.0,
+      0.0
+     ],
+     "s4": [
+      0.0,
+      0.0
+     ]
+    },
+    {
+     "grouping": "Shared receiver",
+     "s2": [
+      0.0,
+      0.0
+     ],
+     "s4": [
+      0.0,
+      0.0
+     ]
+    }
+   ]
+  }
+ ],
+ "refs": {
+  "rotation": [
+   13.7,
+   15.2
+  ],
+  "location_oracle": [
+   0.0,
+   0.0
+  ],
+  "location_evidence_oracle": [
+   100.0,
+   87.5
+  ],
+  "all13": [
+   75.0,
+   79.2
+  ],
+  "learned_pairs_s2": [
+   0.0,
+   0.0
+  ]
+ },
+ "clean_fpr_range_s2_s4": [
+  0.0,
+  4.0
+ ],
+ "clean_fpr_directed_path": [
+  0.0,
+  0.0,
+  0.0,
+  0.4
+ ]
+}

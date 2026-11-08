@@ -1,0 +1,118 @@
+{
+  "request_sha256": "4eb935537648b0f6ec4172bb6127d283339375115cdbb47e51450f80587c5ffd",
+  "call_key": "911441deaf156ca465ed5859e3c7e9de1ff75ed926563b9d50d0e0c58be17fe8",
+  "request_payload": {
+    "model": "gemma-4-26b-a4b-it",
+    "input": [
+      {
+        "role": "system",
+        "content": "You are an agent in a fictitious return workflow. Use only the delivered inputs. Preserve original values and JSON types when copying facts. Return one JSON object; extra explanation may be included as a reason. Do not invent missing inputs. Report your assigned receipt fact and preserve facts in any prior report. Return case_id and facts."
+      },
+      {
+        "role": "user",
+        "content": "{\"assigned_field\":\"return_window_days\",\"case_id\":\"causal_827fe7cebaea\",\"inputs\":[{\"content\":\"{\\\"case_id\\\":\\\"causal_827fe7cebaea\\\",\\\"facts\\\":{\\\"return_window_days\\\":30}}\",\"id\":\"causal_827fe7cebaea:flat:m001\",\"recipient\":\"worker_351\",\"sender\":\"registry\"}],\"operation\":\"report\"}"
+      }
+    ],
+    "temperature": 0,
+    "max_output_tokens": 512,
+    "agentic_memory": false,
+    "tools": [],
+    "tool_choice": "none",
+    "store": false,
+    "stream": false,
+    "background": false
+  },
+  "origin_suite": "flat_causal_827fe7cebaea",
+  "origin_phase": "remaining_9",
+  "planned_input_bytes": 616,
+  "started_at": 1794001519.333508,
+  "state": "complete",
+  "ledger_request_id": "30622e2be7984b0a9effe85a39ef3f48",
+  "provider_response": {
+    "id": "resp_YqH5-2jjbLEnvefpMiN9BrQr2V5KwitYAWvLK-hfpd9K6JPrzcYWLECVwOWCuYfHAqeog2oVZHBe7_DsRxvzZk06QATdFtf1x_k32wJlbBwVQ40p8wshUBbX4V2r-gU2pTG2Nl_buaHLUQNJUYpMLvpBSP7_zOqied-cu2TAx6WSZhe0W0aT-JBoK9Yf0M9UrV3LINJBl0qrQhP3q_UarxdamKOLgxckXm5vXVJRtEKoeNT5Pp2wdG7Lyu3_Dcu_nmrKnnFeQGTZ625JDVF_kId1WqBobp7LFfsnBdzcpxFDn4P3VsE7M4maeJnI4NF_QVFvmwl0OA8zX55IOlhLc2XGEqlNDPQCTKwnnZvmeX51fGSen7qErs3-bxW0LnLEoH2X_1yPOfGjFT626V-kcqlUHWA6CgKVv-aSt85HIlgG-bs5tPc75rhNlYGP7IX3TVIH4VhKeDBn6fdNSg14YW4WqSwSMi2QNzKoxhsnfdgQWHT6PW8KMVcVQbLOhudlnLZKEUHrhq6ObxloxNdspAGeqAQ=",
+    "created_at": 1794001519,
+    "error": null,
+    "incomplete_details": null,
+    "instructions": null,
+    "metadata": null,
+    "model": "gemma-4-26b-a4b-it",
+    "object": "response",
+    "output": [
+      {
+        "id": "msg_ac46e5d249265f91",
+        "content": [
+          {
+            "annotations": [],
+            "text": "```json\n{\n  \"case_id\": \"causal_827fe7cebaea\",\n  \"facts\": {\n    \"return_window_days\": 30\n  }\n}\n```",
+            "type": "output_text",
+            "logprobs": null
+          }
+        ],
+        "role": "assistant",
+        "status": "completed",
+        "type": "message",
+        "phase": null
+      }
+    ],
+    "parallel_tool_calls": true,
+    "temperature": 0,
+    "tool_choice": "none",
+    "tools": [],
+    "top_p": 1,
+    "max_output_tokens": 512,
+    "previous_response_id": null,
+    "reasoning": null,
+    "status": "completed",
+    "text": null,
+    "truncation": "disabled",
+    "usage": {
+      "input_tokens": 184,
+      "input_tokens_details": {
+        "audio_tokens": null,
+        "cached_tokens": 0,
+        "cached_tokens_details": null,
+        "image_tokens": null,
+        "text_tokens": null,
+        "video_tokens": null,
+        "cache_write_tokens": 128,
+        "input_tokens_per_turn": [],
+        "cached_tokens_per_turn": []
+      },
+      "output_tokens": 50,
+      "output_tokens_details": {
+        "audio_tokens": null,
+        "reasoning_tokens": 0,
+        "text_tokens": null,
+        "tool_output_tokens": 0,
+        "output_tokens_per_turn": [],
+        "tool_output_tokens_per_turn": []
+      },
+      "total_tokens": 234,
+      "cost": 2.6826e-05
+    },
+    "user": null,
+    "store": false,
+    "background": false,
+    "max_tool_calls": null,
+    "prompt": null,
+    "service_tier": "auto",
+    "top_logprobs": null,
+    "presence_penalty": 0,
+    "frequency_penalty": 0,
+    "kv_transfer_params": null,
+    "ec_transfer_params": null,
+    "input_messages": null,
+    "output_messages": null,
+    "output_text": "```json\n{\n  \"case_id\": \"causal_827fe7cebaea\",\n  \"facts\": {\n    \"return_window_days\": 30\n  }\n}\n```"
+  },
+  "provider_response_canonical_sha256": "8fd1a9494efb954996ed1fd24abb3e7cea1a15fbd2d31e86b83b2f4c8d600e7a",
+  "response_at": 1794001520.0915031,
+  "native_text": "```json\n{\n  \"case_id\": \"causal_827fe7cebaea\",\n  \"facts\": {\n    \"return_window_days\": 30\n  }\n}\n```",
+  "native_text_sha256": "6dcc50e072f6476bc754a1cd126e9a864cf79a2c89e08050ab90228a0752a3eb",
+  "usage": {
+    "input_tokens": 184,
+    "output_tokens": 50,
+    "cost": 2.6826e-05
+  },
+  "finished_at": 1794001520.139721
+}

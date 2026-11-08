@@ -1,0 +1,118 @@
+{
+  "request_sha256": "d2375eee2ecfa7d99dcd0c426c4ce97419a7fd6961489b7324f3a380c81766ef",
+  "call_key": "fae7561eb9a86d9c10c4277e6522c8980a7c9aa8917c586e37f752c144433261",
+  "request_payload": {
+    "model": "gemma-4-26b-a4b-it",
+    "input": [
+      {
+        "role": "system",
+        "content": "You are an agent in a fictitious return workflow. Use only the delivered inputs. Preserve original values and JSON types when copying facts. Return one JSON object; extra explanation may be included as a reason. Do not invent missing inputs. Approve when the received eligible is true, or (if raw facts were delivered) purchase_age_days <= return_window_days. Refund zero on denial; on approval use received refund_cents or compute price_cents*(100-refund_fee_percent)/100 rounded to nearest cent. Return case_id, decision and refund_cents."
+      },
+      {
+        "role": "user",
+        "content": "{\"case_id\":\"causal_827fe7cebaea\",\"inputs\":[{\"content\":\"```json\\n{\\n  \\\"case_id\\\": \\\"causal_827fe7cebaea\\\",\\n  \\\"eligible\\\": true,\\n  \\\"reason\\\": \\\"purchase_age_days (38) is less than or equal to return_window_days (46).\\\"\\n}\\n```\",\"id\":\"causal_827fe7cebaea:fork_join:m013\",\"recipient\":\"reviewer\",\"sender\":\"eligibility\"},{\"content\":\"```json\\n{\\n  \\\"case_id\\\": \\\"causal_827fe7cebaea\\\",\\n  \\\"refund_cents\\\": 10540\\n}\\n```\\n\\n**Reason:** The customer is eligible for a refund. The calculation is 12400 * (100 - 15) / 100 = 10540.\",\"id\":\"causal_827fe7cebaea:fork_join:m014\",\"recipient\":\"reviewer\",\"sender\":\"refund\"},{\"content\":\"```json\\n{\\n  \\\"case_id\\\": \\\"causal_827fe7cebaea\\\",\\n  \\\"facts\\\": {\\n    \\\"delivery_zone\\\": \\\"north\\\",\\n    \\\"case_priority\\\": \\\"routine\\\"\\n  },\\n  \\\"reason\\\": \\\"Merged facts from multiple inputs: delivery_zone from m010 and case_priority from m011.\\\"\\n}\\n```\",\"id\":\"causal_827fe7cebaea:fork_join:m015\",\"recipient\":\"reviewer\",\"sender\":\"routing\"}],\"operation\":\"decision\"}"
+      }
+    ],
+    "temperature": 0,
+    "max_output_tokens": 512,
+    "agentic_memory": false,
+    "tools": [],
+    "tool_choice": "none",
+    "store": false,
+    "stream": false,
+    "background": false
+  },
+  "origin_suite": "fork_join_causal_827fe7cebaea",
+  "origin_phase": "remaining_9",
+  "planned_input_bytes": 1533,
+  "started_at": 1794001553.58959,
+  "state": "complete",
+  "ledger_request_id": "7ced12f7ddef47f8a9bcc0c6451c061a",
+  "provider_response": {
+    "id": "resp_YmcT0OhYpPdcdBwTUXiFMJrM2deWIM8iqpI-m2M3gHUTrheGLbqJ4hQjRD8L3Z6SkXCPheNPbBIRcpZZXgYSfDaXC4aOdMvVJO0AFqV0psWKH2S3UmCNBqqw1ePHcCgSsQAWl8M0aMlDr9UkAct2UFJgwp1jmrosRufRXAiyRcMRPDijAIISdBhayBgYBVouDs3XGC3nOFtmPm9lJi7CzyqtD1AHyC1IZMja-Zzv8bePwqMEa8ZaKmk21vC_h5qvVav7IcEIl0iGxjtaG2wL1xy1zVtCbIAodfBkFpKADFgQPdZkcpSMEhT6OBxknZnvcLHirm8AEx-WrkiIRd7uFZbmVcFLJ7-KvX-9dL267YrEPiTlPubsmG_F652nJqEfGWsqM2oUzZP_XpLpPoRMAjHkdcYThjSE3joQkhYeOSxmpHyC31e7VoMKfs4cw9sFpSoh4tWo_ENICFp35dn8Nx53CV1uPCBC9ErvB3rduEX2eufB0-y3vJBzGSkcZGtYuC5pYnI1H3wBWUT0fLPhfjyRMmA=",
+    "created_at": 1794001554,
+    "error": null,
+    "incomplete_details": null,
+    "instructions": null,
+    "metadata": null,
+    "model": "gemma-4-26b-a4b-it",
+    "object": "response",
+    "output": [
+      {
+        "id": "msg_9f6364da4a7e3970",
+        "content": [
+          {
+            "annotations": [],
+            "text": "```json\n{\n  \"case_id\": \"causal_827fe7cebaea\",\n  \"decision\": \"approve\",\n  \"refund_cents\": 10540,\n  \"reason\": \"The customer is eligible (eligible: true) and the refund amount was provided in the input.\"\n}\n```",
+            "type": "output_text",
+            "logprobs": null
+          }
+        ],
+        "role": "assistant",
+        "status": "completed",
+        "type": "message",
+        "phase": null
+      }
+    ],
+    "parallel_tool_calls": true,
+    "temperature": 0,
+    "tool_choice": "none",
+    "tools": [],
+    "top_p": 1,
+    "max_output_tokens": 512,
+    "previous_response_id": null,
+    "reasoning": null,
+    "status": "completed",
+    "text": null,
+    "truncation": "disabled",
+    "usage": {
+      "input_tokens": 517,
+      "input_tokens_details": {
+        "audio_tokens": null,
+        "cached_tokens": 128,
+        "cached_tokens_details": null,
+        "image_tokens": null,
+        "text_tokens": null,
+        "video_tokens": null,
+        "cache_write_tokens": 384,
+        "input_tokens_per_turn": [],
+        "cached_tokens_per_turn": []
+      },
+      "output_tokens": 76,
+      "output_tokens_details": {
+        "audio_tokens": null,
+        "reasoning_tokens": 0,
+        "text_tokens": null,
+        "tool_output_tokens": 0,
+        "output_tokens_per_turn": [],
+        "tool_output_tokens_per_turn": []
+      },
+      "total_tokens": 593,
+      "cost": 5.45785e-05
+    },
+    "user": null,
+    "store": false,
+    "background": false,
+    "max_tool_calls": null,
+    "prompt": null,
+    "service_tier": "auto",
+    "top_logprobs": null,
+    "presence_penalty": 0,
+    "frequency_penalty": 0,
+    "kv_transfer_params": null,
+    "ec_transfer_params": null,
+    "input_messages": null,
+    "output_messages": null,
+    "output_text": "```json\n{\n  \"case_id\": \"causal_827fe7cebaea\",\n  \"decision\": \"approve\",\n  \"refund_cents\": 10540,\n  \"reason\": \"The customer is eligible (eligible: true) and the refund amount was provided in the input.\"\n}\n```"
+  },
+  "provider_response_canonical_sha256": "ed057b0ed83fce5099b3f6d8499dcbcee5b2ba371578ec1c233e2e82b627d046",
+  "response_at": 1794001554.489513,
+  "native_text": "```json\n{\n  \"case_id\": \"causal_827fe7cebaea\",\n  \"decision\": \"approve\",\n  \"refund_cents\": 10540,\n  \"reason\": \"The customer is eligible (eligible: true) and the refund amount was provided in the input.\"\n}\n```",
+  "native_text_sha256": "fa84e6eb299c57026e498cc725e8bdac9df1d4db6035f76ca7b660e01f09353d",
+  "usage": {
+    "input_tokens": 517,
+    "output_tokens": 76,
+    "cost": 5.45785e-05
+  },
+  "finished_at": 1794001554.563447
+}

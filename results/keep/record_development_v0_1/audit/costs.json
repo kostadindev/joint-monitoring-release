@@ -1,0 +1,8 @@
+{
+  "scope": "Aggregate additional research spend across all recorded batches, including earlier MESA/fixture development; not a cost attributed solely to this release.",
+  "credits_by_state": {
+    "settled": 0.677856091,
+    "uncertain_retained_resumed": 0.1
+  },
+  "unknown_charge_reservations_are_not_confirmed_spend": true
+}

@@ -1,0 +1,321 @@
+{
+  "phase": "pilot",
+  "phase_cap": 0.25,
+  "new_suite_limit": 3,
+  "workers": 1,
+  "suite_ids": [
+    "flat_causal_7744c2216f55",
+    "sequential_causal_7744c2216f55",
+    "fork_join_causal_7744c2216f55"
+  ],
+  "started_at": 1794000718.2296278,
+  "status": "complete",
+  "errors": [],
+  "finished_at": 1794000769.838519,
+  "ledger": {
+    "authorized": 10.0,
+    "charged_or_reserved": 7.2210123589999995,
+    "batch": "topology_causal_generation_development_v1_pilot",
+    "batch_charged_or_reserved": 0.002144108,
+    "requests": 24298,
+    "blocked": false
+  },
+  "audit": {
+    "actual_confirmed_credits": 0.002144108,
+    "retained_uncertain_credits": 0.0,
+    "active_reserved_credits": 0.0,
+    "ledger_request_states": {
+      "settled": 47
+    },
+    "ledger_requests": {
+      "a06b241936d4487b8dff725835a36847": {
+        "batch": "topology_causal_generation_development_v1_pilot",
+        "charge": 3.2538e-05,
+        "state": "settled",
+        "at": 1794000718.335361
+      },
+      "9d39fb77e3ee4e29a498e46738cd5e07": {
+        "batch": "topology_causal_generation_development_v1_pilot",
+        "charge": 3.3303e-05,
+        "state": "settled",
+        "at": 1794000719.300599
+      },
+      "57ab577987b34fcaaf3b4d9efb16ea72": {
+        "batch": "topology_causal_generation_development_v1_pilot",
+        "charge": 3.35325e-05,
+        "state": "settled",
+        "at": 1794000720.470392
+      },
+      "42649ec99f974b58aa6d5eb100122048": {
+        "batch": "topology_causal_generation_development_v1_pilot",
+        "charge": 2.8764e-05,
+        "state": "settled",
+        "at": 1794000721.640147
+      },
+      "a20f4e201ef442bb9b044336557efbc5": {
+        "batch": "topology_causal_generation_development_v1_pilot",
+        "charge": 2.8764e-05,
+        "state": "settled",
+        "at": 1794000722.474348
+      },
+      "1154133c64fb4e0d8045943070790278": {
+        "batch": "topology_causal_generation_development_v1_pilot",
+        "charge": 2.8764e-05,
+        "state": "settled",
+        "at": 1794000723.3006551
+      },
+      "68402d22db3941fa9521fabd8031320d": {
+        "batch": "topology_causal_generation_development_v1_pilot",
+        "charge": 8.12685e-05,
+        "state": "settled",
+        "at": 1794000724.3752651
+      },
+      "6b577a6d2f1f41dfbe00b8f4027be464": {
+        "batch": "topology_causal_generation_development_v1_pilot",
+        "charge": 3.5904e-05,
+        "state": "settled",
+        "at": 1794000725.502111
+      },
+      "13ac541381a64773a1c58fc089d9cbad": {
+        "batch": "topology_causal_generation_development_v1_pilot",
+        "charge": 6.080900000000001e-05,
+        "state": "settled",
+        "at": 1794000726.629463
+      },
+      "613efa11a1ce47adaa5279c912f15c20": {
+        "batch": "topology_causal_generation_development_v1_pilot",
+        "charge": 3.6414e-05,
+        "state": "settled",
+        "at": 1794000727.717804
+      },
+      "1bf297d710b84436bf65b06c57c5444d": {
+        "batch": "topology_causal_generation_development_v1_pilot",
+        "charge": 6.0962000000000003e-05,
+        "state": "settled",
+        "at": 1794000728.6276748
+      },
+      "aece2dea55384deabe83d3c7704bc9ef": {
+        "batch": "topology_causal_generation_development_v1_pilot",
+        "charge": 7.19525e-05,
+        "state": "settled",
+        "at": 1794000729.510835
+      },
+      "d1a94a820beb4efd8b34e9f0a092f90f": {
+        "batch": "topology_causal_generation_development_v1_pilot",
+        "charge": 2.8441e-05,
+        "state": "settled",
+        "at": 1794000730.609992
+      },
+      "7b15716062ff4d648421e13a0308ba22": {
+        "batch": "topology_causal_generation_development_v1_pilot",
+        "charge": 4.12165e-05,
+        "state": "settled",
+        "at": 1794000731.4680278
+      },
+      "58edaa9549f448538eede06acf77b963": {
+        "batch": "topology_causal_generation_development_v1_pilot",
+        "charge": 4.7260000000000005e-05,
+        "state": "settled",
+        "at": 1794000732.386251
+      },
+      "0abf4a0615ee48099f767ebdef70414a": {
+        "batch": "topology_causal_generation_development_v1_pilot",
+        "charge": 5.38135e-05,
+        "state": "settled",
+        "at": 1794000733.598017
+      },
+      "e0f3c6cffb5740ecbe86b1bb2e2bd91f": {
+        "batch": "topology_causal_generation_development_v1_pilot",
+        "charge": 6.0188499999999995e-05,
+        "state": "settled",
+        "at": 1794000734.926686
+      },
+      "cf29d4bdabcb4741932aa8e81b200b87": {
+        "batch": "topology_causal_generation_development_v1_pilot",
+        "charge": 6.6487e-05,
+        "state": "settled",
+        "at": 1794000736.358121
+      },
+      "908c7172e02342809df327b4ea362a98": {
+        "batch": "topology_causal_generation_development_v1_pilot",
+        "charge": 4.4327500000000005e-05,
+        "state": "settled",
+        "at": 1794000737.8299851
+      },
+      "12720299b41e41f096a5f76cad00ffe4": {
+        "batch": "topology_causal_generation_development_v1_pilot",
+        "charge": 6.32485e-05,
+        "state": "settled",
+        "at": 1794000738.706592
+      },
+      "a07a5c5f1aa34507ab43ae63a213417e": {
+        "batch": "topology_causal_generation_development_v1_pilot",
+        "charge": 6.6487e-05,
+        "state": "settled",
+        "at": 1794000740.095175
+      },
+      "c991e84c8ccc48cc9a60ea4406afbef6": {
+        "batch": "topology_causal_generation_development_v1_pilot",
+        "charge": 4.4327500000000005e-05,
+        "state": "settled",
+        "at": 1794000741.611386
+      },
+      "db81e7f8bcff4060a0383da9a0124098": {
+        "batch": "topology_causal_generation_development_v1_pilot",
+        "charge": 6.4702e-05,
+        "state": "settled",
+        "at": 1794000742.75701
+      },
+      "34034474f7cc4e12a16d532a1c4c6995": {
+        "batch": "topology_causal_generation_development_v1_pilot",
+        "charge": 4.2873999999999996e-05,
+        "state": "settled",
+        "at": 1794000743.900425
+      },
+      "9e42ea964acd42deacf826c61dc61e9c": {
+        "batch": "topology_causal_generation_development_v1_pilot",
+        "charge": 5.9075e-05,
+        "state": "settled",
+        "at": 1794000744.786844
+      },
+      "f67e1d52f2934948a80305bb3e92bd28": {
+        "batch": "topology_causal_generation_development_v1_pilot",
+        "charge": 5.0396500000000004e-05,
+        "state": "settled",
+        "at": 1794000746.1483068
+      },
+      "5a18b2009af14fb7a905e593337c1aec": {
+        "batch": "topology_causal_generation_development_v1_pilot",
+        "charge": 2.8339e-05,
+        "state": "settled",
+        "at": 1794000747.179453
+      },
+      "35e55698717f44f1945d37691919fb0f": {
+        "batch": "topology_causal_generation_development_v1_pilot",
+        "charge": 2.9104e-05,
+        "state": "settled",
+        "at": 1794000748.040747
+      },
+      "de8f54854a6d449d88d50f62f04af6a5": {
+        "batch": "topology_causal_generation_development_v1_pilot",
+        "charge": 2.95885e-05,
+        "state": "settled",
+        "at": 1794000749.182178
+      },
+      "d5ea811fe8954e0c990b41ba1054aa69": {
+        "batch": "topology_causal_generation_development_v1_pilot",
+        "charge": 3.0430000000000002e-05,
+        "state": "settled",
+        "at": 1794000750.093834
+      },
+      "e6b77056102c4b81bd86b207bfd142a8": {
+        "batch": "topology_causal_generation_development_v1_pilot",
+        "charge": 2.992e-05,
+        "state": "settled",
+        "at": 1794000751.306808
+      },
+      "d09057bb177a4a818f667af1c8275e92": {
+        "batch": "topology_causal_generation_development_v1_pilot",
+        "charge": 2.9155e-05,
+        "state": "settled",
+        "at": 1794000752.4324648
+      },
+      "3d49c74875cb404085a1599a178406ac": {
+        "batch": "topology_causal_generation_development_v1_pilot",
+        "charge": 4.42425e-05,
+        "state": "settled",
+        "at": 1794000753.301829
+      },
+      "aca411013a214f61bfb5f27f100e9bea": {
+        "batch": "topology_causal_generation_development_v1_pilot",
+        "charge": 5.7069000000000005e-05,
+        "state": "settled",
+        "at": 1794000754.1633751
+      },
+      "0b3de53ae04c4ebab20358717f50e464": {
+        "batch": "topology_causal_generation_development_v1_pilot",
+        "charge": 5.0260500000000004e-05,
+        "state": "settled",
+        "at": 1794000755.3297129
+      },
+      "92c3b1f97046433e990c4b054134dd40": {
+        "batch": "topology_causal_generation_development_v1_pilot",
+        "charge": 5.84545e-05,
+        "state": "settled",
+        "at": 1794000756.514433
+      },
+      "f60dd05ea6dd4b2a9f496e88cee0d83d": {
+        "batch": "topology_causal_generation_development_v1_pilot",
+        "charge": 3.196e-05,
+        "state": "settled",
+        "at": 1794000757.466539
+      },
+      "f3711c89201f46058ad5ad54b936372a": {
+        "batch": "topology_causal_generation_development_v1_pilot",
+        "charge": 3.95845e-05,
+        "state": "settled",
+        "at": 1794000758.577131
+      },
+      "702a902d580247119ca9d39dbafb854f": {
+        "batch": "topology_causal_generation_development_v1_pilot",
+        "charge": 4.4268000000000004e-05,
+        "state": "settled",
+        "at": 1794000759.6838698
+      },
+      "4ec524a541074f8ba2b94e1ba82ddf0c": {
+        "batch": "topology_causal_generation_development_v1_pilot",
+        "charge": 5.8786e-05,
+        "state": "settled",
+        "at": 1794000760.8292549
+      },
+      "9ae163a163c14ea0a7ac59e8406329ea": {
+        "batch": "topology_causal_generation_development_v1_pilot",
+        "charge": 3.298e-05,
+        "state": "settled",
+        "at": 1794000762.113055
+      },
+      "3065ef84cb3743969da93eda5fb20b26": {
+        "batch": "topology_causal_generation_development_v1_pilot",
+        "charge": 3.5768e-05,
+        "state": "settled",
+        "at": 1794000763.229415
+      },
+      "ad848cf049054522aaee0c4244283158": {
+        "batch": "topology_causal_generation_development_v1_pilot",
+        "charge": 4.4013e-05,
+        "state": "settled",
+        "at": 1794000764.1026618
+      },
+      "c3be84d6f4ef4e54bc5fe51936ab2f04": {
+        "batch": "topology_causal_generation_development_v1_pilot",
+        "charge": 5.84545e-05,
+        "state": "settled",
+        "at": 1794000765.279596
+      },
+      "2698953b6ae047a5ae1012bb0be51df6": {
+        "batch": "topology_causal_generation_development_v1_pilot",
+        "charge": 3.6227000000000004e-05,
+        "state": "settled",
+        "at": 1794000766.2129622
+      },
+      "69f750632676416d8c71a3538f59f15d": {
+        "batch": "topology_causal_generation_development_v1_pilot",
+        "charge": 4.7302499999999996e-05,
+        "state": "settled",
+        "at": 1794000767.332652
+      },
+      "f1649f9c775b464a93d3b269aa7656c0": {
+        "batch": "topology_causal_generation_development_v1_pilot",
+        "charge": 6.23815e-05,
+        "state": "settled",
+        "at": 1794000768.550263
+      }
+    },
+    "native_world_status_counts": {
+      "unresolved": 11,
+      "complete": 1
+    },
+    "logical_provider_error_attempts": 0,
+    "scope": "Actual charges belong only to this phase batch. Native worlds exclude observational honest twins. Artifact coverage completion does not mean all actors returned valid output. Replayed predecessor usage must not be charged again."
+  }
+}

@@ -1,0 +1,13 @@
+{
+  "incremental_confirmed_credits": 3.9080819,
+  "incremental_uncertain_retained_credits": 0.0,
+  "active_reservations": 0,
+  "incremental_ledger_request_states": {
+    "settled": 10830
+  },
+  "reused_unique_views": 2582,
+  "new_unique_views": 10721,
+  "reused_source_logical_replay_credits": 0.84480223,
+  "new_view_logical_replay_credits": 3.9080819,
+  "note": "Incremental actual spending comes from this run batch prefix in the shared ledger. Reused source costs were incurred earlier, not charged again. Logical replay costs are resource descriptions; transport losses and cache hits can differ. Never sum policy replay costs as research spend."
+}

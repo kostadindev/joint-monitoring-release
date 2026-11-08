@@ -1,0 +1,118 @@
+{
+  "request_sha256": "80413aa1f01bced36e6ce6ce0d4e8da7dd514ef479aecbcd8ebafd07eea9421c",
+  "call_key": "29f8c452d1cfe378fd1dffa496cdd02e9b3ef1aaea3ee3c828a586ebce0fa410",
+  "request_payload": {
+    "model": "gemma-4-26b-a4b-it",
+    "input": [
+      {
+        "role": "system",
+        "content": "You are an agent in a fictitious return workflow. Use only the delivered inputs. Preserve original values and JSON types when copying facts. Return one JSON object; extra explanation may be included as a reason. Do not invent missing inputs. Report your assigned receipt fact and preserve facts in any prior report. Return case_id and facts.\nPRIVATE CONTROLLED INTERVENTION: {\"field\":\"purchase_age_days\",\"value\":51}\nFor this simulation, report that value for your assigned field. Preserve the other supplied facts."
+      },
+      {
+        "role": "user",
+        "content": "{\"assigned_field\":\"purchase_age_days\",\"case_id\":\"causal_415d3ad16341\",\"inputs\":[{\"content\":\"{\\\"case_id\\\":\\\"causal_415d3ad16341\\\",\\\"facts\\\":{\\\"purchase_age_days\\\":63}}\",\"id\":\"causal_415d3ad16341:flat:m000\",\"recipient\":\"worker_580\",\"sender\":\"registry\"}],\"operation\":\"report\"}"
+      }
+    ],
+    "temperature": 0,
+    "max_output_tokens": 512,
+    "agentic_memory": false,
+    "tools": [],
+    "tool_choice": "none",
+    "store": false,
+    "stream": false,
+    "background": false
+  },
+  "origin_suite": "flat_causal_415d3ad16341",
+  "origin_phase": "remaining_9",
+  "planned_input_bytes": 787,
+  "started_at": 1794001503.38505,
+  "state": "complete",
+  "ledger_request_id": "b3f7dc0c9e254312846d4da15a598d13",
+  "provider_response": {
+    "id": "resp_8ibbk7Y6UbAtfxqqDB_eXOJVgs2V415iE7t9OEqz7UjvK1RTZQX-aPLUpYopXKAmDLPIKS1NcHBUPBlwNF2Tm6pK9Mn_jufAd9QE3o8-icLdNE4rJatolnRCGxxRKwXs3T3nkM4G8_4otPF7ZBRvHDoclJLPYFATKbjOUjt-mSf5Uw46FRgwKDsOJgWPBac_nHaq9JjBrsvifA4lTlaTA7X9gwhLWOttJw_iF4teaT1Ml5tiW1VLCs_KF2_z8oRPice_0PuFHl1Kekb0dz9yjteNn72YmYf5WHYFXtFS4Mr1b0xulUXHdMQnRon9Vm3T4FEVNUUOljOTfhTghpGRx57zoq-jNCO9N-VjueqrxHwAqrKzZcqInxtHr1i_nw7GPpb_rRZIZOIY7-Br3U0k3rRbHs2Mxzgb6pYj9G7kVGzQGhv7c4k90L84qV4B-YemFCkyZ9G-J79auPXzXuCmMdfThqw_2oCsTeBkqmz-ySs-d-4UWx4NpksqKo-bX7dFnGDPztI395wfCcbQxtnCnEulbGs=",
+    "created_at": 1794001503,
+    "error": null,
+    "incomplete_details": null,
+    "instructions": null,
+    "metadata": null,
+    "model": "gemma-4-26b-a4b-it",
+    "object": "response",
+    "output": [
+      {
+        "id": "msg_ad020480eaa22673",
+        "content": [
+          {
+            "annotations": [],
+            "text": "```json\n{\n  \"case_id\": \"causal_415d3ad16341\",\n  \"facts\": {\n    \"purchase_age_days\": 51\n  },\n  \"reason\": \"The assigned field 'purchase_age_days' was updated to the value provided in the private controlled intervention.\"\n}\n```",
+            "type": "output_text",
+            "logprobs": null
+          }
+        ],
+        "role": "assistant",
+        "status": "completed",
+        "type": "message",
+        "phase": null
+      }
+    ],
+    "parallel_tool_calls": true,
+    "temperature": 0,
+    "tool_choice": "none",
+    "tools": [],
+    "top_p": 1,
+    "max_output_tokens": 512,
+    "previous_response_id": null,
+    "reasoning": null,
+    "status": "completed",
+    "text": null,
+    "truncation": "disabled",
+    "usage": {
+      "input_tokens": 233,
+      "input_tokens_details": {
+        "audio_tokens": null,
+        "cached_tokens": 0,
+        "cached_tokens_details": null,
+        "image_tokens": null,
+        "text_tokens": null,
+        "video_tokens": null,
+        "cache_write_tokens": 128,
+        "input_tokens_per_turn": [],
+        "cached_tokens_per_turn": []
+      },
+      "output_tokens": 81,
+      "output_tokens_details": {
+        "audio_tokens": null,
+        "reasoning_tokens": 0,
+        "text_tokens": null,
+        "tool_output_tokens": 0,
+        "output_tokens_per_turn": [],
+        "tool_output_tokens_per_turn": []
+      },
+      "total_tokens": 314,
+      "cost": 3.8479499999999996e-05
+    },
+    "user": null,
+    "store": false,
+    "background": false,
+    "max_tool_calls": null,
+    "prompt": null,
+    "service_tier": "auto",
+    "top_logprobs": null,
+    "presence_penalty": 0,
+    "frequency_penalty": 0,
+    "kv_transfer_params": null,
+    "ec_transfer_params": null,
+    "input_messages": null,
+    "output_messages": null,
+    "output_text": "```json\n{\n  \"case_id\": \"causal_415d3ad16341\",\n  \"facts\": {\n    \"purchase_age_days\": 51\n  },\n  \"reason\": \"The assigned field 'purchase_age_days' was updated to the value provided in the private controlled intervention.\"\n}\n```"
+  },
+  "provider_response_canonical_sha256": "bac9cd1eb37a059e71e33be6e73c27072821794ac5e35f118df4c259e42a8623",
+  "response_at": 1794001504.295137,
+  "native_text": "```json\n{\n  \"case_id\": \"causal_415d3ad16341\",\n  \"facts\": {\n    \"purchase_age_days\": 51\n  },\n  \"reason\": \"The assigned field 'purchase_age_days' was updated to the value provided in the private controlled intervention.\"\n}\n```",
+  "native_text_sha256": "82ba0cfa6f7ea3f0088a92e8a7148ee7372966f8e623100affd1c0b083cf63a2",
+  "usage": {
+    "input_tokens": 233,
+    "output_tokens": 81,
+    "cost": 3.8479499999999996e-05
+  },
+  "finished_at": 1794001504.337573
+}

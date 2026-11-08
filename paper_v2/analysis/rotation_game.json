@@ -1,0 +1,364 @@
+{
+ "k7_s2": {
+  "strategies": {
+   "betweenness/directed_path": {
+    "aligned": 0.0,
+    "shuffled": 0.0
+   },
+   "betweenness/line_community": {
+    "aligned": 0.0,
+    "shuffled": 0.0
+   },
+   "betweenness/random_matched_sizes": {
+    "aligned": 0.0,
+    "shuffled": 0.0
+   },
+   "betweenness/shared_receiver": {
+    "aligned": 0.0,
+    "shuffled": 0.0
+   },
+   "betweenness/spectral": {
+    "aligned": 0.0,
+    "shuffled": 0.0
+   },
+   "degree/directed_path": {
+    "aligned": 0.1111111111111111,
+    "shuffled": 0.0
+   },
+   "degree/line_community": {
+    "aligned": 0.1111111111111111,
+    "shuffled": 0.0
+   },
+   "degree/random_matched_sizes": {
+    "aligned": 0.0,
+    "shuffled": 0.027777777777777776
+   },
+   "degree/shared_receiver": {
+    "aligned": 0.0,
+    "shuffled": 0.0
+   },
+   "degree/spectral": {
+    "aligned": 0.05555555555555555,
+    "shuffled": 0.0
+   },
+   "downstream_coverage/directed_path": {
+    "aligned": 0.05555555555555555,
+    "shuffled": 0.013888888888888888
+   },
+   "downstream_coverage/line_community": {
+    "aligned": 0.05555555555555555,
+    "shuffled": 0.013888888888888888
+   },
+   "downstream_coverage/random_matched_sizes": {
+    "aligned": 0.0,
+    "shuffled": 0.0
+   },
+   "downstream_coverage/shared_receiver": {
+    "aligned": 0.0,
+    "shuffled": 0.0
+   },
+   "downstream_coverage/spectral": {
+    "aligned": 0.05555555555555555,
+    "shuffled": 0.013888888888888888
+   },
+   "learned_pairs/learned_pairs": {
+    "aligned": 0.0,
+    "shuffled": 0.0
+   },
+   "mesa_static/directed_path": {
+    "aligned": 0.0,
+    "shuffled": 0.0
+   },
+   "mesa_static/line_community": {
+    "aligned": 0.0,
+    "shuffled": 0.0
+   },
+   "mesa_static/random_matched_sizes": {
+    "aligned": 0.0,
+    "shuffled": 0.0
+   },
+   "mesa_static/shared_receiver": {
+    "aligned": 0.0,
+    "shuffled": 0.0
+   },
+   "mesa_static/spectral": {
+    "aligned": 0.0,
+    "shuffled": 0.0
+   },
+   "pagerank/directed_path": {
+    "aligned": 0.0,
+    "shuffled": 0.0
+   },
+   "pagerank/line_community": {
+    "aligned": 0.0,
+    "shuffled": 0.0
+   },
+   "pagerank/random_matched_sizes": {
+    "aligned": 0.0,
+    "shuffled": 0.0
+   },
+   "pagerank/shared_receiver": {
+    "aligned": 0.0,
+    "shuffled": 0.0
+   },
+   "pagerank/spectral": {
+    "aligned": 0.0,
+    "shuffled": 0.0
+   },
+   "random/directed_path": {
+    "aligned": 0.4722222222222222,
+    "shuffled": 0.013888888888888888
+   },
+   "random/line_community": {
+    "aligned": 0.0,
+    "shuffled": 0.0
+   },
+   "random/random_matched_sizes": {
+    "aligned": 0.05555555555555555,
+    "shuffled": 0.16666666666666666
+   },
+   "random/shared_receiver": {
+    "aligned": 0.0,
+    "shuffled": 0.0
+   },
+   "random/spectral": {
+    "aligned": 0.16666666666666666,
+    "shuffled": 0.08333333333333333
+   },
+   "structural_path_pairs/directed_path": {
+    "aligned": 0.4722222222222222,
+    "shuffled": 0.013888888888888888
+   },
+   "structural_path_pairs/exact_matched_random": {
+    "aligned": 0.06746031746031746,
+    "shuffled": 0.09722222222222222
+   },
+   "structural_path_pairs/line_community": {
+    "aligned": 0.0,
+    "shuffled": 0.0
+   },
+   "structural_path_pairs/random_matched_sizes": {
+    "aligned": 0.16666666666666666,
+    "shuffled": 0.08333333333333333
+   },
+   "structural_path_pairs/shared_receiver": {
+    "aligned": 0.0,
+    "shuffled": 0.0
+   },
+   "structural_path_pairs/spectral": {
+    "aligned": 0.1111111111111111,
+    "shuffled": 0.0
+   }
+  },
+  "maximin_value": 0.13685636856368563,
+  "maximin_mixture": {
+   "random/directed_path": 0.1951219512195122,
+   "random/random_matched_sizes": 0.8048780487804879
+  }
+ },
+ "k4_s2": {
+  "strategies": {
+   "random/directed_path": {
+    "aligned": 0.1388888888888889,
+    "shuffled": 0.0
+   },
+   "random/line_community": {
+    "aligned": 0.05555555555555555,
+    "shuffled": 0.0
+   },
+   "random/random_matched_sizes": {
+    "aligned": 0.0,
+    "shuffled": 0.0
+   },
+   "random/shared_receiver": {
+    "aligned": 0.0,
+    "shuffled": 0.0
+   },
+   "random/spectral": {
+    "aligned": 0.08333333333333333,
+    "shuffled": 0.0
+   },
+   "structural_path_pairs/directed_path": {
+    "aligned": 0.2777777777777778,
+    "shuffled": 0.0
+   },
+   "structural_path_pairs/line_community": {
+    "aligned": 0.08333333333333333,
+    "shuffled": 0.0
+   },
+   "structural_path_pairs/random_matched_sizes": {
+    "aligned": 0.16666666666666666,
+    "shuffled": 0.0
+   },
+   "structural_path_pairs/shared_receiver": {
+    "aligned": 0.0,
+    "shuffled": 0.0
+   },
+   "structural_path_pairs/spectral": {
+    "aligned": 0.2777777777777778,
+    "shuffled": 0.0
+   }
+  },
+  "maximin_value": 0.0,
+  "maximin_mixture": {
+   "random/directed_path": 1.0
+  }
+ },
+ "k7_s4": {
+  "strategies": {
+   "betweenness/directed_path": {
+    "aligned": 0.0,
+    "shuffled": 0.0
+   },
+   "betweenness/line_community": {
+    "aligned": 0.0,
+    "shuffled": 0.0
+   },
+   "betweenness/random_matched_sizes": {
+    "aligned": 0.0,
+    "shuffled": 0.0
+   },
+   "betweenness/shared_receiver": {
+    "aligned": 0.0,
+    "shuffled": 0.0
+   },
+   "betweenness/spectral": {
+    "aligned": 0.0,
+    "shuffled": 0.0
+   },
+   "degree/directed_path": {
+    "aligned": 0.1111111111111111,
+    "shuffled": 0.0
+   },
+   "degree/line_community": {
+    "aligned": 0.1111111111111111,
+    "shuffled": 0.0
+   },
+   "degree/random_matched_sizes": {
+    "aligned": 0.0,
+    "shuffled": 0.027777777777777776
+   },
+   "degree/shared_receiver": {
+    "aligned": 0.0,
+    "shuffled": 0.0
+   },
+   "degree/spectral": {
+    "aligned": 0.1111111111111111,
+    "shuffled": 0.0
+   },
+   "downstream_coverage/directed_path": {
+    "aligned": 0.05555555555555555,
+    "shuffled": 0.013888888888888888
+   },
+   "downstream_coverage/line_community": {
+    "aligned": 0.05555555555555555,
+    "shuffled": 0.013888888888888888
+   },
+   "downstream_coverage/random_matched_sizes": {
+    "aligned": 0.0,
+    "shuffled": 0.0
+   },
+   "downstream_coverage/shared_receiver": {
+    "aligned": 0.0,
+    "shuffled": 0.0
+   },
+   "downstream_coverage/spectral": {
+    "aligned": 0.05555555555555555,
+    "shuffled": 0.027777777777777776
+   },
+   "mesa_static/directed_path": {
+    "aligned": 0.0,
+    "shuffled": 0.0
+   },
+   "mesa_static/line_community": {
+    "aligned": 0.0,
+    "shuffled": 0.0
+   },
+   "mesa_static/random_matched_sizes": {
+    "aligned": 0.0,
+    "shuffled": 0.0
+   },
+   "mesa_static/shared_receiver": {
+    "aligned": 0.0,
+    "shuffled": 0.0
+   },
+   "mesa_static/spectral": {
+    "aligned": 0.0,
+    "shuffled": 0.0
+   },
+   "pagerank/directed_path": {
+    "aligned": 0.0,
+    "shuffled": 0.0
+   },
+   "pagerank/line_community": {
+    "aligned": 0.0,
+    "shuffled": 0.0
+   },
+   "pagerank/random_matched_sizes": {
+    "aligned": 0.0,
+    "shuffled": 0.0
+   },
+   "pagerank/shared_receiver": {
+    "aligned": 0.0,
+    "shuffled": 0.0
+   },
+   "pagerank/spectral": {
+    "aligned": 0.0,
+    "shuffled": 0.0
+   },
+   "random/directed_path": {
+    "aligned": 0.4722222222222222,
+    "shuffled": 0.013888888888888888
+   },
+   "random/line_community": {
+    "aligned": 0.0,
+    "shuffled": 0.0
+   },
+   "random/random_matched_sizes": {
+    "aligned": 0.05555555555555555,
+    "shuffled": 0.19444444444444445
+   },
+   "random/shared_receiver": {
+    "aligned": 0.0,
+    "shuffled": 0.0
+   },
+   "random/spectral": {
+    "aligned": 0.2777777777777778,
+    "shuffled": 0.08333333333333333
+   },
+   "structural_path_pairs/directed_path": {
+    "aligned": 0.4722222222222222,
+    "shuffled": 0.013888888888888888
+   },
+   "structural_path_pairs/line_community": {
+    "aligned": 0.0,
+    "shuffled": 0.0
+   },
+   "structural_path_pairs/random_matched_sizes": {
+    "aligned": 0.16666666666666666,
+    "shuffled": 0.08333333333333333
+   },
+   "structural_path_pairs/shared_receiver": {
+    "aligned": 0.0,
+    "shuffled": 0.0
+   },
+   "structural_path_pairs/spectral": {
+    "aligned": 0.2777777777777778,
+    "shuffled": 0.08333333333333333
+   }
+  },
+  "maximin_value": 0.1524547803617571,
+  "maximin_mixture": {
+   "random/directed_path": 0.23255813953488375,
+   "random/random_matched_sizes": 0.7674418604651163
+  }
+ },
+ "colocation_floor_uniform_partition_sizes_1_2_2_2": 0.14285714285714285,
+ "k7_s2_exact_only": {
+  "maximin_value": 0.0921409214092141,
+  "maximin_mixture": {
+   "structural_path_pairs/directed_path": 0.060975609756097573,
+   "structural_path_pairs/exact_matched_random": 0.9390243902439024
+  }
+ }
+}

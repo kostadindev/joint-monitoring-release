@@ -1,0 +1,38 @@
+{
+  "features": [
+    "intercept",
+    "group_size",
+    "directed_two_path",
+    "reciprocal_pair",
+    "shared_sender",
+    "shared_receiver",
+    "shared_endpoint",
+    "mean_sender_indegree",
+    "mean_sender_outdegree",
+    "mean_recipient_indegree",
+    "mean_recipient_outdegree",
+    "mean_recipient_reachability",
+    "recipient_reachability_overlap",
+    "node_count",
+    "edge_density"
+  ],
+  "coef": [
+    0.05131553406918325,
+    -0.20484720138116735,
+    -0.0034943102516387043,
+    -5.551115123125783e-17,
+    -0.01078255586025699,
+    -0.012756139228492983,
+    -0.027033005340436213,
+    -0.1690019974086219,
+    0.024430785472610097,
+    0.008107390242523892,
+    0.04424247210829322,
+    0.052294416059288015,
+    0.18218410837980822,
+    0.020359247271159852,
+    -0.00899714210231413
+  ],
+  "alpha": 0.01,
+  "supervision": "numerical development rewards; topology-only deployment"
+}

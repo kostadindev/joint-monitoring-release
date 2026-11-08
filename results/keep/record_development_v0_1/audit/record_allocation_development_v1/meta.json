@@ -1,0 +1,40 @@
+{
+  "completed": 935,
+  "planned": 2705,
+  "errors": [
+    {
+      "episode_id": "hierarchical:case_910000:clean",
+      "edges": [
+        [
+          "coordinator_0",
+          "reviewer"
+        ],
+        [
+          "reporter_97",
+          "coordinator_1"
+        ],
+        [
+          "reviewer",
+          "executor"
+        ]
+      ],
+      "type": "JSONDecodeError",
+      "error": "Extra data: line 21 column 1 (char 621)"
+    }
+  ],
+  "provider": {
+    "calls": 35,
+    "tokens": 28906,
+    "credits": 0.00363064,
+    "cache_hits": 0,
+    "empty_responses": 0
+  },
+  "ledger": {
+    "authorized": 10.0,
+    "charged_or_reserved": 0.239141791,
+    "batch": "record_allocation_development_v1",
+    "batch_charged_or_reserved": 0.08888095,
+    "requests": 2595,
+    "blocked": false
+  }
+}

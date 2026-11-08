@@ -1,0 +1,26 @@
+{
+  "completed": 0,
+  "planned": 51,
+  "errors": [
+    {
+      "id": "flat:case_910000:b_only",
+      "type": "ValueError",
+      "error": "invalid evidence set"
+    }
+  ],
+  "provider": {
+    "calls": 75,
+    "tokens": 49994,
+    "credits": 0.005663859999999999,
+    "cache_hits": 13,
+    "empty_responses": 0
+  },
+  "ledger": {
+    "authorized": 10.0,
+    "charged_or_reserved": 0.099613681,
+    "batch": "record_judge_development_v1",
+    "batch_charged_or_reserved": 0.00566386,
+    "requests": 1614,
+    "blocked": false
+  }
+}

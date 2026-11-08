@@ -1,0 +1,36 @@
+{
+  "mode": "live",
+  "episodes": 72,
+  "max_view_calls": 792,
+  "dataset_sha256": "46760f4cc6f4515c70c3404bc86899d7f302144e487129f4fa36805d8ff76cf0",
+  "args": {
+    "out": "results/situations_smoke",
+    "calib": 2,
+    "test": 2,
+    "mock": false,
+    "live": true,
+    "workers": 2,
+    "batch": "situations_smoke",
+    "batch_cap": 0.25,
+    "ledger": "results/night_2026-11-06_budget.json",
+    "fpr": 0.1
+  },
+  "claim_scope": "Constructed policy situations, not autonomous agent attack success. Four channels held fixed; three pairings enumerated.",
+  "provider": {
+    "calls": 496,
+    "tokens": 150663,
+    "credits": 0.015098429999999973,
+    "cache_hits": 296,
+    "empty_responses": 0
+  },
+  "ledger": {
+    "authorized": 10.0,
+    "charged_or_reserved": 0.01509843,
+    "batch": "situations_smoke",
+    "batch_charged_or_reserved": 0.01509843,
+    "requests": 496,
+    "blocked": false
+  },
+  "completed": 72,
+  "errors": []
+}

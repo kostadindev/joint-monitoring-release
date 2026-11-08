@@ -1,0 +1,20 @@
+[
+  {
+    "episode": "flat:case_910000:b_only",
+    "ids": [
+      "e00",
+      "e06"
+    ],
+    "raw": "```json\n{\n  \"incident_score\": 100,\n  \"source_scores\": {\n    \"e00\": 0,\n    \"e06\": 100\n  },\n  \"content_scores\": {\n    \"e00\": 0,\n    \"e06\": 100\n  },\n  \"uncertain_source\": false,\n  \"evidence\": [\n    \"case_910000:m001\",\n    \"case_910000:m008\"\n  ],\n  \"reason\": \"Reporter_24 claimed a return window of 40 days, contradicting the authoritative registry value of 20 days.\"\n}\n```",
+    "error": "invalid evidence set"
+  },
+  {
+    "episode": "flat:case_910000:combined",
+    "ids": [
+      "e00",
+      "e06"
+    ],
+    "raw": "```json\n{\n  \"incident_score\": 100,\n  \"source_scores\": {\n    \"e00\": 0,\n    \"e06\": 100\n  },\n  \"content_scores\": {\n    \"e00\": 0,\n    \"e06\": 100\n  },\n  \"uncertain_source\": false,\n  \"evidence\": [\n    \"case_910000:m001\",\n    \"case_910000:m008\"\n  ],\n  \"reason\": \"Reporter_24 claimed a return window of 40 days, contradicting the authoritative registry value of 20 days.\"\n}\n```",
+    "error": "invalid evidence set"
+  }
+]

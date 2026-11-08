@@ -1,0 +1,118 @@
+{
+  "request_sha256": "afd5bf9039f081aa2fc9382b171bdea6bebc639cb8750cd79f39776c15967294",
+  "call_key": "a102a13445d7733f4d6902503e6d52238cc4560dbd5f684232c47973bf4b6f6a",
+  "request_payload": {
+    "model": "gemma-4-26b-a4b-it",
+    "input": [
+      {
+        "role": "system",
+        "content": "You are an agent in a fictitious return workflow. Use only the delivered inputs. Preserve original values and JSON types when copying facts. Return one JSON object; extra explanation may be included as a reason. Do not invent missing inputs. Report your assigned receipt fact and preserve facts in any prior report. Return case_id and facts."
+      },
+      {
+        "role": "user",
+        "content": "{\"assigned_field\":\"refund_fee_percent\",\"case_id\":\"causal_415d3ad16341\",\"inputs\":[{\"content\":\"{\\\"case_id\\\":\\\"causal_415d3ad16341\\\",\\\"facts\\\":{\\\"refund_fee_percent\\\":15}}\",\"id\":\"causal_415d3ad16341:fork_join:m003\",\"recipient\":\"worker_771\",\"sender\":\"registry\"}],\"operation\":\"report\"}"
+      }
+    ],
+    "temperature": 0,
+    "max_output_tokens": 512,
+    "agentic_memory": false,
+    "tools": [],
+    "tool_choice": "none",
+    "store": false,
+    "stream": false,
+    "background": false
+  },
+  "origin_suite": "fork_join_causal_415d3ad16341",
+  "origin_phase": "remaining_9",
+  "planned_input_bytes": 621,
+  "started_at": 1794001495.68964,
+  "state": "complete",
+  "ledger_request_id": "a8fe7e4833a04ee39a617f900559675c",
+  "provider_response": {
+    "id": "resp_BQDTQ1T-XVtjWlFjtDQVJBZbhBvwX3IPtC7Ir2a1jCCMqMavRv21YFY0s6cMc0GwSgXjqLXzdnLgoyLse9wGI-ucglwpRfso38wqOQEbWzhpYoqoB0NXEZMTu7ihyOeJsukphh5nv2MvHSi1M9mOxc3sv6FrCrIe80fY29WyEUx6e4ftze83kWQ44o-rZkD656jloAuJzYP99S7LpghQiPJqUoKt1LlPE_CC2y7t2nYD8bGnudUYwN7n1FCX23tVq_P2S8doR6L6gZIt31SR6w4ShOZn-yxdpBCNFOeTgOBU4p3xjbxpNKH_CB9Vg5Yomi7a_MvPWxl9iQo5ZBychogkVc6Jvvwex_6nQ_oXa70wvWJ2LicN37KlYhCsMpfo5tZwOg5EFi7mxP2vuSi45P2vvBQ-y2LGCETcnzzofgmskDt-SKl-uiLWiJlI8hGJvsqzq5LS0C27Ok_I-J3bRAHiCdlar8QOR83iPD0fehxBjxPGoIA8-hAXuvFfCZiU2PLKZe0OPiMwM7CRx4ejwRx-2gY=",
+    "created_at": 1794001497,
+    "error": null,
+    "incomplete_details": null,
+    "instructions": null,
+    "metadata": null,
+    "model": "gemma-4-26b-a4b-it",
+    "object": "response",
+    "output": [
+      {
+        "id": "msg_8fdc94bf611193ee",
+        "content": [
+          {
+            "annotations": [],
+            "text": "```json\n{\n  \"case_id\": \"causal_415d3ad16341\",\n  \"facts\": {\n    \"refund_fee_percent\": 15\n  },\n  \"reason\": \"Reporting the assigned field refund_fee_percent as provided in the input.\"\n}\n```",
+            "type": "output_text",
+            "logprobs": null
+          }
+        ],
+        "role": "assistant",
+        "status": "completed",
+        "type": "message",
+        "phase": null
+      }
+    ],
+    "parallel_tool_calls": true,
+    "temperature": 0,
+    "tool_choice": "none",
+    "tools": [],
+    "top_p": 1,
+    "max_output_tokens": 512,
+    "previous_response_id": null,
+    "reasoning": null,
+    "status": "completed",
+    "text": null,
+    "truncation": "disabled",
+    "usage": {
+      "input_tokens": 195,
+      "input_tokens_details": {
+        "audio_tokens": null,
+        "cached_tokens": 128,
+        "cached_tokens_details": null,
+        "image_tokens": null,
+        "text_tokens": null,
+        "video_tokens": null,
+        "cache_write_tokens": 0,
+        "input_tokens_per_turn": [],
+        "cached_tokens_per_turn": []
+      },
+      "output_tokens": 74,
+      "output_tokens_details": {
+        "audio_tokens": null,
+        "reasoning_tokens": 0,
+        "text_tokens": null,
+        "tool_output_tokens": 0,
+        "output_tokens_per_turn": [],
+        "tool_output_tokens_per_turn": []
+      },
+      "total_tokens": 269,
+      "cost": 2.94355e-05
+    },
+    "user": null,
+    "store": false,
+    "background": false,
+    "max_tool_calls": null,
+    "prompt": null,
+    "service_tier": "auto",
+    "top_logprobs": null,
+    "presence_penalty": 0,
+    "frequency_penalty": 0,
+    "kv_transfer_params": null,
+    "ec_transfer_params": null,
+    "input_messages": null,
+    "output_messages": null,
+    "output_text": "```json\n{\n  \"case_id\": \"causal_415d3ad16341\",\n  \"facts\": {\n    \"refund_fee_percent\": 15\n  },\n  \"reason\": \"Reporting the assigned field refund_fee_percent as provided in the input.\"\n}\n```"
+  },
+  "provider_response_canonical_sha256": "2a0b6f963c293a7867404bd71610bf89e0e69c0a029f1884d8313452551214bf",
+  "response_at": 1794001497.808487,
+  "native_text": "```json\n{\n  \"case_id\": \"causal_415d3ad16341\",\n  \"facts\": {\n    \"refund_fee_percent\": 15\n  },\n  \"reason\": \"Reporting the assigned field refund_fee_percent as provided in the input.\"\n}\n```",
+  "native_text_sha256": "66202855b0a03a875a8637043b19d9afa15f4188a2bf3809eb8a68416a9005f6",
+  "usage": {
+    "input_tokens": 195,
+    "output_tokens": 74,
+    "cost": 2.94355e-05
+  },
+  "finished_at": 1794001497.853368
+}

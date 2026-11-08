@@ -1,0 +1,36 @@
+{
+  "completed": 903,
+  "planned": 2705,
+  "errors": [
+    {
+      "episode_id": "hierarchical:case_910000:clean",
+      "edges": [
+        [
+          "reporter_38",
+          "coordinator_0"
+        ],
+        [
+          "reporter_97",
+          "coordinator_1"
+        ]
+      ],
+      "type": "HTTPError",
+      "error": "HTTP Error 502: Bad Gateway"
+    }
+  ],
+  "provider": {
+    "calls": 363,
+    "tokens": 293631,
+    "credits": 0.03525030999999997,
+    "cache_hits": 547,
+    "empty_responses": 0
+  },
+  "ledger": {
+    "authorized": 10.0,
+    "charged_or_reserved": 0.235511151,
+    "batch": "record_allocation_development_v1",
+    "batch_charged_or_reserved": 0.08525031,
+    "requests": 2560,
+    "blocked": true
+  }
+}

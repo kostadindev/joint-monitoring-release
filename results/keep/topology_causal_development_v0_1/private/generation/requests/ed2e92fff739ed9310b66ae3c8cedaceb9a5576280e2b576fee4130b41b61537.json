@@ -1,0 +1,118 @@
+{
+  "request_sha256": "94d79218f4d139ed1078c1db22233e5ff83b04dbd9fd1e18f39c430a638f788f",
+  "call_key": "8b2b06700018f600fbbfaa51aa81893b5b2070bb07bdd0d8e667666fb575b2f0",
+  "request_payload": {
+    "model": "gemma-4-26b-a4b-it",
+    "input": [
+      {
+        "role": "system",
+        "content": "You are an agent in a fictitious return workflow. Use only the delivered inputs. Preserve original values and JSON types when copying facts. Return one JSON object; extra explanation may be included as a reason. Do not invent missing inputs. Copy the received administrative fields. Return case_id and facts."
+      },
+      {
+        "role": "user",
+        "content": "{\"case_id\":\"causal_827fe7cebaea\",\"inputs\":[{\"content\":\"```json\\n{\\n  \\\"case_id\\\": \\\"causal_827fe7cebaea\\\",\\n  \\\"facts\\\": {\\n    \\\"delivery_zone\\\": \\\"north\\\"\\n  }\\n}\\n```\",\"id\":\"causal_827fe7cebaea:fork_join:m010\",\"recipient\":\"routing\",\"sender\":\"worker_928\"},{\"content\":\"```json\\n{\\n  \\\"case_id\\\": \\\"causal_827fe7cebaea\\\",\\n  \\\"facts\\\": {\\n    \\\"case_priority\\\": \\\"routine\\\"\\n  },\\n  \\\"reason\\\": \\\"Reporting the assigned case_priority fact from the delivered input.\\\"\\n}\\n```\",\"id\":\"causal_827fe7cebaea:fork_join:m011\",\"recipient\":\"routing\",\"sender\":\"worker_177\"}],\"operation\":\"routing\"}"
+      }
+    ],
+    "temperature": 0,
+    "max_output_tokens": 512,
+    "agentic_memory": false,
+    "tools": [],
+    "tool_choice": "none",
+    "store": false,
+    "stream": false,
+    "background": false
+  },
+  "origin_suite": "fork_join_causal_827fe7cebaea",
+  "origin_phase": "remaining_9",
+  "planned_input_bytes": 894,
+  "started_at": 1794001542.2659788,
+  "state": "complete",
+  "ledger_request_id": "8a330f3263f94e6a82b95dac9d349a28",
+  "provider_response": {
+    "id": "resp_JcbD2iaKBR5AWXfdfosdEBlHQFQhXvTKJl_eRBnShqWMTlknliz8N5yiSZWEhanLt2Ie6mwmKzCpDOpD2jsYMhrarJvgim-sidQ3LlbRJI1mrl_Jx1adJ8-gLtMWqNUdHPv3oRM4V4sj3MFvtyC4dXYoCa7s-Rs7ncPsJex_37czgL5jSYzF-oZFG1aPGfNLPzi1SC_Zl_g9SWze8LNzoi0Azwq_UYfM8AKBuCQzx51CJyGi6nDY0cLtyothdgLcIfgRiE5Ykg883pG64U70Ygn8ir3GSkTDobRxPF-oiOQ5BnvyscArwF_noDMzAMmcUk-cFKV0TSPIQMtU-rWI8-ESNxAAx7LDektXtAkM1gUKpZ3H3SJ_PpOnl7MVCNV_8kxq83MC7k-0oFTV-RnndkfJvXOH3HGVfbBOj4aE9ZEd-WS_aXkOb_yccP0arHvqw0Hc_-5RG7imzauP-bcCTHVvrBXlFLb__0K3IQQd3TxX6rjI980yNr3NBKT7g64r1zqGVuvP_rbTuqZ0OQjXeigXYGM=",
+    "created_at": 1794001542,
+    "error": null,
+    "incomplete_details": null,
+    "instructions": null,
+    "metadata": null,
+    "model": "gemma-4-26b-a4b-it",
+    "object": "response",
+    "output": [
+      {
+        "id": "msg_817023c9dc5e07b8",
+        "content": [
+          {
+            "annotations": [],
+            "text": "```json\n{\n  \"case_id\": \"causal_827fe7cebaea\",\n  \"facts\": {\n    \"delivery_zone\": \"north\",\n    \"case_priority\": \"routine\"\n  },\n  \"reason\": \"Merged facts from multiple inputs: delivery_zone from m010 and case_priority from m011.\"\n}\n```",
+            "type": "output_text",
+            "logprobs": null
+          }
+        ],
+        "role": "assistant",
+        "status": "completed",
+        "type": "message",
+        "phase": null
+      }
+    ],
+    "parallel_tool_calls": true,
+    "temperature": 0,
+    "tool_choice": "none",
+    "tools": [],
+    "top_p": 1,
+    "max_output_tokens": 512,
+    "previous_response_id": null,
+    "reasoning": null,
+    "status": "completed",
+    "text": null,
+    "truncation": "disabled",
+    "usage": {
+      "input_tokens": 295,
+      "input_tokens_details": {
+        "audio_tokens": null,
+        "cached_tokens": 0,
+        "cached_tokens_details": null,
+        "image_tokens": null,
+        "text_tokens": null,
+        "video_tokens": null,
+        "cache_write_tokens": 256,
+        "input_tokens_per_turn": [],
+        "cached_tokens_per_turn": []
+      },
+      "output_tokens": 88,
+      "output_tokens_details": {
+        "audio_tokens": null,
+        "reasoning_tokens": 0,
+        "text_tokens": null,
+        "tool_output_tokens": 0,
+        "output_tokens_per_turn": [],
+        "tool_output_tokens_per_turn": []
+      },
+      "total_tokens": 383,
+      "cost": 4.50075e-05
+    },
+    "user": null,
+    "store": false,
+    "background": false,
+    "max_tool_calls": null,
+    "prompt": null,
+    "service_tier": "auto",
+    "top_logprobs": null,
+    "presence_penalty": 0,
+    "frequency_penalty": 0,
+    "kv_transfer_params": null,
+    "ec_transfer_params": null,
+    "input_messages": null,
+    "output_messages": null,
+    "output_text": "```json\n{\n  \"case_id\": \"causal_827fe7cebaea\",\n  \"facts\": {\n    \"delivery_zone\": \"north\",\n    \"case_priority\": \"routine\"\n  },\n  \"reason\": \"Merged facts from multiple inputs: delivery_zone from m010 and case_priority from m011.\"\n}\n```"
+  },
+  "provider_response_canonical_sha256": "b82f2b30a684270364b06b2c2d9918f2f5d5dd19914704134b80b35d9e20e76c",
+  "response_at": 1794001543.1195068,
+  "native_text": "```json\n{\n  \"case_id\": \"causal_827fe7cebaea\",\n  \"facts\": {\n    \"delivery_zone\": \"north\",\n    \"case_priority\": \"routine\"\n  },\n  \"reason\": \"Merged facts from multiple inputs: delivery_zone from m010 and case_priority from m011.\"\n}\n```",
+  "native_text_sha256": "4497f8982d9e542c013a5119dd7b682092b4234594420b5e8569deeed6eda587",
+  "usage": {
+    "input_tokens": 295,
+    "output_tokens": 88,
+    "cost": 4.50075e-05
+  },
+  "finished_at": 1794001543.181023
+}

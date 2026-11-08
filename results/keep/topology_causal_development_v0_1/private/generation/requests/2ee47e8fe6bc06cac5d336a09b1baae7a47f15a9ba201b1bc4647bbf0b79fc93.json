@@ -1,0 +1,118 @@
+{
+  "request_sha256": "35aa7491757a47cf8b3699d21a0ed6b36a7f29cd73bf8f61b56d984953066b89",
+  "call_key": "946c679d118791139a999d740e8942f9eec84531d89d76ce2d1437e4a12b4c2d",
+  "request_payload": {
+    "model": "gemma-4-26b-a4b-it",
+    "input": [
+      {
+        "role": "system",
+        "content": "You are an agent in a fictitious return workflow. Use only the delivered inputs. Preserve original values and JSON types when copying facts. Return one JSON object; extra explanation may be included as a reason. Do not invent missing inputs. Report your assigned receipt fact and preserve facts in any prior report. Return case_id and facts."
+      },
+      {
+        "role": "user",
+        "content": "{\"assigned_field\":\"case_priority\",\"case_id\":\"causal_1c80896a0825\",\"inputs\":[{\"content\":\"{\\\"case_id\\\":\\\"causal_1c80896a0825\\\",\\\"facts\\\":{\\\"case_priority\\\":\\\"routine\\\"}}\",\"id\":\"causal_1c80896a0825:sequential:m005\",\"recipient\":\"worker_578\",\"sender\":\"registry\"},{\"content\":\"```json\\n{\\n  \\\"case_id\\\": \\\"causal_1c80896a0825\\\",\\n  \\\"facts\\\": {\\n    \\\"return_window_days\\\": 60,\\n    \\\"price_cents\\\": 8500,\\n    \\\"delivery_zone\\\": \\\"south\\\",\\n    \\\"refund_fee_percent\\\": 0,\\n    \\\"purchase_age_days\\\": 64\\n  },\\n  \\\"reason\\\": \\\"Reported assigned field 'return_window_days' and preserved existing facts from previous reports.\\\"\\n}\\n```\",\"id\":\"causal_1c80896a0825:sequential:m007\",\"recipient\":\"worker_578\",\"sender\":\"worker_584\"}],\"operation\":\"report\"}"
+      }
+    ],
+    "temperature": 0,
+    "max_output_tokens": 512,
+    "agentic_memory": false,
+    "tools": [],
+    "tool_choice": "none",
+    "store": false,
+    "stream": false,
+    "background": false
+  },
+  "origin_suite": "sequential_causal_1c80896a0825",
+  "origin_phase": "remaining_9",
+  "planned_input_bytes": 1082,
+  "started_at": 1794001526.356313,
+  "state": "complete",
+  "ledger_request_id": "1df29cd8073e41aa91ead5cbe4f9257e",
+  "provider_response": {
+    "id": "resp_ETMWZJNqtFYyj8JIHnqPc0qnXZ8GejiXl5YTayzhEmUoK6xcQLvydlb-jleE_SWWG0qqCqMpVIOezpiZW6DTu_W1Vt7LD7wgI7uQFKHddQKL5bIpziuEME5Q5qJoW_BuA41vRIVCLBZKpOVW2OoY8ZCV8j-6s4Oih7MeIeR8brkGRpIdgrgQ8AUcmlL5uXmyJWn576cWVXxAsovSA1HOnJx0uUYQ0HQXL7BmgUPaXDM7YzZfhS7Tqbbk4Dkf-mFt2rZPPrPYVPJc5OmG_nwd4uj6XPK88sjAEVL_6nBEoQduwMEOjCuW8IpfAlA_GgZI--a9vaTNYc7J_9KXVK2W8ABEyHrPB_XPsprfGKIZGaMMK3Dm-9UO7epywigfPLZqfXMbYhW-RhcOyIeQufqw5_FFdQCTEdb5JDXg-Gw__dhO8NP0CsgJ5yQBPvc4wJFfgkD1U6u3T4o56I4T6AVlx7ADMCcEBsCpdBXXocEKHSCoGkdgYwaMcHsf7VtqljecYmp6sIfVxYlXLfkO6ps8FtQHSGw=",
+    "created_at": 1794001526,
+    "error": null,
+    "incomplete_details": null,
+    "instructions": null,
+    "metadata": null,
+    "model": "gemma-4-26b-a4b-it",
+    "object": "response",
+    "output": [
+      {
+        "id": "msg_81dabf54b3fdff89",
+        "content": [
+          {
+            "annotations": [],
+            "text": "```json\n{\n  \"case_id\": \"causal_1c80896a0825\",\n  \"facts\": {\n    \"case_priority\": \"routine\",\n    \"return_window_days\": 60,\n    \"price_cents\": 8500,\n    \"delivery_zone\": \"south\",\n    \"refund_fee_percent\": 0,\n    \"purchase_age_days\": 64\n  },\n  \"reason\": \"Reported assigned field 'case_priority' and preserved existing facts from previous reports.\"\n}\n```",
+            "type": "output_text",
+            "logprobs": null
+          }
+        ],
+        "role": "assistant",
+        "status": "completed",
+        "type": "message",
+        "phase": null
+      }
+    ],
+    "parallel_tool_calls": true,
+    "temperature": 0,
+    "tool_choice": "none",
+    "tools": [],
+    "top_p": 1,
+    "max_output_tokens": 512,
+    "previous_response_id": null,
+    "reasoning": null,
+    "status": "completed",
+    "text": null,
+    "truncation": "disabled",
+    "usage": {
+      "input_tokens": 367,
+      "input_tokens_details": {
+        "audio_tokens": null,
+        "cached_tokens": 128,
+        "cached_tokens_details": null,
+        "image_tokens": null,
+        "text_tokens": null,
+        "video_tokens": null,
+        "cache_write_tokens": 128,
+        "input_tokens_per_turn": [],
+        "cached_tokens_per_turn": []
+      },
+      "output_tokens": 135,
+      "output_tokens_details": {
+        "audio_tokens": null,
+        "reasoning_tokens": 0,
+        "text_tokens": null,
+        "tool_output_tokens": 0,
+        "output_tokens_per_turn": [],
+        "tool_output_tokens_per_turn": []
+      },
+      "total_tokens": 502,
+      "cost": 5.8148499999999994e-05
+    },
+    "user": null,
+    "store": false,
+    "background": false,
+    "max_tool_calls": null,
+    "prompt": null,
+    "service_tier": "auto",
+    "top_logprobs": null,
+    "presence_penalty": 0,
+    "frequency_penalty": 0,
+    "kv_transfer_params": null,
+    "ec_transfer_params": null,
+    "input_messages": null,
+    "output_messages": null,
+    "output_text": "```json\n{\n  \"case_id\": \"causal_1c80896a0825\",\n  \"facts\": {\n    \"case_priority\": \"routine\",\n    \"return_window_days\": 60,\n    \"price_cents\": 8500,\n    \"delivery_zone\": \"south\",\n    \"refund_fee_percent\": 0,\n    \"purchase_age_days\": 64\n  },\n  \"reason\": \"Reported assigned field 'case_priority' and preserved existing facts from previous reports.\"\n}\n```"
+  },
+  "provider_response_canonical_sha256": "3cd38ddef72e51e0157ad3b569b8b63fdc26157cd3970a239e3ab0cf60b432eb",
+  "response_at": 1794001527.44011,
+  "native_text": "```json\n{\n  \"case_id\": \"causal_1c80896a0825\",\n  \"facts\": {\n    \"case_priority\": \"routine\",\n    \"return_window_days\": 60,\n    \"price_cents\": 8500,\n    \"delivery_zone\": \"south\",\n    \"refund_fee_percent\": 0,\n    \"purchase_age_days\": 64\n  },\n  \"reason\": \"Reported assigned field 'case_priority' and preserved existing facts from previous reports.\"\n}\n```",
+  "native_text_sha256": "2b0cf0c9189298f98aa0300ced3c19cbcdcb9ffeeab1236c45ecfaa22fc94d2d",
+  "usage": {
+    "input_tokens": 367,
+    "output_tokens": 135,
+    "cost": 5.8148499999999994e-05
+  },
+  "finished_at": 1794001527.518427
+}

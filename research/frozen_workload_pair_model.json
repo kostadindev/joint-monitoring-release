@@ -1,0 +1,60 @@
+{
+  "features": [
+    "intercept",
+    "size",
+    "registry_fraction",
+    "protected_chain",
+    "other_chain",
+    "shared_sender",
+    "shared_receiver",
+    "shared_endpoint",
+    "sender_degree",
+    "recipient_degree",
+    "downstream_fraction",
+    "reviewer_sender_fraction",
+    "reviewer_recipient_fraction",
+    "executor_recipient_fraction",
+    "graph_size",
+    "density"
+  ],
+  "coef": [
+    0.09637263980018623,
+    -0.08013326939254539,
+    0.011830376490333864,
+    0.08956189063724185,
+    -0.13119516702366119,
+    0.028581860132631247,
+    0.022185596598470234,
+    0.009134180344701126,
+    -0.09821390058624203,
+    0.009766114214168623,
+    -0.01376809508548511,
+    -0.12259923907816112,
+    -0.039380053214656555,
+    -0.12259923907816112,
+    -0.007991082464177908,
+    0.0035314127051221055
+  ],
+  "alpha": 0.01,
+  "fp_penalty": 2.0,
+  "training_cases": [
+    "case_910000",
+    "case_910001",
+    "case_910002",
+    "case_910100",
+    "case_910101"
+  ],
+  "training_episodes": 51,
+  "training_probes": {
+    "logical_views": 5134,
+    "unique_prompts": 2376,
+    "unique_prompt_replay_usage": {
+      "input_tokens": 1400607,
+      "output_tokens": 280572,
+      "cost": 0.19435407
+    },
+    "note": "Acquisition/training requirement, not incremental paid spend; actual spend is in the shared ledger."
+  },
+  "supervision": "development ground truth and measured judge source scores",
+  "selection_note": "Central grid setting alpha=0.01, false-flag penalty=2; fixed before any workload judge results. Trained only on the original five development task clusters. No claim of optimal hyperparameters."
+}

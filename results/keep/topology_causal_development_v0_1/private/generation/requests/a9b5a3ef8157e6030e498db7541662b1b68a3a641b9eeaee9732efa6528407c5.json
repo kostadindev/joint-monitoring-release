@@ -1,0 +1,118 @@
+{
+  "request_sha256": "a335d132a0626eea2f0d28b5da0056b752a03c6b1d51192da278757181807be1",
+  "call_key": "f7cafd292ae08254e3cf543ffe26cb6d33e5c58f39096ead5a6fae17204c0a5b",
+  "request_payload": {
+    "model": "gemma-4-26b-a4b-it",
+    "input": [
+      {
+        "role": "system",
+        "content": "You are an agent in a fictitious return workflow. Use only the delivered inputs. Preserve original values and JSON types when copying facts. Return one JSON object; extra explanation may be included as a reason. Do not invent missing inputs. Report your assigned receipt fact and preserve facts in any prior report. Return case_id and facts."
+      },
+      {
+        "role": "user",
+        "content": "{\"assigned_field\":\"delivery_zone\",\"case_id\":\"causal_1c80896a0825\",\"inputs\":[{\"content\":\"{\\\"case_id\\\":\\\"causal_1c80896a0825\\\",\\\"facts\\\":{\\\"delivery_zone\\\":\\\"south\\\"}}\",\"id\":\"causal_1c80896a0825:sequential:m004\",\"recipient\":\"worker_606\",\"sender\":\"registry\"},{\"content\":\"```json\\n{\\n  \\\"case_id\\\": \\\"causal_1c80896a0825\\\",\\n  \\\"facts\\\": {\\n    \\\"refund_fee_percent\\\": 0,\\n    \\\"purchase_age_days\\\": 72\\n  },\\n  \\\"reason\\\": \\\"Reporting the assigned field refund_fee_percent from the registry and preserving the previously reported purchase_age_days.\\\"\\n}\\n```\",\"id\":\"causal_1c80896a0825:sequential:m009\",\"recipient\":\"worker_606\",\"sender\":\"worker_468\"}],\"operation\":\"report\"}"
+      }
+    ],
+    "temperature": 0,
+    "max_output_tokens": 512,
+    "agentic_memory": false,
+    "tools": [],
+    "tool_choice": "none",
+    "store": false,
+    "stream": false,
+    "background": false
+  },
+  "origin_suite": "sequential_causal_1c80896a0825",
+  "origin_phase": "remaining_9",
+  "planned_input_bytes": 1011,
+  "started_at": 1794001515.590736,
+  "state": "complete",
+  "ledger_request_id": "a2557eda993a443baeab26e036af1295",
+  "provider_response": {
+    "id": "resp_mrN9rjLiDvTXaTOR9GKZEP55OWpodNBOSGouuybFNDvKU2jtbEincipt82dikrd1AuGIgEjfu8yO_2kbf5fcN9KqoL0VqQ0VrvoRyengHCxb0-6hqz7Oeg9NqurIO7NtEHj4M__fUGWnXZgC6-PHwxbHFoWVNXq249L_pBwdtbdF3vR-QtRuFga8lkiNd6zJK7Lf6NhOz62p6aFjJfpQS363E54u9hc8zsAHeok-t9ggNrnyUL4NLsU-jMlDq-opmHhn_krvCCGvgoai1h0rSfz_uziKOW-JTVhlcNGm6M-phsXI7IBghu5iP1EzNmzpZyL1njfe06hGsRXeNEndq08Gy8BuqvFtgFZoba8ZiDGQPjq1gliYTGMVfBQrzHd-4jHkrWgrbKxVdYBUFvtHuyvVCfCgVfLh1fUq6fjV_-Ea5qQKx0_V7QaOwJ441luYHexKY5NHlVzAwiIdsrPiNKNLweaTXRrt8ElJrp6vrE2l14H0XH1P49Su47RF4LRG9JKs04Qmytuf2vwVaOqj5Rkxmlk=",
+    "created_at": 1794001516,
+    "error": null,
+    "incomplete_details": null,
+    "instructions": null,
+    "metadata": null,
+    "model": "gemma-4-26b-a4b-it",
+    "object": "response",
+    "output": [
+      {
+        "id": "msg_9652225ee500d108",
+        "content": [
+          {
+            "annotations": [],
+            "text": "```json\n{\n  \"case_id\": \"causal_1c80896a0825\",\n  \"facts\": {\n    \"delivery_zone\": \"south\",\n    \"refund_fee_percent\": 0,\n    \"purchase_age_days\": 72\n  },\n  \"reason\": \"Reporting the assigned field delivery_zone from the registry and preserving the previously reported refund_fee_percent and purchase_age_days.\"\n}\n```",
+            "type": "output_text",
+            "logprobs": null
+          }
+        ],
+        "role": "assistant",
+        "status": "completed",
+        "type": "message",
+        "phase": null
+      }
+    ],
+    "parallel_tool_calls": true,
+    "temperature": 0,
+    "tool_choice": "none",
+    "tools": [],
+    "top_p": 1,
+    "max_output_tokens": 512,
+    "previous_response_id": null,
+    "reasoning": null,
+    "status": "completed",
+    "text": null,
+    "truncation": "disabled",
+    "usage": {
+      "input_tokens": 334,
+      "input_tokens_details": {
+        "audio_tokens": null,
+        "cached_tokens": 128,
+        "cached_tokens_details": null,
+        "image_tokens": null,
+        "text_tokens": null,
+        "video_tokens": null,
+        "cache_write_tokens": 128,
+        "input_tokens_per_turn": [],
+        "cached_tokens_per_turn": []
+      },
+      "output_tokens": 109,
+      "output_tokens_details": {
+        "audio_tokens": null,
+        "reasoning_tokens": 0,
+        "text_tokens": null,
+        "tool_output_tokens": 0,
+        "output_tokens_per_turn": [],
+        "tool_output_tokens_per_turn": []
+      },
+      "total_tokens": 443,
+      "cost": 4.8994e-05
+    },
+    "user": null,
+    "store": false,
+    "background": false,
+    "max_tool_calls": null,
+    "prompt": null,
+    "service_tier": "auto",
+    "top_logprobs": null,
+    "presence_penalty": 0,
+    "frequency_penalty": 0,
+    "kv_transfer_params": null,
+    "ec_transfer_params": null,
+    "input_messages": null,
+    "output_messages": null,
+    "output_text": "```json\n{\n  \"case_id\": \"causal_1c80896a0825\",\n  \"facts\": {\n    \"delivery_zone\": \"south\",\n    \"refund_fee_percent\": 0,\n    \"purchase_age_days\": 72\n  },\n  \"reason\": \"Reporting the assigned field delivery_zone from the registry and preserving the previously reported refund_fee_percent and purchase_age_days.\"\n}\n```"
+  },
+  "provider_response_canonical_sha256": "084fb388b58f6b6e3d0f483c5263cfa424aa6b1d2a78ce6c6d5d6ab2838fb69e",
+  "response_at": 1794001516.592024,
+  "native_text": "```json\n{\n  \"case_id\": \"causal_1c80896a0825\",\n  \"facts\": {\n    \"delivery_zone\": \"south\",\n    \"refund_fee_percent\": 0,\n    \"purchase_age_days\": 72\n  },\n  \"reason\": \"Reporting the assigned field delivery_zone from the registry and preserving the previously reported refund_fee_percent and purchase_age_days.\"\n}\n```",
+  "native_text_sha256": "e587fc382344ea1dd8f27d1043563c5a6b87b07ba9ec243dbd6a82dbf351c0c8",
+  "usage": {
+    "input_tokens": 334,
+    "output_tokens": 109,
+    "cost": 4.8994e-05
+  },
+  "finished_at": 1794001516.6366348
+}

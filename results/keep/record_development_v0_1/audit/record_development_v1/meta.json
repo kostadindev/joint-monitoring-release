@@ -1,0 +1,28 @@
+{
+  "mode": "live",
+  "completed": 30,
+  "planned": 51,
+  "errors": [
+    {
+      "case_id": "case_910001",
+      "type": "ValueError",
+      "error": "wrong field type: case_priority"
+    }
+  ],
+  "provider": {
+    "calls": 99,
+    "tokens": 23927,
+    "credits": 0.0024892080000000006,
+    "cache_hits": 133,
+    "empty_responses": 0
+  },
+  "ledger": {
+    "authorized": 10.0,
+    "charged_or_reserved": 0.090482008,
+    "batch": "record_development_v1",
+    "batch_charged_or_reserved": 0.002489208,
+    "requests": 1405,
+    "blocked": false
+  },
+  "plan_sha256": "21091f5c8216a30fb72a7dab404c396a6a13767e996797ab566deaf631563f13"
+}

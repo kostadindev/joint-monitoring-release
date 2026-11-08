@@ -1,0 +1,118 @@
+{
+  "request_sha256": "0297ed51cc99e0a6084bc95e6122fdec1b19b195ef2299bd647d01d6ee113754",
+  "call_key": "9ca7a249d0ef9e9b3cf078e8ae7255b87bf044cb533b3cf7ca9551cea914e1d8",
+  "request_payload": {
+    "model": "gemma-4-26b-a4b-it",
+    "input": [
+      {
+        "role": "system",
+        "content": "You are an agent in a fictitious return workflow. Use only the delivered inputs. Preserve original values and JSON types when copying facts. Return one JSON object; extra explanation may be included as a reason. Do not invent missing inputs. If eligible is false return refund_cents 0; otherwise compute price_cents*(100-refund_fee_percent)/100 rounded to nearest cent. Return case_id and refund_cents."
+      },
+      {
+        "role": "user",
+        "content": "{\"case_id\":\"causal_415d3ad16341\",\"inputs\":[{\"content\":\"```json\\n{\\n  \\\"case_id\\\": \\\"causal_415d3ad16341\\\",\\n  \\\"facts\\\": {\\n    \\\"refund_fee_percent\\\": 15\\n  },\\n  \\\"reason\\\": \\\"Reporting the assigned field refund_fee_percent as provided in the input.\\\"\\n}\\n```\",\"id\":\"causal_415d3ad16341:fork_join:m009\",\"recipient\":\"refund\",\"sender\":\"worker_771\"},{\"content\":\"```json\\n{\\n  \\\"case_id\\\": \\\"causal_415d3ad16341\\\",\\n  \\\"facts\\\": {\\n    \\\"price_cents\\\": 23900\\n  },\\n  \\\"reason\\\": \\\"Reporting the assigned field price_cents as requested.\\\"\\n}\\n```\",\"id\":\"causal_415d3ad16341:fork_join:m008\",\"recipient\":\"refund\",\"sender\":\"worker_376\"},{\"content\":\"```json\\n{\\n  \\\"case_id\\\": \\\"causal_415d3ad16341\\\",\\n  \\\"eligible\\\": false,\\n  \\\"reason\\\": \\\"purchase_age_days (51) is greater than return_window_days (45).\\\"\\n}\\n```\",\"id\":\"causal_415d3ad16341:fork_join:m012\",\"recipient\":\"refund\",\"sender\":\"eligibility\"}],\"operation\":\"refund\"}"
+      }
+    ],
+    "temperature": 0,
+    "max_output_tokens": 512,
+    "agentic_memory": false,
+    "tools": [],
+    "tool_choice": "none",
+    "store": false,
+    "stream": false,
+    "background": false
+  },
+  "origin_suite": "fork_join_causal_415d3ad16341",
+  "origin_phase": "remaining_9",
+  "planned_input_bytes": 1323,
+  "started_at": 1794001508.3835342,
+  "state": "complete",
+  "ledger_request_id": "1229bc4cb649443abb572f3437fdfccc",
+  "provider_response": {
+    "id": "resp_qrV_264UGNMmqbIH2VsJ04QXpadqJsvD5huQjXpFNYjEbsFzWCi6KT4_-nKZgrrxZfMn2gp8MGWjghmcQ1aI7cdHI1lQm0rVhyY6zDbioTTD86M-3raAMhYWOM414TjdfPj_eqILUDh33WZtZmsSZCYvLPZkaQeyskU7PAwcFxQp7_b_tyUGM11vHy3MNWYPeLBVId9B_uJOctsc8RF_UufmfTVS8mcewBhpttHf1eibPfRSVrC2FNSxoX1m2WDiYG9E8vZ_cxcVTPchbfQwnO0CKUh8uGtL1PrXQwTSNtFZAcB0HZ_pFvps69alJAv1geZodO5P9KkOGwFLep2CDPtjqcqXJlDtKV-JUjjzCQTauA16NUp9IUR2TikOBsu1YHbO7euUbFymwa6Awu3iMYf6u5wxEtghY_J5JLKwbNoj5uNC6C-afxMSLVjjZ2gcQn-WiDqA_nVbOkfHU-BqQcW4BB5ueDZ5V_vojlYObnDhCtQM6WjvKtySIFqiwK60fYBg1wPXc4-YlU3B5TFV5lHPNLc=",
+    "created_at": 1794001508,
+    "error": null,
+    "incomplete_details": null,
+    "instructions": null,
+    "metadata": null,
+    "model": "gemma-4-26b-a4b-it",
+    "object": "response",
+    "output": [
+      {
+        "id": "msg_a0ca3c5d9b380a4c",
+        "content": [
+          {
+            "annotations": [],
+            "text": "```json\n{\n  \"case_id\": \"causal_415d3ad16341\",\n  \"refund_cents\": 0,\n  \"reason\": \"The item is not eligible for a refund because purchase_age_days (51) is greater than return_window_days (45).\"\n}\n```",
+            "type": "output_text",
+            "logprobs": null
+          }
+        ],
+        "role": "assistant",
+        "status": "completed",
+        "type": "message",
+        "phase": null
+      }
+    ],
+    "parallel_tool_calls": true,
+    "temperature": 0,
+    "tool_choice": "none",
+    "tools": [],
+    "top_p": 1,
+    "max_output_tokens": 512,
+    "previous_response_id": null,
+    "reasoning": null,
+    "status": "completed",
+    "text": null,
+    "truncation": "disabled",
+    "usage": {
+      "input_tokens": 474,
+      "input_tokens_details": {
+        "audio_tokens": null,
+        "cached_tokens": 0,
+        "cached_tokens_details": null,
+        "image_tokens": null,
+        "text_tokens": null,
+        "video_tokens": null,
+        "cache_write_tokens": 384,
+        "input_tokens_per_turn": [],
+        "cached_tokens_per_turn": []
+      },
+      "output_tokens": 78,
+      "output_tokens_details": {
+        "audio_tokens": null,
+        "reasoning_tokens": 0,
+        "text_tokens": null,
+        "tool_output_tokens": 0,
+        "output_tokens_per_turn": [],
+        "tool_output_tokens_per_turn": []
+      },
+      "total_tokens": 552,
+      "cost": 5.6151000000000005e-05
+    },
+    "user": null,
+    "store": false,
+    "background": false,
+    "max_tool_calls": null,
+    "prompt": null,
+    "service_tier": "auto",
+    "top_logprobs": null,
+    "presence_penalty": 0,
+    "frequency_penalty": 0,
+    "kv_transfer_params": null,
+    "ec_transfer_params": null,
+    "input_messages": null,
+    "output_messages": null,
+    "output_text": "```json\n{\n  \"case_id\": \"causal_415d3ad16341\",\n  \"refund_cents\": 0,\n  \"reason\": \"The item is not eligible for a refund because purchase_age_days (51) is greater than return_window_days (45).\"\n}\n```"
+  },
+  "provider_response_canonical_sha256": "a1f114ff053f446ffd6d5f3261a0e4e06eaab341cceec3cfa6fe414922bdf8b8",
+  "response_at": 1794001509.2146602,
+  "native_text": "```json\n{\n  \"case_id\": \"causal_415d3ad16341\",\n  \"refund_cents\": 0,\n  \"reason\": \"The item is not eligible for a refund because purchase_age_days (51) is greater than return_window_days (45).\"\n}\n```",
+  "native_text_sha256": "7a5caa5ae288211eef074d99b6af680f9cc5bc627dba7b45748b9ee2b2a93699",
+  "usage": {
+    "input_tokens": 474,
+    "output_tokens": 78,
+    "cost": 5.6151000000000005e-05
+  },
+  "finished_at": 1794001509.2581918
+}

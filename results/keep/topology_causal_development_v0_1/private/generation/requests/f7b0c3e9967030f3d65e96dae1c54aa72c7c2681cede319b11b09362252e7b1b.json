@@ -1,0 +1,118 @@
+{
+  "request_sha256": "45492e718dddeb293d2128c06f304c4f62557f4e74f4ce343563fa3eaa6f08a1",
+  "call_key": "0bc094301caa19f8b9909e2fc36afb0e1838299ecccec9650f8fead963f78a33",
+  "request_payload": {
+    "model": "gemma-4-26b-a4b-it",
+    "input": [
+      {
+        "role": "system",
+        "content": "You are an agent in a fictitious return workflow. Use only the delivered inputs. Preserve original values and JSON types when copying facts. Return one JSON object; extra explanation may be included as a reason. Do not invent missing inputs. Report your assigned receipt fact and preserve facts in any prior report. Return case_id and facts."
+      },
+      {
+        "role": "user",
+        "content": "{\"assigned_field\":\"price_cents\",\"case_id\":\"causal_1c80896a0825\",\"inputs\":[{\"content\":\"{\\\"case_id\\\":\\\"causal_1c80896a0825\\\",\\\"facts\\\":{\\\"price_cents\\\":8500}}\",\"id\":\"causal_1c80896a0825:sequential:m002\",\"recipient\":\"worker_604\",\"sender\":\"registry\"},{\"content\":\"```json\\n{\\n  \\\"case_id\\\": \\\"causal_1c80896a0825\\\",\\n  \\\"facts\\\": {\\n    \\\"delivery_zone\\\": \\\"south\\\",\\n    \\\"refund_fee_percent\\\": 0,\\n    \\\"purchase_age_days\\\": 72\\n  },\\n  \\\"reason\\\": \\\"Reporting the assigned field delivery_zone from the registry and preserving the previously reported refund_fee_percent and purchase_age_days.\\\"\\n}\\n```\",\"id\":\"causal_1c80896a0825:sequential:m010\",\"recipient\":\"worker_604\",\"sender\":\"worker_606\"}],\"operation\":\"report\"}"
+      }
+    ],
+    "temperature": 0,
+    "max_output_tokens": 512,
+    "agentic_memory": false,
+    "tools": [],
+    "tool_choice": "none",
+    "store": false,
+    "stream": false,
+    "background": false
+  },
+  "origin_suite": "sequential_causal_1c80896a0825",
+  "origin_phase": "remaining_9",
+  "planned_input_bytes": 1055,
+  "started_at": 1794001516.6372092,
+  "state": "complete",
+  "ledger_request_id": "1a68e53a300147db945738ff4df67e32",
+  "provider_response": {
+    "id": "resp_icnWPrDPHkIxmP9eyzu_D5HqTgTcYcB8nmnQCDMENZzFcPg2-Yc8uKsq7LlKLML9CatqfcVXm-C_FB419U6RqbN1PhvqI18KiymSntYlCMDhq-dKoPOKCF8YIXMn7Lv3JFWNpWe3za7sTpjB9FPqo1RPhdfLBaTikDODvn1E73MOEiI5X3jA904BAjSRFvdyAXZczlY2odHxXq6IEr_gOul2dFoTRif0Eic2lkQL4Tc2orh5c0oA1jRIqgAh4gvTat4vCQi8EOHKkaeRuUPFjdWMcYzednKn0K5b4NzIxDLuqYu7No7XPRbjwENFe8LfnkQ6WQIgBhdDKDZAuG7ZhWYnfmYD2Wcf7kY5tQStFqZc3S-OpSAjnOnUCSCRKk0Hb3-8QlLdn85lo-WEO8pNAMg1zkY2av-TTe1k71E435o7U9Wd_QAk3VyFWJKQ7mmv6LwVjb6KejbYclIhaD92UUQNh0Cu-BRwqQ2lz60Vi0DtPTt9MKdN9OndvzaoebeYqkJO3xIvX_UGIiR33QEEOD4OsRM=",
+    "created_at": 1794001517,
+    "error": null,
+    "incomplete_details": null,
+    "instructions": null,
+    "metadata": null,
+    "model": "gemma-4-26b-a4b-it",
+    "object": "response",
+    "output": [
+      {
+        "id": "msg_a6f34130f9734dee",
+        "content": [
+          {
+            "annotations": [],
+            "text": "```json\n{\n  \"case_id\": \"causal_1c80896a0825\",\n  \"facts\": {\n    \"price_cents\": 8500,\n    \"delivery_zone\": \"south\",\n    \"refund_fee_percent\": 0,\n    \"purchase_age_days\": 72\n  },\n  \"reason\": \"Reporting the assigned field price_cents from the registry and preserving the previously reported delivery_zone, refund_fee_percent, and purchase_age_days.\"\n}\n```",
+            "type": "output_text",
+            "logprobs": null
+          }
+        ],
+        "role": "assistant",
+        "status": "completed",
+        "type": "message",
+        "phase": null
+      }
+    ],
+    "parallel_tool_calls": true,
+    "temperature": 0,
+    "tool_choice": "none",
+    "tools": [],
+    "top_p": 1,
+    "max_output_tokens": 512,
+    "previous_response_id": null,
+    "reasoning": null,
+    "status": "completed",
+    "text": null,
+    "truncation": "disabled",
+    "usage": {
+      "input_tokens": 351,
+      "input_tokens_details": {
+        "audio_tokens": null,
+        "cached_tokens": 0,
+        "cached_tokens_details": null,
+        "image_tokens": null,
+        "text_tokens": null,
+        "video_tokens": null,
+        "cache_write_tokens": 256,
+        "input_tokens_per_turn": [],
+        "cached_tokens_per_turn": []
+      },
+      "output_tokens": 127,
+      "output_tokens_details": {
+        "audio_tokens": null,
+        "reasoning_tokens": 0,
+        "text_tokens": null,
+        "tool_output_tokens": 0,
+        "output_tokens_per_turn": [],
+        "tool_output_tokens_per_turn": []
+      },
+      "total_tokens": 478,
+      "cost": 5.923650000000001e-05
+    },
+    "user": null,
+    "store": false,
+    "background": false,
+    "max_tool_calls": null,
+    "prompt": null,
+    "service_tier": "auto",
+    "top_logprobs": null,
+    "presence_penalty": 0,
+    "frequency_penalty": 0,
+    "kv_transfer_params": null,
+    "ec_transfer_params": null,
+    "input_messages": null,
+    "output_messages": null,
+    "output_text": "```json\n{\n  \"case_id\": \"causal_1c80896a0825\",\n  \"facts\": {\n    \"price_cents\": 8500,\n    \"delivery_zone\": \"south\",\n    \"refund_fee_percent\": 0,\n    \"purchase_age_days\": 72\n  },\n  \"reason\": \"Reporting the assigned field price_cents from the registry and preserving the previously reported delivery_zone, refund_fee_percent, and purchase_age_days.\"\n}\n```"
+  },
+  "provider_response_canonical_sha256": "69f3a80689c0a3040bbaac0707e4d9238febde9859554637b29bafc364f8185b",
+  "response_at": 1794001517.669535,
+  "native_text": "```json\n{\n  \"case_id\": \"causal_1c80896a0825\",\n  \"facts\": {\n    \"price_cents\": 8500,\n    \"delivery_zone\": \"south\",\n    \"refund_fee_percent\": 0,\n    \"purchase_age_days\": 72\n  },\n  \"reason\": \"Reporting the assigned field price_cents from the registry and preserving the previously reported delivery_zone, refund_fee_percent, and purchase_age_days.\"\n}\n```",
+  "native_text_sha256": "07b64c2928a9891bca48a26d5109513f7c88d0b677adc3e56fdf520e6bf70ab6",
+  "usage": {
+    "input_tokens": 351,
+    "output_tokens": 127,
+    "cost": 5.923650000000001e-05
+  },
+  "finished_at": 1794001517.7147148
+}

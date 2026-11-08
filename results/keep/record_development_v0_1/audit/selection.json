@@ -1,0 +1,270 @@
+{
+  "seed": 20261106,
+  "scope": "Purposeful strata, one seeded selection within each; not a prevalence sample. Current development cases only.",
+  "snapshot_views": 5580,
+  "snapshot_sha256": "a3b8edf4f778603fd226bde41c553e98952e60efa55e44ba907d91f688436da8",
+  "selections": [
+    {
+      "reason": "flat_combined_protected_pair",
+      "episode_id": "flat:case_910002:combined",
+      "edges": [
+        [
+          "registry",
+          "reporter_33"
+        ],
+        [
+          "reporter_33",
+          "reviewer"
+        ]
+      ]
+    },
+    {
+      "reason": "flat_combined_two_untrusted_reports",
+      "episode_id": "flat:case_910000:combined",
+      "edges": [
+        [
+          "reporter_24",
+          "reviewer"
+        ],
+        [
+          "reporter_97",
+          "reviewer"
+        ]
+      ]
+    },
+    {
+      "reason": "sequential_full_false_source_accusation",
+      "episode_id": "sequential:case_910000:combined",
+      "edges": [
+        [
+          "registry",
+          "reporter_24"
+        ],
+        [
+          "registry",
+          "reporter_38"
+        ],
+        [
+          "registry",
+          "reporter_61"
+        ],
+        [
+          "registry",
+          "reporter_62"
+        ],
+        [
+          "registry",
+          "reporter_87"
+        ],
+        [
+          "registry",
+          "reporter_97"
+        ],
+        [
+          "reporter_24",
+          "reporter_97"
+        ],
+        [
+          "reporter_38",
+          "reporter_87"
+        ],
+        [
+          "reporter_61",
+          "reporter_24"
+        ],
+        [
+          "reporter_62",
+          "reporter_61"
+        ],
+        [
+          "reporter_87",
+          "reviewer"
+        ],
+        [
+          "reporter_97",
+          "reporter_38"
+        ],
+        [
+          "reviewer",
+          "executor"
+        ]
+      ]
+    },
+    {
+      "reason": "hierarchical_clean_false_source_accusation",
+      "episode_id": "hierarchical:case_910001:clean",
+      "edges": [
+        [
+          "coordinator_1",
+          "reviewer"
+        ],
+        [
+          "registry",
+          "reporter_29"
+        ],
+        [
+          "registry",
+          "reporter_48"
+        ],
+        [
+          "reporter_48",
+          "coordinator_1"
+        ]
+      ]
+    },
+    {
+      "reason": "terminal_schema_abstention",
+      "episode_id": "flat:case_910001:a_only",
+      "edges": [
+        [
+          "registry",
+          "reporter_51"
+        ],
+        [
+          "reporter_29",
+          "reviewer"
+        ],
+        [
+          "reporter_63",
+          "reviewer"
+        ],
+        [
+          "reporter_92",
+          "reviewer"
+        ]
+      ]
+    },
+    {
+      "reason": "single_noneligibility_field_protected_pair",
+      "episode_id": "flat:case_910000:single",
+      "edges": [
+        [
+          "registry",
+          "reporter_61"
+        ],
+        [
+          "reporter_61",
+          "reviewer"
+        ]
+      ]
+    },
+    {
+      "reason": "clean_full_context_negative",
+      "episode_id": "sequential:case_910000:clean",
+      "edges": [
+        [
+          "registry",
+          "reporter_24"
+        ],
+        [
+          "registry",
+          "reporter_38"
+        ],
+        [
+          "registry",
+          "reporter_61"
+        ],
+        [
+          "registry",
+          "reporter_62"
+        ],
+        [
+          "registry",
+          "reporter_87"
+        ],
+        [
+          "registry",
+          "reporter_97"
+        ],
+        [
+          "reporter_24",
+          "reporter_97"
+        ],
+        [
+          "reporter_38",
+          "reporter_87"
+        ],
+        [
+          "reporter_61",
+          "reporter_24"
+        ],
+        [
+          "reporter_62",
+          "reporter_61"
+        ],
+        [
+          "reporter_87",
+          "reviewer"
+        ],
+        [
+          "reporter_97",
+          "reporter_38"
+        ],
+        [
+          "reviewer",
+          "executor"
+        ]
+      ]
+    },
+    {
+      "reason": "sequential_full_source_miss",
+      "episode_id": "sequential:case_910000:combined",
+      "edges": [
+        [
+          "registry",
+          "reporter_24"
+        ],
+        [
+          "registry",
+          "reporter_38"
+        ],
+        [
+          "registry",
+          "reporter_61"
+        ],
+        [
+          "registry",
+          "reporter_62"
+        ],
+        [
+          "registry",
+          "reporter_87"
+        ],
+        [
+          "registry",
+          "reporter_97"
+        ],
+        [
+          "reporter_24",
+          "reporter_97"
+        ],
+        [
+          "reporter_38",
+          "reporter_87"
+        ],
+        [
+          "reporter_61",
+          "reporter_24"
+        ],
+        [
+          "reporter_62",
+          "reporter_61"
+        ],
+        [
+          "reporter_87",
+          "reviewer"
+        ],
+        [
+          "reporter_97",
+          "reporter_38"
+        ],
+        [
+          "reviewer",
+          "executor"
+        ]
+      ]
+    }
+  ],
+  "snapshot_bytes": 44558496,
+  "snapshot_reconstruction": "First snapshot_views complete lines of the append-only V3 views.jsonl"
+}

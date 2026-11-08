@@ -1,0 +1,22 @@
+episodes: results/mesa_pilot_adaption_mini_gemma/episodes.jsonl
+conditions:
+- clean
+- overt
+- a_only
+- b_only
+- ab
+- mismatched
+monitor:
+  provider:
+    kind: adaption
+    model: gemma-4-31b-it
+    temperature: 0.0
+    max_output_tokens: 120
+    cost:
+      allow_live: true
+      max_calls: 600
+      max_tokens: 900000
+      max_credits: 1.0
+fpr: 0.1
+out_dir: results/mesa_monitors_adaption_mini_gemma
+workers: 8

@@ -1,0 +1,6 @@
+# Monitoring stage on finished MESA pilot logs, mock monitor (deterministic, free).
+episodes: results/mesa_pilot_mock/episodes.jsonl
+conditions: [clean, overt, a_only, b_only, ab, mismatched]
+monitor: {provider: {kind: mock}}
+fpr: 0.1
+out_dir: results/mesa_monitors_mock

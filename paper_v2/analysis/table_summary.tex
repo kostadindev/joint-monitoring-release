@@ -1,0 +1,25 @@
+\begin{table}[!t]
+\centering\footnotesize
+\setlength{\tabcolsep}{2.6pt}
+\caption{\textbf{Detection by grouping rule at a fixed budget.} Graph-based grouping wins where the evidence follows the graph (aligned) and loses where it does not (shuffled). $k$ channels inspected, at most $s$ per call; $n$: tasks, violations, or false-origin opportunities across three allocation seeds (not independent episodes). Counts are detections out of $n$, percentages recall of false origins; random entries are averages; bold marks the best budgeted entry. $^{a}$All four channels report to one supervisor, so a graph rule cannot choose among pairings; the entry is their mean. $^{b}$Larger input limit. $^{c}$Any channel read alone; the attacked channel alone catches 2/20.}\label{tab:summary}
+\begin{tabular}{@{}lllllll@{}}
+\toprule
+Testbed & $k$, $s$ & $n$ & Individual ($s{=}1$) & Random grouping & Graph-based grouping & One call, all channels \\
+\midrule
+Customer service: templated rewrite & 4, 2 & 20 & 7/20$^{c}$ & \textbf{19.0/20} & \textbf{19.0/20}$^{a}$ & 20/20 \\
+Customer service: dynamic rewrite & 4, 2 & 20 & \textbf{20/20} & 18.0/20 & 18.0/20$^{a}$ & 20/20 \\
+\addlinespace[2pt]
+Constructed decomposed violations & 4, 2 & 8 & 0/8 & 2.7/8 & \textbf{8/8} & 8/8 \\
+\addlinespace[2pt]
+13-channel workflow: aligned & 7, 2 & 72 & 0.0\% & 6.7\% & \textbf{47.2\%} & 75.0\%$^{b}$ \\
+13-channel workflow: shuffled & 7, 2 & 72 & 0.0\% & \textbf{9.7\%} & 1.4\% & 79.2\%$^{b}$ \\
+\quad worst case of the two & 7, 2 & 72 & 0.0\% & \textbf{6.7\%} & 1.4\% & 75.0\%$^{b}$ \\
+\quad best fixed combination, worst case & 7, 2 & 72 & \multicolumn{3}{c}{8.3\%} & \\
+\quad fitted mixture, expected worst case & 7, 2 & 72 & \multicolumn{3}{c}{13.7\%} & \\
+\addlinespace[2pt]
+Workflow shape: flat & 7, 2 & 24 & 0.0\% & 22.0\% & \textbf{45.8\%} & 100.0\% \\
+Workflow shape: fork/join & 7, 2 & 24 & 0.0\% & 17.9\% & \textbf{100.0\%} & 100.0\% \\
+Workflow shape: sequential & 7, 2 & 24 & 0.0\% & 8.9\% & \textbf{37.5\%} & 100.0\% \\
+\bottomrule
+\end{tabular}
+\end{table}

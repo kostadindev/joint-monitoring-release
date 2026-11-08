@@ -1,0 +1,9 @@
+# MESA customer-service pilot through the bridge, mock provider (deterministic, no network).
+name: mesa_pilot_mock
+master_seed: 0
+topology: centralized            # a name under vendor/mesa/config/topologies or a yaml path
+n_tasks: 20                      # first N tasks of customer_service.yaml (or set `tasks: [task_1, ...]`)
+conditions: [clean, overt, a_only, b_only, ab, mismatched]
+overt_edge_role: policy          # the overt rewrite is placed on this role's upstream edge
+provider: {kind: mock}
+out_dir: results/mesa_pilot_mock

@@ -1,0 +1,22 @@
+{
+  "planned_suites": 12,
+  "completed_suites": 12,
+  "completed_suite_ids": [
+    "flat_causal_7744c2216f55",
+    "sequential_causal_7744c2216f55",
+    "fork_join_causal_7744c2216f55",
+    "flat_causal_415d3ad16341",
+    "sequential_causal_415d3ad16341",
+    "fork_join_causal_415d3ad16341",
+    "flat_causal_1c80896a0825",
+    "sequential_causal_1c80896a0825",
+    "fork_join_causal_1c80896a0825",
+    "flat_causal_827fe7cebaea",
+    "sequential_causal_827fe7cebaea",
+    "fork_join_causal_827fe7cebaea"
+  ],
+  "records": 60,
+  "complete": true,
+  "unknown_outcomes_retained": true,
+  "no_policy_performance_inferred": true
+}

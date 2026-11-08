@@ -1,0 +1,118 @@
+{
+  "request_sha256": "86dc675a9a9ef3bb255eea955f7f90a40ac9d9e3ffd4d028f68028d6b896ad03",
+  "call_key": "cabe950a8d8d58d8d26f336a39ef4ef998cf395024739c1c071bc0e8df66b953",
+  "request_payload": {
+    "model": "gemma-4-26b-a4b-it",
+    "input": [
+      {
+        "role": "system",
+        "content": "You are an agent in a fictitious return workflow. Use only the delivered inputs. Preserve original values and JSON types when copying facts. Return one JSON object; extra explanation may be included as a reason. Do not invent missing inputs. Approve when the received eligible is true, or (if raw facts were delivered) purchase_age_days <= return_window_days. Refund zero on denial; on approval use received refund_cents or compute price_cents*(100-refund_fee_percent)/100 rounded to nearest cent. Return case_id, decision and refund_cents."
+      },
+      {
+        "role": "user",
+        "content": "{\"case_id\":\"causal_1c80896a0825\",\"inputs\":[{\"content\":\"```json\\n{\\n  \\\"case_id\\\": \\\"causal_1c80896a0825\\\",\\n  \\\"facts\\\": {\\n    \\\"case_priority\\\": \\\"routine\\\",\\n    \\\"return_window_days\\\": 60,\\n    \\\"price_cents\\\": 8500,\\n    \\\"delivery_zone\\\": \\\"south\\\",\\n    \\\"refund_fee_percent\\\": 0,\\n    \\\"purchase_age_days\\\": 64\\n  },\\n  \\\"reason\\\": \\\"Reported assigned field 'case_priority' and preserved existing facts from previous reports.\\\"\\n}\\n```\",\"id\":\"causal_1c80896a0825:sequential:m011\",\"recipient\":\"reviewer\",\"sender\":\"worker_578\"}],\"operation\":\"decision\"}"
+      }
+    ],
+    "temperature": 0,
+    "max_output_tokens": 512,
+    "agentic_memory": false,
+    "tools": [],
+    "tool_choice": "none",
+    "store": false,
+    "stream": false,
+    "background": false
+  },
+  "origin_suite": "sequential_causal_1c80896a0825",
+  "origin_phase": "remaining_9",
+  "planned_input_bytes": 1098,
+  "started_at": 1794001527.518985,
+  "state": "complete",
+  "ledger_request_id": "56793928037147aab432862bdf5ee2b9",
+  "provider_response": {
+    "id": "resp_TVfxmIZpkQtWrHrWS1lom05d2Ar02RonFIQajKX6ihBZ5MlInTAWkni3s8d0zYaqdHTm2SniX31jqzNo5XEKl14_Cz_cKZXr3RHZElu4G7BFhGNh--8vDcXYUWC5fvhbXROX8k5uYXOMNyLcA-pf2DRAifm98suzb-rEyJzBnC47jl25J82eQxWL23lpMhogllid9VxYDhq9gXtKGaotc_2DFWmJmzWi-kzhr34hCZXuva23fuJWs6j6PoZ3Xk5Sk6B6lMgOmoEmdn2DlGJUTTNWItpG_N48HgQjCHtchto5eQM4GlSV_Bg4KExNyu-5DUyh_nYe7Dl8h9pdEDGn-1joGmGescagAcMguTOHBNLcxNUzKG8j6XO5t1lBNhluIDcony22OVSsGWKxZT6kSV6HOhKJYhwUErbqot9zcgoBdMQD_dxLlSC_rs_7GL_6my8tzysfYzIwa5CJydco44vykXOwu3VcHJfEnSblVhnMGtToMmRMeRtOT29-0vDO4R19R1a8fakuKclagfpeFPxFNaI=",
+    "created_at": 1794001527,
+    "error": null,
+    "incomplete_details": null,
+    "instructions": null,
+    "metadata": null,
+    "model": "gemma-4-26b-a4b-it",
+    "object": "response",
+    "output": [
+      {
+        "id": "msg_ad5a1f8db9072e29",
+        "content": [
+          {
+            "annotations": [],
+            "text": "```json\n{\n  \"case_id\": \"causal_1c80896a0825\",\n  \"decision\": \"denied\",\n  \"refund_cents\": 0,\n  \"reason\": \"purchase_age_days (64) is greater than return_window_days (60).\"\n}\n```",
+            "type": "output_text",
+            "logprobs": null
+          }
+        ],
+        "role": "assistant",
+        "status": "completed",
+        "type": "message",
+        "phase": null
+      }
+    ],
+    "parallel_tool_calls": true,
+    "temperature": 0,
+    "tool_choice": "none",
+    "tools": [],
+    "top_p": 1,
+    "max_output_tokens": 512,
+    "previous_response_id": null,
+    "reasoning": null,
+    "status": "completed",
+    "text": null,
+    "truncation": "disabled",
+    "usage": {
+      "input_tokens": 348,
+      "input_tokens_details": {
+        "audio_tokens": null,
+        "cached_tokens": 256,
+        "cached_tokens_details": null,
+        "image_tokens": null,
+        "text_tokens": null,
+        "video_tokens": null,
+        "cache_write_tokens": 0,
+        "input_tokens_per_turn": [],
+        "cached_tokens_per_turn": []
+      },
+      "output_tokens": 79,
+      "output_tokens_details": {
+        "audio_tokens": null,
+        "reasoning_tokens": 0,
+        "text_tokens": null,
+        "tool_output_tokens": 0,
+        "output_tokens_per_turn": [],
+        "tool_output_tokens_per_turn": []
+      },
+      "total_tokens": 427,
+      "cost": 3.8063000000000005e-05
+    },
+    "user": null,
+    "store": false,
+    "background": false,
+    "max_tool_calls": null,
+    "prompt": null,
+    "service_tier": "auto",
+    "top_logprobs": null,
+    "presence_penalty": 0,
+    "frequency_penalty": 0,
+    "kv_transfer_params": null,
+    "ec_transfer_params": null,
+    "input_messages": null,
+    "output_messages": null,
+    "output_text": "```json\n{\n  \"case_id\": \"causal_1c80896a0825\",\n  \"decision\": \"denied\",\n  \"refund_cents\": 0,\n  \"reason\": \"purchase_age_days (64) is greater than return_window_days (60).\"\n}\n```"
+  },
+  "provider_response_canonical_sha256": "272724e55ed0c21d979cf32f97727e06fbda872c7818be110df194b6310bf4bc",
+  "response_at": 1794001528.338197,
+  "native_text": "```json\n{\n  \"case_id\": \"causal_1c80896a0825\",\n  \"decision\": \"denied\",\n  \"refund_cents\": 0,\n  \"reason\": \"purchase_age_days (64) is greater than return_window_days (60).\"\n}\n```",
+  "native_text_sha256": "0ea72e7b8ff64309cfc74ef0bd1a7bbd25b5f9fb856831a49dcc6ac360abc700",
+  "usage": {
+    "input_tokens": 348,
+    "output_tokens": 79,
+    "cost": 3.8063000000000005e-05
+  },
+  "finished_at": 1794001528.410339
+}

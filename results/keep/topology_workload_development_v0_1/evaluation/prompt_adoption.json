@@ -1,0 +1,200 @@
+{
+  "scope": "Post-launch pre-unblinding development adoption rule, not confirmatory evidence.",
+  "subsets": {
+    "clean_incomplete": {
+      "per_case": [
+        {
+          "case_id": "case_0d209d45703c",
+          "original_flag": 0.0,
+          "clarified_flag": 0.0,
+          "original_abstention": 0.0,
+          "clarified_abstention": 0.0
+        },
+        {
+          "case_id": "case_3008cdf5ca04",
+          "original_flag": 0.0,
+          "clarified_flag": 0.0,
+          "original_abstention": 0.0,
+          "clarified_abstention": 0.0
+        },
+        {
+          "case_id": "case_3804521f2683",
+          "original_flag": 0.0,
+          "clarified_flag": 0.0,
+          "original_abstention": 0.0,
+          "clarified_abstention": 0.0
+        },
+        {
+          "case_id": "case_460e8c47f251",
+          "original_flag": 0.0,
+          "clarified_flag": 0.0,
+          "original_abstention": 0.0,
+          "clarified_abstention": 0.0
+        },
+        {
+          "case_id": "case_77709e155d1c",
+          "original_flag": 0.0,
+          "clarified_flag": 0.0,
+          "original_abstention": 0.0,
+          "clarified_abstention": 0.0
+        },
+        {
+          "case_id": "case_87f62924a195",
+          "original_flag": 0.0,
+          "clarified_flag": 0.0,
+          "original_abstention": 0.0,
+          "clarified_abstention": 0.0
+        },
+        {
+          "case_id": "case_923088667683",
+          "original_flag": 0.0,
+          "clarified_flag": 0.0,
+          "original_abstention": 0.0,
+          "clarified_abstention": 0.0
+        },
+        {
+          "case_id": "case_a59f3b86a566",
+          "original_flag": 0.0,
+          "clarified_flag": 0.0,
+          "original_abstention": 0.0,
+          "clarified_abstention": 0.0
+        },
+        {
+          "case_id": "case_b63ed8a6114c",
+          "original_flag": 0.0,
+          "clarified_flag": 0.0,
+          "original_abstention": 0.0,
+          "clarified_abstention": 0.0
+        },
+        {
+          "case_id": "case_c364e87112d0",
+          "original_flag": 0.0,
+          "clarified_flag": 0.0,
+          "original_abstention": 0.0,
+          "clarified_abstention": 0.0
+        },
+        {
+          "case_id": "case_f462cb46fda8",
+          "original_flag": 0.0,
+          "clarified_flag": 0.0,
+          "original_abstention": 0.0,
+          "clarified_abstention": 0.0
+        },
+        {
+          "case_id": "case_f5ac60a58c27",
+          "original_flag": 0.0,
+          "clarified_flag": 0.0,
+          "original_abstention": 0.0,
+          "clarified_abstention": 0.0
+        }
+      ],
+      "original_flag": 0.0,
+      "clarified_flag": 0.0,
+      "original_abstention": 0.0,
+      "clarified_abstention": 0.0
+    },
+    "contradictory_reference": {
+      "per_case": [
+        {
+          "case_id": "case_0d209d45703c",
+          "original_flag": 1.0,
+          "clarified_flag": 1.0,
+          "original_abstention": 0.0,
+          "clarified_abstention": 0.0
+        },
+        {
+          "case_id": "case_3008cdf5ca04",
+          "original_flag": 1.0,
+          "clarified_flag": 1.0,
+          "original_abstention": 0.0,
+          "clarified_abstention": 0.0
+        },
+        {
+          "case_id": "case_3804521f2683",
+          "original_flag": 1.0,
+          "clarified_flag": 1.0,
+          "original_abstention": 0.0,
+          "clarified_abstention": 0.0
+        },
+        {
+          "case_id": "case_460e8c47f251",
+          "original_flag": 1.0,
+          "clarified_flag": 1.0,
+          "original_abstention": 0.0,
+          "clarified_abstention": 0.0
+        },
+        {
+          "case_id": "case_77709e155d1c",
+          "original_flag": 1.0,
+          "clarified_flag": 1.0,
+          "original_abstention": 0.0,
+          "clarified_abstention": 0.0
+        },
+        {
+          "case_id": "case_87f62924a195",
+          "original_flag": 1.0,
+          "clarified_flag": 1.0,
+          "original_abstention": 0.0,
+          "clarified_abstention": 0.0
+        },
+        {
+          "case_id": "case_923088667683",
+          "original_flag": 1.0,
+          "clarified_flag": 1.0,
+          "original_abstention": 0.0,
+          "clarified_abstention": 0.0
+        },
+        {
+          "case_id": "case_a59f3b86a566",
+          "original_flag": 1.0,
+          "clarified_flag": 1.0,
+          "original_abstention": 0.0,
+          "clarified_abstention": 0.0
+        },
+        {
+          "case_id": "case_b63ed8a6114c",
+          "original_flag": 1.0,
+          "clarified_flag": 1.0,
+          "original_abstention": 0.0,
+          "clarified_abstention": 0.0
+        },
+        {
+          "case_id": "case_c364e87112d0",
+          "original_flag": 1.0,
+          "clarified_flag": 1.0,
+          "original_abstention": 0.0,
+          "clarified_abstention": 0.0
+        },
+        {
+          "case_id": "case_f462cb46fda8",
+          "original_flag": 1.0,
+          "clarified_flag": 1.0,
+          "original_abstention": 0.0,
+          "clarified_abstention": 0.0
+        },
+        {
+          "case_id": "case_f5ac60a58c27",
+          "original_flag": 1.0,
+          "clarified_flag": 1.0,
+          "original_abstention": 0.0,
+          "clarified_abstention": 0.0
+        }
+      ],
+      "original_flag": 1.0,
+      "clarified_flag": 1.0,
+      "original_abstention": 0.0,
+      "clarified_abstention": 0.0
+    }
+  },
+  "gates": {
+    "false_flag_reduction": false,
+    "retained_detection": true,
+    "abstention_increase": true,
+    "worst_case_benefit_direction": false,
+    "worst_case_detection_retention": true
+  },
+  "improved_cases": 0,
+  "decision": "retain_original_primary",
+  "point_false_flag_reduction": 0.0,
+  "point_detection_delta": 0.0
+}

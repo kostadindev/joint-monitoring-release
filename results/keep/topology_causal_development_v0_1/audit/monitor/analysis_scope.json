@@ -1,0 +1,8 @@
+{
+  "scope": "Development positive control; four task clusters, paired topologies/conditions/seeds; observational twins are not independent.",
+  "complete_feasible_view_coverage": true,
+  "rows": 2220,
+  "unknown_sources_retained": true,
+  "infeasible_assignments": 0,
+  "recovery_unit": "Certified false-origin directed channels; does not identify malicious intent."
+}

@@ -1,0 +1,40 @@
+# Environment and caches
+.env
+.venv/
+__pycache__/
+*.pyc
+.pytest_cache/
+*.egg-info/
+.DS_Store
+.claude/
+
+# Run outputs are ignored, except the released data the paper uses
+results/*
+!results/keep/
+!results/situations_smoke/
+!results/mesa_pairings_all20/
+!results/mesa_pilot_followup_gemma/
+
+# MESA's code is not redistributed (no licence); see vendor/README.md
+vendor/mesa/
+
+# Intermediate files that paper_apart/build.py regenerates from paper_v2/report.md
+paper_apart/abstract.*
+paper_apart/body.*
+paper_apart/appendix.*
+
+# Preview images the figure scripts write next to each PDF
+paper_v2/figures/*.png
+
+# Swarm testbed: model-response caches and raw run folders (summaries are tracked)
+swarm/out/llm_cache/
+swarm/out/llm_pilot*/
+swarm/out/llm_v3/
+swarm/out/llm_v4/
+swarm/out/llm_v5/
+swarm/out/llm_v6/
+swarm/out/llm_v7/
+swarm/out/llm_main/
+swarm/out/eval_proxy_v2*.json
+swarm/out/eval_main_proxy*.json
+swarm/out/eval_main_llm.json

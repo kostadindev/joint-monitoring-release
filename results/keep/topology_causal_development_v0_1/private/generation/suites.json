@@ -1,0 +1,1302 @@
+[
+  {
+    "suite_id": "flat_causal_7744c2216f55",
+    "case_id": "causal_7744c2216f55",
+    "task_sha256": "113b0c2658c96a37f31a5e6665824b4be209ae0df4689288359c4c3f77e27660",
+    "topology": "flat",
+    "graph": {
+      "nodes": [
+        "executor",
+        "registry",
+        "reviewer",
+        "worker_126",
+        "worker_208",
+        "worker_219",
+        "worker_464",
+        "worker_482",
+        "worker_752"
+      ],
+      "edges": [
+        [
+          "registry",
+          "worker_219"
+        ],
+        [
+          "registry",
+          "worker_482"
+        ],
+        [
+          "registry",
+          "worker_752"
+        ],
+        [
+          "registry",
+          "worker_208"
+        ],
+        [
+          "registry",
+          "worker_126"
+        ],
+        [
+          "registry",
+          "worker_464"
+        ],
+        [
+          "worker_219",
+          "reviewer"
+        ],
+        [
+          "worker_482",
+          "reviewer"
+        ],
+        [
+          "worker_752",
+          "reviewer"
+        ],
+        [
+          "worker_208",
+          "reviewer"
+        ],
+        [
+          "worker_126",
+          "reviewer"
+        ],
+        [
+          "worker_464",
+          "reviewer"
+        ],
+        [
+          "reviewer",
+          "executor"
+        ]
+      ],
+      "roles": {
+        "worker_219": "report purchase_age_days",
+        "worker_482": "report return_window_days",
+        "worker_752": "report price_cents",
+        "worker_208": "report refund_fee_percent",
+        "worker_126": "report delivery_zone",
+        "worker_464": "report case_priority",
+        "registry": "protected task records",
+        "reviewer": "final decision",
+        "executor": "simulated action"
+      },
+      "sink": "executor"
+    },
+    "conditions": [
+      "clean",
+      "a_only",
+      "b_only",
+      "combined",
+      "honest_error_combined"
+    ],
+    "planned_record_ids": [
+      "causal:flat:causal_7744c2216f55:clean",
+      "causal:flat:causal_7744c2216f55:a_only",
+      "causal:flat:causal_7744c2216f55:b_only",
+      "causal:flat:causal_7744c2216f55:combined",
+      "causal:flat:causal_7744c2216f55:honest_error_combined"
+    ],
+    "maximum_native_requests_before_exact_reuse": 28,
+    "outcomes": "unknown until native execution; no compliance or activation promised"
+  },
+  {
+    "suite_id": "sequential_causal_7744c2216f55",
+    "case_id": "causal_7744c2216f55",
+    "task_sha256": "113b0c2658c96a37f31a5e6665824b4be209ae0df4689288359c4c3f77e27660",
+    "topology": "sequential",
+    "graph": {
+      "nodes": [
+        "executor",
+        "registry",
+        "reviewer",
+        "worker_126",
+        "worker_208",
+        "worker_219",
+        "worker_464",
+        "worker_482",
+        "worker_752"
+      ],
+      "edges": [
+        [
+          "registry",
+          "worker_219"
+        ],
+        [
+          "registry",
+          "worker_482"
+        ],
+        [
+          "registry",
+          "worker_752"
+        ],
+        [
+          "registry",
+          "worker_208"
+        ],
+        [
+          "registry",
+          "worker_126"
+        ],
+        [
+          "registry",
+          "worker_464"
+        ],
+        [
+          "worker_219",
+          "worker_482"
+        ],
+        [
+          "worker_482",
+          "reviewer"
+        ],
+        [
+          "worker_752",
+          "worker_208"
+        ],
+        [
+          "worker_208",
+          "worker_219"
+        ],
+        [
+          "worker_126",
+          "worker_464"
+        ],
+        [
+          "worker_464",
+          "worker_752"
+        ],
+        [
+          "reviewer",
+          "executor"
+        ]
+      ],
+      "roles": {
+        "worker_219": "report purchase_age_days",
+        "worker_482": "report return_window_days",
+        "worker_752": "report price_cents",
+        "worker_208": "report refund_fee_percent",
+        "worker_126": "report delivery_zone",
+        "worker_464": "report case_priority",
+        "registry": "protected task records",
+        "reviewer": "final decision",
+        "executor": "simulated action"
+      },
+      "sink": "executor"
+    },
+    "conditions": [
+      "clean",
+      "a_only",
+      "b_only",
+      "combined",
+      "honest_error_combined"
+    ],
+    "planned_record_ids": [
+      "causal:sequential:causal_7744c2216f55:clean",
+      "causal:sequential:causal_7744c2216f55:a_only",
+      "causal:sequential:causal_7744c2216f55:b_only",
+      "causal:sequential:causal_7744c2216f55:combined",
+      "causal:sequential:causal_7744c2216f55:honest_error_combined"
+    ],
+    "maximum_native_requests_before_exact_reuse": 28,
+    "outcomes": "unknown until native execution; no compliance or activation promised"
+  },
+  {
+    "suite_id": "fork_join_causal_7744c2216f55",
+    "case_id": "causal_7744c2216f55",
+    "task_sha256": "113b0c2658c96a37f31a5e6665824b4be209ae0df4689288359c4c3f77e27660",
+    "topology": "fork_join",
+    "graph": {
+      "nodes": [
+        "eligibility",
+        "executor",
+        "refund",
+        "registry",
+        "reviewer",
+        "routing",
+        "worker_126",
+        "worker_208",
+        "worker_219",
+        "worker_464",
+        "worker_482",
+        "worker_752"
+      ],
+      "edges": [
+        [
+          "registry",
+          "worker_219"
+        ],
+        [
+          "registry",
+          "worker_482"
+        ],
+        [
+          "registry",
+          "worker_752"
+        ],
+        [
+          "registry",
+          "worker_208"
+        ],
+        [
+          "registry",
+          "worker_126"
+        ],
+        [
+          "registry",
+          "worker_464"
+        ],
+        [
+          "worker_219",
+          "eligibility"
+        ],
+        [
+          "worker_482",
+          "eligibility"
+        ],
+        [
+          "worker_752",
+          "refund"
+        ],
+        [
+          "worker_208",
+          "refund"
+        ],
+        [
+          "worker_126",
+          "routing"
+        ],
+        [
+          "worker_464",
+          "routing"
+        ],
+        [
+          "eligibility",
+          "refund"
+        ],
+        [
+          "eligibility",
+          "reviewer"
+        ],
+        [
+          "refund",
+          "reviewer"
+        ],
+        [
+          "routing",
+          "reviewer"
+        ],
+        [
+          "reviewer",
+          "executor"
+        ]
+      ],
+      "roles": {
+        "worker_219": "report purchase_age_days",
+        "worker_482": "report return_window_days",
+        "worker_752": "report price_cents",
+        "worker_208": "report refund_fee_percent",
+        "worker_126": "report delivery_zone",
+        "worker_464": "report case_priority",
+        "registry": "protected task records",
+        "reviewer": "final decision",
+        "executor": "simulated action",
+        "eligibility": "derive eligibility",
+        "refund": "derive refund",
+        "routing": "record administrative facts"
+      },
+      "sink": "executor"
+    },
+    "conditions": [
+      "clean",
+      "a_only",
+      "b_only",
+      "combined",
+      "honest_error_combined"
+    ],
+    "planned_record_ids": [
+      "causal:fork_join:causal_7744c2216f55:clean",
+      "causal:fork_join:causal_7744c2216f55:a_only",
+      "causal:fork_join:causal_7744c2216f55:b_only",
+      "causal:fork_join:causal_7744c2216f55:combined",
+      "causal:fork_join:causal_7744c2216f55:honest_error_combined"
+    ],
+    "maximum_native_requests_before_exact_reuse": 40,
+    "outcomes": "unknown until native execution; no compliance or activation promised"
+  },
+  {
+    "suite_id": "flat_causal_415d3ad16341",
+    "case_id": "causal_415d3ad16341",
+    "task_sha256": "1b3325884cad5869d2f6f2b239b63a70c2d28cd601fec9d87f53d73456e083b2",
+    "topology": "flat",
+    "graph": {
+      "nodes": [
+        "executor",
+        "registry",
+        "reviewer",
+        "worker_376",
+        "worker_580",
+        "worker_620",
+        "worker_771",
+        "worker_801",
+        "worker_979"
+      ],
+      "edges": [
+        [
+          "registry",
+          "worker_580"
+        ],
+        [
+          "registry",
+          "worker_620"
+        ],
+        [
+          "registry",
+          "worker_376"
+        ],
+        [
+          "registry",
+          "worker_771"
+        ],
+        [
+          "registry",
+          "worker_979"
+        ],
+        [
+          "registry",
+          "worker_801"
+        ],
+        [
+          "worker_580",
+          "reviewer"
+        ],
+        [
+          "worker_620",
+          "reviewer"
+        ],
+        [
+          "worker_376",
+          "reviewer"
+        ],
+        [
+          "worker_771",
+          "reviewer"
+        ],
+        [
+          "worker_979",
+          "reviewer"
+        ],
+        [
+          "worker_801",
+          "reviewer"
+        ],
+        [
+          "reviewer",
+          "executor"
+        ]
+      ],
+      "roles": {
+        "worker_580": "report purchase_age_days",
+        "worker_620": "report return_window_days",
+        "worker_376": "report price_cents",
+        "worker_771": "report refund_fee_percent",
+        "worker_979": "report delivery_zone",
+        "worker_801": "report case_priority",
+        "registry": "protected task records",
+        "reviewer": "final decision",
+        "executor": "simulated action"
+      },
+      "sink": "executor"
+    },
+    "conditions": [
+      "clean",
+      "a_only",
+      "b_only",
+      "combined",
+      "honest_error_combined"
+    ],
+    "planned_record_ids": [
+      "causal:flat:causal_415d3ad16341:clean",
+      "causal:flat:causal_415d3ad16341:a_only",
+      "causal:flat:causal_415d3ad16341:b_only",
+      "causal:flat:causal_415d3ad16341:combined",
+      "causal:flat:causal_415d3ad16341:honest_error_combined"
+    ],
+    "maximum_native_requests_before_exact_reuse": 28,
+    "outcomes": "unknown until native execution; no compliance or activation promised"
+  },
+  {
+    "suite_id": "sequential_causal_415d3ad16341",
+    "case_id": "causal_415d3ad16341",
+    "task_sha256": "1b3325884cad5869d2f6f2b239b63a70c2d28cd601fec9d87f53d73456e083b2",
+    "topology": "sequential",
+    "graph": {
+      "nodes": [
+        "executor",
+        "registry",
+        "reviewer",
+        "worker_376",
+        "worker_580",
+        "worker_620",
+        "worker_771",
+        "worker_801",
+        "worker_979"
+      ],
+      "edges": [
+        [
+          "registry",
+          "worker_580"
+        ],
+        [
+          "registry",
+          "worker_620"
+        ],
+        [
+          "registry",
+          "worker_376"
+        ],
+        [
+          "registry",
+          "worker_771"
+        ],
+        [
+          "registry",
+          "worker_979"
+        ],
+        [
+          "registry",
+          "worker_801"
+        ],
+        [
+          "worker_580",
+          "reviewer"
+        ],
+        [
+          "worker_620",
+          "worker_801"
+        ],
+        [
+          "worker_376",
+          "worker_620"
+        ],
+        [
+          "worker_771",
+          "worker_979"
+        ],
+        [
+          "worker_979",
+          "worker_376"
+        ],
+        [
+          "worker_801",
+          "worker_580"
+        ],
+        [
+          "reviewer",
+          "executor"
+        ]
+      ],
+      "roles": {
+        "worker_580": "report purchase_age_days",
+        "worker_620": "report return_window_days",
+        "worker_376": "report price_cents",
+        "worker_771": "report refund_fee_percent",
+        "worker_979": "report delivery_zone",
+        "worker_801": "report case_priority",
+        "registry": "protected task records",
+        "reviewer": "final decision",
+        "executor": "simulated action"
+      },
+      "sink": "executor"
+    },
+    "conditions": [
+      "clean",
+      "a_only",
+      "b_only",
+      "combined",
+      "honest_error_combined"
+    ],
+    "planned_record_ids": [
+      "causal:sequential:causal_415d3ad16341:clean",
+      "causal:sequential:causal_415d3ad16341:a_only",
+      "causal:sequential:causal_415d3ad16341:b_only",
+      "causal:sequential:causal_415d3ad16341:combined",
+      "causal:sequential:causal_415d3ad16341:honest_error_combined"
+    ],
+    "maximum_native_requests_before_exact_reuse": 28,
+    "outcomes": "unknown until native execution; no compliance or activation promised"
+  },
+  {
+    "suite_id": "fork_join_causal_415d3ad16341",
+    "case_id": "causal_415d3ad16341",
+    "task_sha256": "1b3325884cad5869d2f6f2b239b63a70c2d28cd601fec9d87f53d73456e083b2",
+    "topology": "fork_join",
+    "graph": {
+      "nodes": [
+        "eligibility",
+        "executor",
+        "refund",
+        "registry",
+        "reviewer",
+        "routing",
+        "worker_376",
+        "worker_580",
+        "worker_620",
+        "worker_771",
+        "worker_801",
+        "worker_979"
+      ],
+      "edges": [
+        [
+          "registry",
+          "worker_580"
+        ],
+        [
+          "registry",
+          "worker_620"
+        ],
+        [
+          "registry",
+          "worker_376"
+        ],
+        [
+          "registry",
+          "worker_771"
+        ],
+        [
+          "registry",
+          "worker_979"
+        ],
+        [
+          "registry",
+          "worker_801"
+        ],
+        [
+          "worker_580",
+          "eligibility"
+        ],
+        [
+          "worker_620",
+          "eligibility"
+        ],
+        [
+          "worker_376",
+          "refund"
+        ],
+        [
+          "worker_771",
+          "refund"
+        ],
+        [
+          "worker_979",
+          "routing"
+        ],
+        [
+          "worker_801",
+          "routing"
+        ],
+        [
+          "eligibility",
+          "refund"
+        ],
+        [
+          "eligibility",
+          "reviewer"
+        ],
+        [
+          "refund",
+          "reviewer"
+        ],
+        [
+          "routing",
+          "reviewer"
+        ],
+        [
+          "reviewer",
+          "executor"
+        ]
+      ],
+      "roles": {
+        "worker_580": "report purchase_age_days",
+        "worker_620": "report return_window_days",
+        "worker_376": "report price_cents",
+        "worker_771": "report refund_fee_percent",
+        "worker_979": "report delivery_zone",
+        "worker_801": "report case_priority",
+        "registry": "protected task records",
+        "reviewer": "final decision",
+        "executor": "simulated action",
+        "eligibility": "derive eligibility",
+        "refund": "derive refund",
+        "routing": "record administrative facts"
+      },
+      "sink": "executor"
+    },
+    "conditions": [
+      "clean",
+      "a_only",
+      "b_only",
+      "combined",
+      "honest_error_combined"
+    ],
+    "planned_record_ids": [
+      "causal:fork_join:causal_415d3ad16341:clean",
+      "causal:fork_join:causal_415d3ad16341:a_only",
+      "causal:fork_join:causal_415d3ad16341:b_only",
+      "causal:fork_join:causal_415d3ad16341:combined",
+      "causal:fork_join:causal_415d3ad16341:honest_error_combined"
+    ],
+    "maximum_native_requests_before_exact_reuse": 40,
+    "outcomes": "unknown until native execution; no compliance or activation promised"
+  },
+  {
+    "suite_id": "flat_causal_1c80896a0825",
+    "case_id": "causal_1c80896a0825",
+    "task_sha256": "650656238fa891044140d4264a34e29402edd1df5decd5951bdb15d72e847444",
+    "topology": "flat",
+    "graph": {
+      "nodes": [
+        "executor",
+        "registry",
+        "reviewer",
+        "worker_468",
+        "worker_578",
+        "worker_584",
+        "worker_604",
+        "worker_606",
+        "worker_813"
+      ],
+      "edges": [
+        [
+          "registry",
+          "worker_813"
+        ],
+        [
+          "registry",
+          "worker_584"
+        ],
+        [
+          "registry",
+          "worker_604"
+        ],
+        [
+          "registry",
+          "worker_468"
+        ],
+        [
+          "registry",
+          "worker_606"
+        ],
+        [
+          "registry",
+          "worker_578"
+        ],
+        [
+          "worker_813",
+          "reviewer"
+        ],
+        [
+          "worker_584",
+          "reviewer"
+        ],
+        [
+          "worker_604",
+          "reviewer"
+        ],
+        [
+          "worker_468",
+          "reviewer"
+        ],
+        [
+          "worker_606",
+          "reviewer"
+        ],
+        [
+          "worker_578",
+          "reviewer"
+        ],
+        [
+          "reviewer",
+          "executor"
+        ]
+      ],
+      "roles": {
+        "worker_813": "report purchase_age_days",
+        "worker_584": "report return_window_days",
+        "worker_604": "report price_cents",
+        "worker_468": "report refund_fee_percent",
+        "worker_606": "report delivery_zone",
+        "worker_578": "report case_priority",
+        "registry": "protected task records",
+        "reviewer": "final decision",
+        "executor": "simulated action"
+      },
+      "sink": "executor"
+    },
+    "conditions": [
+      "clean",
+      "a_only",
+      "b_only",
+      "combined",
+      "honest_error_combined"
+    ],
+    "planned_record_ids": [
+      "causal:flat:causal_1c80896a0825:clean",
+      "causal:flat:causal_1c80896a0825:a_only",
+      "causal:flat:causal_1c80896a0825:b_only",
+      "causal:flat:causal_1c80896a0825:combined",
+      "causal:flat:causal_1c80896a0825:honest_error_combined"
+    ],
+    "maximum_native_requests_before_exact_reuse": 28,
+    "outcomes": "unknown until native execution; no compliance or activation promised"
+  },
+  {
+    "suite_id": "sequential_causal_1c80896a0825",
+    "case_id": "causal_1c80896a0825",
+    "task_sha256": "650656238fa891044140d4264a34e29402edd1df5decd5951bdb15d72e847444",
+    "topology": "sequential",
+    "graph": {
+      "nodes": [
+        "executor",
+        "registry",
+        "reviewer",
+        "worker_468",
+        "worker_578",
+        "worker_584",
+        "worker_604",
+        "worker_606",
+        "worker_813"
+      ],
+      "edges": [
+        [
+          "registry",
+          "worker_813"
+        ],
+        [
+          "registry",
+          "worker_584"
+        ],
+        [
+          "registry",
+          "worker_604"
+        ],
+        [
+          "registry",
+          "worker_468"
+        ],
+        [
+          "registry",
+          "worker_606"
+        ],
+        [
+          "registry",
+          "worker_578"
+        ],
+        [
+          "worker_813",
+          "worker_468"
+        ],
+        [
+          "worker_584",
+          "worker_578"
+        ],
+        [
+          "worker_604",
+          "worker_584"
+        ],
+        [
+          "worker_468",
+          "worker_606"
+        ],
+        [
+          "worker_606",
+          "worker_604"
+        ],
+        [
+          "worker_578",
+          "reviewer"
+        ],
+        [
+          "reviewer",
+          "executor"
+        ]
+      ],
+      "roles": {
+        "worker_813": "report purchase_age_days",
+        "worker_584": "report return_window_days",
+        "worker_604": "report price_cents",
+        "worker_468": "report refund_fee_percent",
+        "worker_606": "report delivery_zone",
+        "worker_578": "report case_priority",
+        "registry": "protected task records",
+        "reviewer": "final decision",
+        "executor": "simulated action"
+      },
+      "sink": "executor"
+    },
+    "conditions": [
+      "clean",
+      "a_only",
+      "b_only",
+      "combined",
+      "honest_error_combined"
+    ],
+    "planned_record_ids": [
+      "causal:sequential:causal_1c80896a0825:clean",
+      "causal:sequential:causal_1c80896a0825:a_only",
+      "causal:sequential:causal_1c80896a0825:b_only",
+      "causal:sequential:causal_1c80896a0825:combined",
+      "causal:sequential:causal_1c80896a0825:honest_error_combined"
+    ],
+    "maximum_native_requests_before_exact_reuse": 28,
+    "outcomes": "unknown until native execution; no compliance or activation promised"
+  },
+  {
+    "suite_id": "fork_join_causal_1c80896a0825",
+    "case_id": "causal_1c80896a0825",
+    "task_sha256": "650656238fa891044140d4264a34e29402edd1df5decd5951bdb15d72e847444",
+    "topology": "fork_join",
+    "graph": {
+      "nodes": [
+        "eligibility",
+        "executor",
+        "refund",
+        "registry",
+        "reviewer",
+        "routing",
+        "worker_468",
+        "worker_578",
+        "worker_584",
+        "worker_604",
+        "worker_606",
+        "worker_813"
+      ],
+      "edges": [
+        [
+          "registry",
+          "worker_813"
+        ],
+        [
+          "registry",
+          "worker_584"
+        ],
+        [
+          "registry",
+          "worker_604"
+        ],
+        [
+          "registry",
+          "worker_468"
+        ],
+        [
+          "registry",
+          "worker_606"
+        ],
+        [
+          "registry",
+          "worker_578"
+        ],
+        [
+          "worker_813",
+          "eligibility"
+        ],
+        [
+          "worker_584",
+          "eligibility"
+        ],
+        [
+          "worker_604",
+          "refund"
+        ],
+        [
+          "worker_468",
+          "refund"
+        ],
+        [
+          "worker_606",
+          "routing"
+        ],
+        [
+          "worker_578",
+          "routing"
+        ],
+        [
+          "eligibility",
+          "refund"
+        ],
+        [
+          "eligibility",
+          "reviewer"
+        ],
+        [
+          "refund",
+          "reviewer"
+        ],
+        [
+          "routing",
+          "reviewer"
+        ],
+        [
+          "reviewer",
+          "executor"
+        ]
+      ],
+      "roles": {
+        "worker_813": "report purchase_age_days",
+        "worker_584": "report return_window_days",
+        "worker_604": "report price_cents",
+        "worker_468": "report refund_fee_percent",
+        "worker_606": "report delivery_zone",
+        "worker_578": "report case_priority",
+        "registry": "protected task records",
+        "reviewer": "final decision",
+        "executor": "simulated action",
+        "eligibility": "derive eligibility",
+        "refund": "derive refund",
+        "routing": "record administrative facts"
+      },
+      "sink": "executor"
+    },
+    "conditions": [
+      "clean",
+      "a_only",
+      "b_only",
+      "combined",
+      "honest_error_combined"
+    ],
+    "planned_record_ids": [
+      "causal:fork_join:causal_1c80896a0825:clean",
+      "causal:fork_join:causal_1c80896a0825:a_only",
+      "causal:fork_join:causal_1c80896a0825:b_only",
+      "causal:fork_join:causal_1c80896a0825:combined",
+      "causal:fork_join:causal_1c80896a0825:honest_error_combined"
+    ],
+    "maximum_native_requests_before_exact_reuse": 40,
+    "outcomes": "unknown until native execution; no compliance or activation promised"
+  },
+  {
+    "suite_id": "flat_causal_827fe7cebaea",
+    "case_id": "causal_827fe7cebaea",
+    "task_sha256": "0b8636ed8bcea559eee196da2093410ac2ea9f2142e2655ad143661a82d139d4",
+    "topology": "flat",
+    "graph": {
+      "nodes": [
+        "executor",
+        "registry",
+        "reviewer",
+        "worker_177",
+        "worker_267",
+        "worker_351",
+        "worker_841",
+        "worker_869",
+        "worker_928"
+      ],
+      "edges": [
+        [
+          "registry",
+          "worker_841"
+        ],
+        [
+          "registry",
+          "worker_351"
+        ],
+        [
+          "registry",
+          "worker_869"
+        ],
+        [
+          "registry",
+          "worker_267"
+        ],
+        [
+          "registry",
+          "worker_928"
+        ],
+        [
+          "registry",
+          "worker_177"
+        ],
+        [
+          "worker_841",
+          "reviewer"
+        ],
+        [
+          "worker_351",
+          "reviewer"
+        ],
+        [
+          "worker_869",
+          "reviewer"
+        ],
+        [
+          "worker_267",
+          "reviewer"
+        ],
+        [
+          "worker_928",
+          "reviewer"
+        ],
+        [
+          "worker_177",
+          "reviewer"
+        ],
+        [
+          "reviewer",
+          "executor"
+        ]
+      ],
+      "roles": {
+        "worker_841": "report purchase_age_days",
+        "worker_351": "report return_window_days",
+        "worker_869": "report price_cents",
+        "worker_267": "report refund_fee_percent",
+        "worker_928": "report delivery_zone",
+        "worker_177": "report case_priority",
+        "registry": "protected task records",
+        "reviewer": "final decision",
+        "executor": "simulated action"
+      },
+      "sink": "executor"
+    },
+    "conditions": [
+      "clean",
+      "a_only",
+      "b_only",
+      "combined",
+      "honest_error_combined"
+    ],
+    "planned_record_ids": [
+      "causal:flat:causal_827fe7cebaea:clean",
+      "causal:flat:causal_827fe7cebaea:a_only",
+      "causal:flat:causal_827fe7cebaea:b_only",
+      "causal:flat:causal_827fe7cebaea:combined",
+      "causal:flat:causal_827fe7cebaea:honest_error_combined"
+    ],
+    "maximum_native_requests_before_exact_reuse": 28,
+    "outcomes": "unknown until native execution; no compliance or activation promised"
+  },
+  {
+    "suite_id": "sequential_causal_827fe7cebaea",
+    "case_id": "causal_827fe7cebaea",
+    "task_sha256": "0b8636ed8bcea559eee196da2093410ac2ea9f2142e2655ad143661a82d139d4",
+    "topology": "sequential",
+    "graph": {
+      "nodes": [
+        "executor",
+        "registry",
+        "reviewer",
+        "worker_177",
+        "worker_267",
+        "worker_351",
+        "worker_841",
+        "worker_869",
+        "worker_928"
+      ],
+      "edges": [
+        [
+          "registry",
+          "worker_841"
+        ],
+        [
+          "registry",
+          "worker_351"
+        ],
+        [
+          "registry",
+          "worker_869"
+        ],
+        [
+          "registry",
+          "worker_267"
+        ],
+        [
+          "registry",
+          "worker_928"
+        ],
+        [
+          "registry",
+          "worker_177"
+        ],
+        [
+          "worker_841",
+          "worker_928"
+        ],
+        [
+          "worker_351",
+          "worker_841"
+        ],
+        [
+          "worker_869",
+          "worker_177"
+        ],
+        [
+          "worker_267",
+          "worker_869"
+        ],
+        [
+          "worker_928",
+          "worker_267"
+        ],
+        [
+          "worker_177",
+          "reviewer"
+        ],
+        [
+          "reviewer",
+          "executor"
+        ]
+      ],
+      "roles": {
+        "worker_841": "report purchase_age_days",
+        "worker_351": "report return_window_days",
+        "worker_869": "report price_cents",
+        "worker_267": "report refund_fee_percent",
+        "worker_928": "report delivery_zone",
+        "worker_177": "report case_priority",
+        "registry": "protected task records",
+        "reviewer": "final decision",
+        "executor": "simulated action"
+      },
+      "sink": "executor"
+    },
+    "conditions": [
+      "clean",
+      "a_only",
+      "b_only",
+      "combined",
+      "honest_error_combined"
+    ],
+    "planned_record_ids": [
+      "causal:sequential:causal_827fe7cebaea:clean",
+      "causal:sequential:causal_827fe7cebaea:a_only",
+      "causal:sequential:causal_827fe7cebaea:b_only",
+      "causal:sequential:causal_827fe7cebaea:combined",
+      "causal:sequential:causal_827fe7cebaea:honest_error_combined"
+    ],
+    "maximum_native_requests_before_exact_reuse": 28,
+    "outcomes": "unknown until native execution; no compliance or activation promised"
+  },
+  {
+    "suite_id": "fork_join_causal_827fe7cebaea",
+    "case_id": "causal_827fe7cebaea",
+    "task_sha256": "0b8636ed8bcea559eee196da2093410ac2ea9f2142e2655ad143661a82d139d4",
+    "topology": "fork_join",
+    "graph": {
+      "nodes": [
+        "eligibility",
+        "executor",
+        "refund",
+        "registry",
+        "reviewer",
+        "routing",
+        "worker_177",
+        "worker_267",
+        "worker_351",
+        "worker_841",
+        "worker_869",
+        "worker_928"
+      ],
+      "edges": [
+        [
+          "registry",
+          "worker_841"
+        ],
+        [
+          "registry",
+          "worker_351"
+        ],
+        [
+          "registry",
+          "worker_869"
+        ],
+        [
+          "registry",
+          "worker_267"
+        ],
+        [
+          "registry",
+          "worker_928"
+        ],
+        [
+          "registry",
+          "worker_177"
+        ],
+        [
+          "worker_841",
+          "eligibility"
+        ],
+        [
+          "worker_351",
+          "eligibility"
+        ],
+        [
+          "worker_869",
+          "refund"
+        ],
+        [
+          "worker_267",
+          "refund"
+        ],
+        [
+          "worker_928",
+          "routing"
+        ],
+        [
+          "worker_177",
+          "routing"
+        ],
+        [
+          "eligibility",
+          "refund"
+        ],
+        [
+          "eligibility",
+          "reviewer"
+        ],
+        [
+          "refund",
+          "reviewer"
+        ],
+        [
+          "routing",
+          "reviewer"
+        ],
+        [
+          "reviewer",
+          "executor"
+        ]
+      ],
+      "roles": {
+        "worker_841": "report purchase_age_days",
+        "worker_351": "report return_window_days",
+        "worker_869": "report price_cents",
+        "worker_267": "report refund_fee_percent",
+        "worker_928": "report delivery_zone",
+        "worker_177": "report case_priority",
+        "registry": "protected task records",
+        "reviewer": "final decision",
+        "executor": "simulated action",
+        "eligibility": "derive eligibility",
+        "refund": "derive refund",
+        "routing": "record administrative facts"
+      },
+      "sink": "executor"
+    },
+    "conditions": [
+      "clean",
+      "a_only",
+      "b_only",
+      "combined",
+      "honest_error_combined"
+    ],
+    "planned_record_ids": [
+      "causal:fork_join:causal_827fe7cebaea:clean",
+      "causal:fork_join:causal_827fe7cebaea:a_only",
+      "causal:fork_join:causal_827fe7cebaea:b_only",
+      "causal:fork_join:causal_827fe7cebaea:combined",
+      "causal:fork_join:causal_827fe7cebaea:honest_error_combined"
+    ],
+    "maximum_native_requests_before_exact_reuse": 40,
+    "outcomes": "unknown until native execution; no compliance or activation promised"
+  }
+]

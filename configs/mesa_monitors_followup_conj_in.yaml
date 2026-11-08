@@ -1,0 +1,26 @@
+episodes: results/mesa_pilot_followup_gemma/episodes.jsonl
+conditions:
+- clean
+- a_only
+- b_in_only
+- ab_in
+- mismatched_in
+monitor:
+  provider:
+    kind: adaption
+    model: gemma-4-31b-it
+    temperature: 0.0
+    max_output_tokens: 120
+    cost:
+      allow_live: true
+      max_calls: 600
+      max_tokens: 900000
+      max_credits: 1.0
+fpr: 0.1
+out_dir: results/mesa_monitors_followup_conj_in
+workers: 8
+pair:
+- - worker_1
+  - hub
+- - hub
+  - worker_3

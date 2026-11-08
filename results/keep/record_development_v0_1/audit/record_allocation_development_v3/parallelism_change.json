@@ -1,0 +1,8 @@
+{
+  "at": 1793979179.844028,
+  "reason": "User authorized 5-10 concurrent sessions; increase workers from 4 to 8.",
+  "previous_process_exit": 130,
+  "outstanding_reservations": 0,
+  "saved_views": 4505,
+  "preservation": "Completed view rows and raw attempts retained; in-flight calls drained and responses cached before restart."
+}

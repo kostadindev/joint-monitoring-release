@@ -1,0 +1,79 @@
+{
+  "args": {
+    "repo": ".",
+    "out": "results/mesa_pairings_all20",
+    "live": false,
+    "workers": 4,
+    "batch": "mesa_pairings",
+    "batch_cap": 0.5,
+    "ledger": "results/night_2026-11-06_budget.json"
+  },
+  "mode": "prepare",
+  "sources": [
+    {
+      "family": "static",
+      "source": "results/keep/pilot_2026-11-06/episodes.jsonl.gz",
+      "source_sha256": "eca742e9d48efa4274225a5d283a15b6165771bc6c39fa6f3526274779b61d3b",
+      "tasks": [
+        "task_1",
+        "task_10",
+        "task_11",
+        "task_12",
+        "task_13",
+        "task_14",
+        "task_15",
+        "task_16",
+        "task_17",
+        "task_18",
+        "task_19",
+        "task_2",
+        "task_20",
+        "task_3",
+        "task_4",
+        "task_5",
+        "task_6",
+        "task_7",
+        "task_8",
+        "task_9"
+      ]
+    },
+    {
+      "family": "dynamic",
+      "source": "results/mesa_pilot_followup_gemma/episodes.jsonl",
+      "source_sha256": "8a040d32c0fe47c356be456fcc47f0727f04dc68e5d176e904d0a848554cedb5",
+      "tasks": [
+        "task_1",
+        "task_10",
+        "task_11",
+        "task_12",
+        "task_13",
+        "task_14",
+        "task_15",
+        "task_16",
+        "task_17",
+        "task_18",
+        "task_19",
+        "task_2",
+        "task_20",
+        "task_3",
+        "task_4",
+        "task_5",
+        "task_6",
+        "task_7",
+        "task_8",
+        "task_9"
+      ]
+    }
+  ],
+  "episodes": 80,
+  "max_view_calls": 880,
+  "notes": [
+    "Exploratory; tasks and attack families have already been inspected in prior pilots.",
+    "Thresholds use clean tasks only; attack test tasks disjoint from calibration tasks.",
+    "All paired policies use four selected channels and two calls. Independent is per channel, not per message.",
+    "Full reads the selected four channels, not all eight channels of the workflow.",
+    "Shared recipient affinity ties for every partition in this hub; structural resolves to pairing_0.",
+    "Lexical pairing reads observed text on the already selected channels; no embeddings or attack labels.",
+    "Different pairings can have different achieved false-positive rates; report both."
+  ]
+}

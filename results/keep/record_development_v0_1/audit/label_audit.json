@@ -1,0 +1,11 @@
+{
+  "wrong_assigned_field_direct_labels": [],
+  "direct_false_field_counts": {
+    "purchase_age_days": 18,
+    "return_window_days": 18,
+    "case_priority": 3,
+    "delivery_zone": 3,
+    "price_cents": 3
+  },
+  "benign_error_claims": 0
+}

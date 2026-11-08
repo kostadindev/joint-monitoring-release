@@ -1,0 +1,262 @@
+{
+  "dynamic": {
+    "full": {
+      "threshold": 0.3,
+      "tp": 10,
+      "n_positive": 10,
+      "fp": 1,
+      "n_negative": 10,
+      "tpr": 1.0,
+      "fpr": 0.1,
+      "tpr_wilson_descriptive": [
+        0.7224598312333834,
+        1.0
+      ],
+      "mean_tokens_in": 1154.65,
+      "calls_per_episode": 1,
+      "note": "Variants share tasks; negative counts are not independent. Small-sample exploratory comparison."
+    },
+    "independent": {
+      "threshold": 0.85,
+      "tp": 5,
+      "n_positive": 10,
+      "fp": 0,
+      "n_negative": 10,
+      "tpr": 0.5,
+      "fpr": 0.0,
+      "tpr_wilson_descriptive": [
+        0.23658959361548731,
+        0.7634104063845126
+      ],
+      "mean_tokens_in": 1790.65,
+      "calls_per_episode": 4,
+      "note": "Variants share tasks; negative counts are not independent. Small-sample exploratory comparison."
+    },
+    "lexical": {
+      "threshold": 0.85,
+      "tp": 4,
+      "n_positive": 10,
+      "fp": 0,
+      "n_negative": 10,
+      "tpr": 0.4,
+      "fpr": 0.0,
+      "tpr_wilson_descriptive": [
+        0.16817758120350967,
+        0.6873304525498135
+      ],
+      "mean_tokens_in": 1366.65,
+      "calls_per_episode": 2,
+      "note": "Variants share tasks; negative counts are not independent. Small-sample exploratory comparison."
+    },
+    "pairing_0": {
+      "threshold": 0.85,
+      "tp": 4,
+      "n_positive": 10,
+      "fp": 0,
+      "n_negative": 10,
+      "tpr": 0.4,
+      "fpr": 0.0,
+      "tpr_wilson_descriptive": [
+        0.16817758120350967,
+        0.6873304525498135
+      ],
+      "mean_tokens_in": 1366.65,
+      "calls_per_episode": 2,
+      "note": "Variants share tasks; negative counts are not independent. Small-sample exploratory comparison."
+    },
+    "pairing_1": {
+      "threshold": 0.85,
+      "tp": 3,
+      "n_positive": 10,
+      "fp": 1,
+      "n_negative": 10,
+      "tpr": 0.3,
+      "fpr": 0.1,
+      "tpr_wilson_descriptive": [
+        0.10778928748621183,
+        0.6032267800204347
+      ],
+      "mean_tokens_in": 1366.65,
+      "calls_per_episode": 2,
+      "note": "Variants share tasks; negative counts are not independent. Small-sample exploratory comparison."
+    },
+    "pairing_2": {
+      "threshold": 0.9,
+      "tp": 1,
+      "n_positive": 10,
+      "fp": 0,
+      "n_negative": 10,
+      "tpr": 0.1,
+      "fpr": 0.0,
+      "tpr_wilson_descriptive": [
+        0.01787574951572113,
+        0.4041563854975721
+      ],
+      "mean_tokens_in": 1366.65,
+      "calls_per_episode": 2,
+      "note": "Variants share tasks; negative counts are not independent. Small-sample exploratory comparison."
+    },
+    "random_fixed": {
+      "threshold": 0.85,
+      "tp": 4,
+      "n_positive": 10,
+      "fp": 0,
+      "n_negative": 10,
+      "tpr": 0.4,
+      "fpr": 0.0,
+      "tpr_wilson_descriptive": [
+        0.16817758120350967,
+        0.6873304525498135
+      ],
+      "mean_tokens_in": 1366.65,
+      "calls_per_episode": 2,
+      "note": "Variants share tasks; negative counts are not independent. Small-sample exploratory comparison."
+    },
+    "structural": {
+      "threshold": 0.85,
+      "tp": 4,
+      "n_positive": 10,
+      "fp": 0,
+      "n_negative": 10,
+      "tpr": 0.4,
+      "fpr": 0.0,
+      "tpr_wilson_descriptive": [
+        0.16817758120350967,
+        0.6873304525498135
+      ],
+      "mean_tokens_in": 1366.65,
+      "calls_per_episode": 2,
+      "note": "Variants share tasks; negative counts are not independent. Small-sample exploratory comparison."
+    }
+  },
+  "static": {
+    "full": {
+      "threshold": 0.3,
+      "tp": 10,
+      "n_positive": 10,
+      "fp": 1,
+      "n_negative": 10,
+      "tpr": 1.0,
+      "fpr": 0.1,
+      "tpr_wilson_descriptive": [
+        0.7224598312333834,
+        1.0
+      ],
+      "mean_tokens_in": 1172.8,
+      "calls_per_episode": 1,
+      "note": "Variants share tasks; negative counts are not independent. Small-sample exploratory comparison."
+    },
+    "independent": {
+      "threshold": 0.85,
+      "tp": 0,
+      "n_positive": 10,
+      "fp": 0,
+      "n_negative": 10,
+      "tpr": 0.0,
+      "fpr": 0.0,
+      "tpr_wilson_descriptive": [
+        -2.7755575615628914e-17,
+        0.2775401687666166
+      ],
+      "mean_tokens_in": 1808.8,
+      "calls_per_episode": 4,
+      "note": "Variants share tasks; negative counts are not independent. Small-sample exploratory comparison."
+    },
+    "lexical": {
+      "threshold": 0.85,
+      "tp": 6,
+      "n_positive": 10,
+      "fp": 0,
+      "n_negative": 10,
+      "tpr": 0.6,
+      "fpr": 0.0,
+      "tpr_wilson_descriptive": [
+        0.3126695474501864,
+        0.8318224187964902
+      ],
+      "mean_tokens_in": 1384.8,
+      "calls_per_episode": 2,
+      "note": "Variants share tasks; negative counts are not independent. Small-sample exploratory comparison."
+    },
+    "pairing_0": {
+      "threshold": 0.85,
+      "tp": 8,
+      "n_positive": 10,
+      "fp": 0,
+      "n_negative": 10,
+      "tpr": 0.8,
+      "fpr": 0.0,
+      "tpr_wilson_descriptive": [
+        0.49015684672072335,
+        0.9433190520193067
+      ],
+      "mean_tokens_in": 1384.8,
+      "calls_per_episode": 2,
+      "note": "Variants share tasks; negative counts are not independent. Small-sample exploratory comparison."
+    },
+    "pairing_1": {
+      "threshold": 0.85,
+      "tp": 9,
+      "n_positive": 10,
+      "fp": 1,
+      "n_negative": 10,
+      "tpr": 0.9,
+      "fpr": 0.1,
+      "tpr_wilson_descriptive": [
+        0.5958436145024278,
+        0.9821242504842788
+      ],
+      "mean_tokens_in": 1384.8,
+      "calls_per_episode": 2,
+      "note": "Variants share tasks; negative counts are not independent. Small-sample exploratory comparison."
+    },
+    "pairing_2": {
+      "threshold": 0.9,
+      "tp": 2,
+      "n_positive": 10,
+      "fp": 0,
+      "n_negative": 10,
+      "tpr": 0.2,
+      "fpr": 0.0,
+      "tpr_wilson_descriptive": [
+        0.056680947980693314,
+        0.5098431532792765
+      ],
+      "mean_tokens_in": 1384.8,
+      "calls_per_episode": 2,
+      "note": "Variants share tasks; negative counts are not independent. Small-sample exploratory comparison."
+    },
+    "random_fixed": {
+      "threshold": 0.85,
+      "tp": 9,
+      "n_positive": 10,
+      "fp": 0,
+      "n_negative": 10,
+      "tpr": 0.9,
+      "fpr": 0.0,
+      "tpr_wilson_descriptive": [
+        0.5958436145024278,
+        0.9821242504842788
+      ],
+      "mean_tokens_in": 1384.8,
+      "calls_per_episode": 2,
+      "note": "Variants share tasks; negative counts are not independent. Small-sample exploratory comparison."
+    },
+    "structural": {
+      "threshold": 0.85,
+      "tp": 8,
+      "n_positive": 10,
+      "fp": 0,
+      "n_negative": 10,
+      "tpr": 0.8,
+      "fpr": 0.0,
+      "tpr_wilson_descriptive": [
+        0.49015684672072335,
+        0.9433190520193067
+      ],
+      "mean_tokens_in": 1384.8,
+      "calls_per_episode": 2,
+      "note": "Variants share tasks; negative counts are not independent. Small-sample exploratory comparison."
+    }
+  }
+}

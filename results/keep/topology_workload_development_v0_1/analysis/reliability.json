@@ -1,0 +1,125 @@
+{
+  "rows": [
+    {
+      "group_size": 1,
+      "unique_views": 953,
+      "judged_views": 953,
+      "abstained_views": 0,
+      "abstention_rate": 0.0,
+      "retried_views": 6,
+      "retry_rate": 0.0062959076600209865,
+      "format_retry_attempts": 6,
+      "total_attempts": 959,
+      "attempts_at_or_above_output_cap": 6,
+      "output_caps": [
+        1024
+      ],
+      "logical_input_tokens": 1418873,
+      "logical_output_tokens": 98757,
+      "logical_replay_credits": 0.15087211,
+      "flagged_views": 0,
+      "flagged_views_with_valid_citations": 0
+    },
+    {
+      "group_size": 2,
+      "unique_views": 6230,
+      "judged_views": 6224,
+      "abstained_views": 6,
+      "abstention_rate": 0.0009630818619582664,
+      "retried_views": 29,
+      "retry_rate": 0.004654895666131621,
+      "format_retry_attempts": 29,
+      "total_attempts": 6259,
+      "attempts_at_or_above_output_cap": 32,
+      "output_caps": [
+        1024
+      ],
+      "logical_input_tokens": 14718669,
+      "logical_output_tokens": 825846,
+      "logical_replay_credits": 1.52001505,
+      "flagged_views": 483,
+      "flagged_views_with_valid_citations": 474
+    },
+    {
+      "group_size": 3,
+      "unique_views": 1188,
+      "judged_views": 1187,
+      "abstained_views": 1,
+      "abstention_rate": 0.0008417508417508417,
+      "retried_views": 3,
+      "retry_rate": 0.0025252525252525255,
+      "format_retry_attempts": 3,
+      "total_attempts": 1191,
+      "attempts_at_or_above_output_cap": 3,
+      "output_caps": [
+        1024
+      ],
+      "logical_input_tokens": 3865457,
+      "logical_output_tokens": 170576,
+      "logical_replay_credits": 0.38935449,
+      "flagged_views": 44,
+      "flagged_views_with_valid_citations": 44
+    },
+    {
+      "group_size": 4,
+      "unique_views": 3068,
+      "judged_views": 3055,
+      "abstained_views": 13,
+      "abstention_rate": 0.00423728813559322,
+      "retried_views": 28,
+      "retry_rate": 0.009126466753585397,
+      "format_retry_attempts": 28,
+      "total_attempts": 3096,
+      "attempts_at_or_above_output_cap": 20,
+      "output_caps": [
+        1024
+      ],
+      "logical_input_tokens": 12628222,
+      "logical_output_tokens": 559154,
+      "logical_replay_credits": 1.26413202,
+      "flagged_views": 379,
+      "flagged_views_with_valid_citations": 366
+    },
+    {
+      "group_size": 7,
+      "unique_views": 1672,
+      "judged_views": 1641,
+      "abstained_views": 31,
+      "abstention_rate": 0.01854066985645933,
+      "retried_views": 70,
+      "retry_rate": 0.041866028708133975,
+      "format_retry_attempts": 70,
+      "total_attempts": 1742,
+      "attempts_at_or_above_output_cap": 87,
+      "output_caps": [
+        1024
+      ],
+      "logical_input_tokens": 11715601,
+      "logical_output_tokens": 547727,
+      "logical_replay_credits": 1.18152599,
+      "flagged_views": 647,
+      "flagged_views_with_valid_citations": 629
+    },
+    {
+      "group_size": 13,
+      "unique_views": 192,
+      "judged_views": 189,
+      "abstained_views": 3,
+      "abstention_rate": 0.015625,
+      "retried_views": 11,
+      "retry_rate": 0.057291666666666664,
+      "format_retry_attempts": 11,
+      "total_attempts": 203,
+      "attempts_at_or_above_output_cap": 14,
+      "output_caps": [
+        1024
+      ],
+      "logical_input_tokens": 2477029,
+      "logical_output_tokens": 86929,
+      "logical_replay_credits": 0.24698446999999998,
+      "flagged_views": 92,
+      "flagged_views_with_valid_citations": 90
+    }
+  ],
+  "scope": "Unique completed judge views, not policy-weighted assignments. Counts include schema retries; output-at-cap is a truncation diagnostic, not proof of causation. Logical replay charges may include cached responses and exclude uncertain transport failures; use the shared ledger for actual research spend."
+}

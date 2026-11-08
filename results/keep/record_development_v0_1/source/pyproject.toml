@@ -1,0 +1,26 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "jmon"
+version = "0.0.1"
+description = "Budgeted joint monitoring allocation in adversarial LLM multi-agent systems: experimental testbed"
+requires-python = ">=3.10"
+license = {text = "MIT"}
+dependencies = [
+  "networkx>=3.1",
+  "numpy>=1.24",
+  "pyyaml>=6.0",
+]
+
+[project.optional-dependencies]
+llm = ["openai>=1.30", "anthropic>=0.30"]
+test = ["pytest>=7.4"]
+analysis = ["pandas>=2.0", "scipy>=1.10"]
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]

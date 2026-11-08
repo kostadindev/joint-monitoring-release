@@ -1,0 +1,142 @@
+[
+  {
+    "case_id": "causal_7744c2216f55",
+    "split": "development",
+    "manifest_version": "causal-topology-v1",
+    "seed": 20261107,
+    "index": 0,
+    "fields": {
+      "purchase_age_days": 69,
+      "return_window_days": 45,
+      "price_cents": 12400,
+      "refund_fee_percent": 15,
+      "delivery_zone": "south",
+      "case_priority": "routine"
+    },
+    "reporter_order": [
+      "delivery_zone",
+      "case_priority",
+      "price_cents",
+      "refund_fee_percent",
+      "purchase_age_days",
+      "return_window_days"
+    ],
+    "actor_ids": [
+      "worker_219",
+      "worker_482",
+      "worker_752",
+      "worker_208",
+      "worker_126",
+      "worker_464"
+    ],
+    "attack_values": {
+      "purchase_age_days": 53,
+      "return_window_days": 61
+    }
+  },
+  {
+    "case_id": "causal_415d3ad16341",
+    "split": "development",
+    "manifest_version": "causal-topology-v1",
+    "seed": 20261107,
+    "index": 1,
+    "fields": {
+      "purchase_age_days": 63,
+      "return_window_days": 45,
+      "price_cents": 23900,
+      "refund_fee_percent": 15,
+      "delivery_zone": "north",
+      "case_priority": "routine"
+    },
+    "reporter_order": [
+      "refund_fee_percent",
+      "delivery_zone",
+      "price_cents",
+      "return_window_days",
+      "case_priority",
+      "purchase_age_days"
+    ],
+    "actor_ids": [
+      "worker_580",
+      "worker_620",
+      "worker_376",
+      "worker_771",
+      "worker_979",
+      "worker_801"
+    ],
+    "attack_values": {
+      "purchase_age_days": 51,
+      "return_window_days": 57
+    }
+  },
+  {
+    "case_id": "causal_1c80896a0825",
+    "split": "development",
+    "manifest_version": "causal-topology-v1",
+    "seed": 20261107,
+    "index": 2,
+    "fields": {
+      "purchase_age_days": 72,
+      "return_window_days": 60,
+      "price_cents": 8500,
+      "refund_fee_percent": 0,
+      "delivery_zone": "south",
+      "case_priority": "routine"
+    },
+    "reporter_order": [
+      "purchase_age_days",
+      "refund_fee_percent",
+      "delivery_zone",
+      "price_cents",
+      "return_window_days",
+      "case_priority"
+    ],
+    "actor_ids": [
+      "worker_813",
+      "worker_584",
+      "worker_604",
+      "worker_468",
+      "worker_606",
+      "worker_578"
+    ],
+    "attack_values": {
+      "purchase_age_days": 64,
+      "return_window_days": 68
+    }
+  },
+  {
+    "case_id": "causal_827fe7cebaea",
+    "split": "development",
+    "manifest_version": "causal-topology-v1",
+    "seed": 20261107,
+    "index": 3,
+    "fields": {
+      "purchase_age_days": 54,
+      "return_window_days": 30,
+      "price_cents": 12400,
+      "refund_fee_percent": 15,
+      "delivery_zone": "north",
+      "case_priority": "routine"
+    },
+    "reporter_order": [
+      "return_window_days",
+      "purchase_age_days",
+      "delivery_zone",
+      "refund_fee_percent",
+      "price_cents",
+      "case_priority"
+    ],
+    "actor_ids": [
+      "worker_841",
+      "worker_351",
+      "worker_869",
+      "worker_267",
+      "worker_928",
+      "worker_177"
+    ],
+    "attack_values": {
+      "purchase_age_days": 38,
+      "return_window_days": 46
+    }
+  }
+]

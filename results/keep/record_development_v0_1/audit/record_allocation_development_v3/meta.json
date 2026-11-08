@@ -1,0 +1,20 @@
+{
+  "completed": 9152,
+  "planned": 9152,
+  "errors": [],
+  "provider": {
+    "calls": 2809,
+    "tokens": 2495824,
+    "credits": 0.2996355299999998,
+    "cache_hits": 1892,
+    "empty_responses": 0
+  },
+  "ledger": {
+    "authorized": 10.0,
+    "charged_or_reserved": 0.777856091,
+    "batch": "record_allocation_development_v3",
+    "batch_charged_or_reserved": 0.5238339399999999,
+    "requests": 7112,
+    "blocked": false
+  }
+}

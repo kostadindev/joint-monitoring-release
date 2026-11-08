@@ -1,0 +1,7 @@
+**What the results establish.** On our testbeds, joint reading catches contradictions and decomposed violations that per-channel reading misses, graph-based grouping beats random grouping only when evidence follows the graph, and, on the two evidence routes we designed, a mixture of grouping strategies fitted to the recorded runs has a higher expected worst case than any fixed strategy.
+
+**What they do not establish.** How often these situations occur in deployed systems, whether monitoring prevents harm before a decision, how results transfer to other workflows and domains, or whether a flagged channel was malicious, since the monitor flags honest errors as often as false reports (Section 4.3).
+
+**Dual use.** The findings show where a budget-limited monitor reads, which could help an attacker place evidence where it is not read together; randomized grouping (Section 4.4) makes this harder to predict. The attacks reimplement published ones, plus two split variants of our own, and run only on simulated systems with fictitious data; the released attack code targets these simulations.
+
+**Ethical considerations.** The monitor flags honest errors as often as false reports, so its flags should not be used to attribute intent; false accusations can trigger unnecessary blocking or review. All experiments are offline evaluations on simulated systems; no real users or systems were involved.

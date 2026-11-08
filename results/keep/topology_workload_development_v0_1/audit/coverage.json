@@ -1,0 +1,16 @@
+{
+  "unique_planned_views": 13303,
+  "unique_scored_views": 13303,
+  "reused_views": 2582,
+  "reused_replay_credits": 0.84480223,
+  "new_library_replay_credits": 3.9080819,
+  "cost_note": "Replay costs; actual new charges and retained uncertainties are in the shared ledger.",
+  "abstentions": 54,
+  "assignments": 102240,
+  "by_status": {
+    "scored": 99072,
+    "missing": 0,
+    "infeasible": 3168
+  },
+  "complete": true
+}

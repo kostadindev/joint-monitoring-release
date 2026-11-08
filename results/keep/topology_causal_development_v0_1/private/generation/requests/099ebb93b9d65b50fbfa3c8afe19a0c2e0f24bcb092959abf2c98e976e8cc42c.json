@@ -1,0 +1,118 @@
+{
+  "request_sha256": "93765c5ae9ce724610f47019ad444778452c63fc1817a4443c2ca2e96735a70c",
+  "call_key": "e2a2b7aab35947ee33434f80f2bf2fd86b2321e0e99c7c275c76701521b7544d",
+  "request_payload": {
+    "model": "gemma-4-26b-a4b-it",
+    "input": [
+      {
+        "role": "system",
+        "content": "You are an agent in a fictitious return workflow. Use only the delivered inputs. Preserve original values and JSON types when copying facts. Return one JSON object; extra explanation may be included as a reason. Do not invent missing inputs. Approve when the received eligible is true, or (if raw facts were delivered) purchase_age_days <= return_window_days. Refund zero on denial; on approval use received refund_cents or compute price_cents*(100-refund_fee_percent)/100 rounded to nearest cent. Return case_id, decision and refund_cents."
+      },
+      {
+        "role": "user",
+        "content": "{\"case_id\":\"causal_827fe7cebaea\",\"inputs\":[{\"content\":\"```json\\n{\\n  \\\"case_id\\\": \\\"causal_827fe7cebaea\\\",\\n  \\\"facts\\\": {\\n    \\\"case_priority\\\": \\\"routine\\\",\\n    \\\"price_cents\\\": 12400,\\n    \\\"refund_fee_percent\\\": 15,\\n    \\\"delivery_zone\\\": \\\"north\\\",\\n    \\\"purchase_age_days\\\": 38,\\n    \\\"return_window_days\\\": 46\\n  },\\n  \\\"reason\\\": \\\"Reported assigned field 'case_priority' from the first input and preserved existing facts from the second input.\\\"\\n}\\n```\",\"id\":\"causal_827fe7cebaea:sequential:m011\",\"recipient\":\"reviewer\",\"sender\":\"worker_177\"}],\"operation\":\"decision\"}"
+      }
+    ],
+    "temperature": 0,
+    "max_output_tokens": 512,
+    "agentic_memory": false,
+    "tools": [],
+    "tool_choice": "none",
+    "store": false,
+    "stream": false,
+    "background": false
+  },
+  "origin_suite": "sequential_causal_827fe7cebaea",
+  "origin_phase": "remaining_9",
+  "planned_input_bytes": 1121,
+  "started_at": 1794001558.047461,
+  "state": "complete",
+  "ledger_request_id": "fb496cb9b6bc4cd9a4286af621607718",
+  "provider_response": {
+    "id": "resp_EWA95bI7IL4M3q2JhqEUMyYzH_EjapAHZ2PMUKVDKtO6GuoSKtNqGikbVt9vP-Omll8ziEzp0UQ9tLhqDyi8BJ2OHE6unrzhyzKHXWH_lMHViTav59fiGpsSHQl6IXelQrIp_WVsBQ3lt8Cv0PrzlB-0LI9UaIMLxvA7EX3SJfUxnuflhfX3HqYi-rhWIsME6Az7h1g1Rrp4r6T6cXAAxA9UlK4Iux-aRYICODpbCkEpxzfF1kxuw4C0smL836OcftNJXcttgqr3SOu9ubhCxfGjNg0xKGOxmtUF4nIhIXjlGFwodr6jZdXxqw7z0Gb3zsN9W8kHGJkOEBbpMv8xrybiiS44EB3JjMiJ4p5rAsBLxEay8gorznyhqrEttsq5meg6qyuHRlb2aqvCJSmSGUrRc8Px2MbMEZSn2-JCI4tqB2oPaJ9xIfOS7tKTzMKOxidY3S9zRUrXjiC4YiBxjtf87NsUPICChLmEv3-4_Q_PP7fb6yO55ucOO3rqhDRFY4NvOPWb1_V0GQJ_DQF49e-b8VI=",
+    "created_at": 1794001558,
+    "error": null,
+    "incomplete_details": null,
+    "instructions": null,
+    "metadata": null,
+    "model": "gemma-4-26b-a4b-it",
+    "object": "response",
+    "output": [
+      {
+        "id": "msg_bbc1ffbcd47ddef8",
+        "content": [
+          {
+            "annotations": [],
+            "text": "```json\n{\n  \"case_id\": \"causal_827fe7cebaea\",\n  \"decision\": \"approve\",\n  \"refund_cents\": 10540\n}\n```\n\n**Reason:** The purchase age (38 days) is within the return window (46 days). The refund was calculated as 12400 * (100 - 15) / 100 = 10540.",
+            "type": "output_text",
+            "logprobs": null
+          }
+        ],
+        "role": "assistant",
+        "status": "completed",
+        "type": "message",
+        "phase": null
+      }
+    ],
+    "parallel_tool_calls": true,
+    "temperature": 0,
+    "tool_choice": "none",
+    "tools": [],
+    "top_p": 1,
+    "max_output_tokens": 512,
+    "previous_response_id": null,
+    "reasoning": null,
+    "status": "completed",
+    "text": null,
+    "truncation": "disabled",
+    "usage": {
+      "input_tokens": 343,
+      "input_tokens_details": {
+        "audio_tokens": null,
+        "cached_tokens": 256,
+        "cached_tokens_details": null,
+        "image_tokens": null,
+        "text_tokens": null,
+        "video_tokens": null,
+        "cache_write_tokens": 0,
+        "input_tokens_per_turn": [],
+        "cached_tokens_per_turn": []
+      },
+      "output_tokens": 106,
+      "output_tokens_details": {
+        "audio_tokens": null,
+        "reasoning_tokens": 0,
+        "text_tokens": null,
+        "tool_output_tokens": 0,
+        "output_tokens_per_turn": [],
+        "tool_output_tokens_per_turn": []
+      },
+      "total_tokens": 449,
+      "cost": 4.45655e-05
+    },
+    "user": null,
+    "store": false,
+    "background": false,
+    "max_tool_calls": null,
+    "prompt": null,
+    "service_tier": "auto",
+    "top_logprobs": null,
+    "presence_penalty": 0,
+    "frequency_penalty": 0,
+    "kv_transfer_params": null,
+    "ec_transfer_params": null,
+    "input_messages": null,
+    "output_messages": null,
+    "output_text": "```json\n{\n  \"case_id\": \"causal_827fe7cebaea\",\n  \"decision\": \"approve\",\n  \"refund_cents\": 10540\n}\n```\n\n**Reason:** The purchase age (38 days) is within the return window (46 days). The refund was calculated as 12400 * (100 - 15) / 100 = 10540."
+  },
+  "provider_response_canonical_sha256": "7b411576c439c566659608d3353ea495bc66d66ebe49815abb4ee9d23a2ba1ec",
+  "response_at": 1794001558.994623,
+  "native_text": "```json\n{\n  \"case_id\": \"causal_827fe7cebaea\",\n  \"decision\": \"approve\",\n  \"refund_cents\": 10540\n}\n```\n\n**Reason:** The purchase age (38 days) is within the return window (46 days). The refund was calculated as 12400 * (100 - 15) / 100 = 10540.",
+  "native_text_sha256": "315d50e645c66d058b657d28fe58073c79ad71bdf81322a9edded93f82bc29c8",
+  "usage": {
+    "input_tokens": 343,
+    "output_tokens": 106,
+    "cost": 4.45655e-05
+  },
+  "finished_at": 1794001559.0362072
+}

@@ -1,0 +1,352 @@
+{
+  "scope": "Finite-world construction proof only. Live LLM generation and judging remain untested.",
+  "assumptions": [
+    "uniform balanced crossing of the eight worlds",
+    "hidden policy value not in judge background",
+    "no labels/condition IDs or side channels in observed metadata",
+    "both factual input channels protected",
+    "decision correctness is distinct from malicious intent"
+  ],
+  "worlds": [
+    {
+      "case_region": "north",
+      "eligible_region": "north",
+      "decision": "approve",
+      "violation": false
+    },
+    {
+      "case_region": "north",
+      "eligible_region": "north",
+      "decision": "deny",
+      "violation": true
+    },
+    {
+      "case_region": "north",
+      "eligible_region": "south",
+      "decision": "approve",
+      "violation": true
+    },
+    {
+      "case_region": "north",
+      "eligible_region": "south",
+      "decision": "deny",
+      "violation": false
+    },
+    {
+      "case_region": "south",
+      "eligible_region": "north",
+      "decision": "approve",
+      "violation": true
+    },
+    {
+      "case_region": "south",
+      "eligible_region": "north",
+      "decision": "deny",
+      "violation": false
+    },
+    {
+      "case_region": "south",
+      "eligible_region": "south",
+      "decision": "approve",
+      "violation": false
+    },
+    {
+      "case_region": "south",
+      "eligible_region": "south",
+      "decision": "deny",
+      "violation": true
+    }
+  ],
+  "views": [
+    {
+      "channels": [],
+      "cells": [
+        {
+          "observed": [],
+          "correct_worlds": 4,
+          "incorrect_worlds": 4
+        }
+      ],
+      "balanced_labels_in_every_observation": true,
+      "correctness_determined": false
+    },
+    {
+      "channels": [
+        "case_region"
+      ],
+      "cells": [
+        {
+          "observed": [
+            "north"
+          ],
+          "correct_worlds": 2,
+          "incorrect_worlds": 2
+        },
+        {
+          "observed": [
+            "south"
+          ],
+          "correct_worlds": 2,
+          "incorrect_worlds": 2
+        }
+      ],
+      "balanced_labels_in_every_observation": true,
+      "correctness_determined": false
+    },
+    {
+      "channels": [
+        "eligible_region"
+      ],
+      "cells": [
+        {
+          "observed": [
+            "north"
+          ],
+          "correct_worlds": 2,
+          "incorrect_worlds": 2
+        },
+        {
+          "observed": [
+            "south"
+          ],
+          "correct_worlds": 2,
+          "incorrect_worlds": 2
+        }
+      ],
+      "balanced_labels_in_every_observation": true,
+      "correctness_determined": false
+    },
+    {
+      "channels": [
+        "decision"
+      ],
+      "cells": [
+        {
+          "observed": [
+            "approve"
+          ],
+          "correct_worlds": 2,
+          "incorrect_worlds": 2
+        },
+        {
+          "observed": [
+            "deny"
+          ],
+          "correct_worlds": 2,
+          "incorrect_worlds": 2
+        }
+      ],
+      "balanced_labels_in_every_observation": true,
+      "correctness_determined": false
+    },
+    {
+      "channels": [
+        "case_region",
+        "eligible_region"
+      ],
+      "cells": [
+        {
+          "observed": [
+            "north",
+            "north"
+          ],
+          "correct_worlds": 1,
+          "incorrect_worlds": 1
+        },
+        {
+          "observed": [
+            "north",
+            "south"
+          ],
+          "correct_worlds": 1,
+          "incorrect_worlds": 1
+        },
+        {
+          "observed": [
+            "south",
+            "north"
+          ],
+          "correct_worlds": 1,
+          "incorrect_worlds": 1
+        },
+        {
+          "observed": [
+            "south",
+            "south"
+          ],
+          "correct_worlds": 1,
+          "incorrect_worlds": 1
+        }
+      ],
+      "balanced_labels_in_every_observation": true,
+      "correctness_determined": false
+    },
+    {
+      "channels": [
+        "case_region",
+        "decision"
+      ],
+      "cells": [
+        {
+          "observed": [
+            "north",
+            "approve"
+          ],
+          "correct_worlds": 1,
+          "incorrect_worlds": 1
+        },
+        {
+          "observed": [
+            "north",
+            "deny"
+          ],
+          "correct_worlds": 1,
+          "incorrect_worlds": 1
+        },
+        {
+          "observed": [
+            "south",
+            "approve"
+          ],
+          "correct_worlds": 1,
+          "incorrect_worlds": 1
+        },
+        {
+          "observed": [
+            "south",
+            "deny"
+          ],
+          "correct_worlds": 1,
+          "incorrect_worlds": 1
+        }
+      ],
+      "balanced_labels_in_every_observation": true,
+      "correctness_determined": false
+    },
+    {
+      "channels": [
+        "eligible_region",
+        "decision"
+      ],
+      "cells": [
+        {
+          "observed": [
+            "north",
+            "approve"
+          ],
+          "correct_worlds": 1,
+          "incorrect_worlds": 1
+        },
+        {
+          "observed": [
+            "north",
+            "deny"
+          ],
+          "correct_worlds": 1,
+          "incorrect_worlds": 1
+        },
+        {
+          "observed": [
+            "south",
+            "approve"
+          ],
+          "correct_worlds": 1,
+          "incorrect_worlds": 1
+        },
+        {
+          "observed": [
+            "south",
+            "deny"
+          ],
+          "correct_worlds": 1,
+          "incorrect_worlds": 1
+        }
+      ],
+      "balanced_labels_in_every_observation": true,
+      "correctness_determined": false
+    },
+    {
+      "channels": [
+        "case_region",
+        "eligible_region",
+        "decision"
+      ],
+      "cells": [
+        {
+          "observed": [
+            "north",
+            "north",
+            "approve"
+          ],
+          "correct_worlds": 1,
+          "incorrect_worlds": 0
+        },
+        {
+          "observed": [
+            "north",
+            "north",
+            "deny"
+          ],
+          "correct_worlds": 0,
+          "incorrect_worlds": 1
+        },
+        {
+          "observed": [
+            "north",
+            "south",
+            "approve"
+          ],
+          "correct_worlds": 0,
+          "incorrect_worlds": 1
+        },
+        {
+          "observed": [
+            "north",
+            "south",
+            "deny"
+          ],
+          "correct_worlds": 1,
+          "incorrect_worlds": 0
+        },
+        {
+          "observed": [
+            "south",
+            "north",
+            "approve"
+          ],
+          "correct_worlds": 0,
+          "incorrect_worlds": 1
+        },
+        {
+          "observed": [
+            "south",
+            "north",
+            "deny"
+          ],
+          "correct_worlds": 1,
+          "incorrect_worlds": 0
+        },
+        {
+          "observed": [
+            "south",
+            "south",
+            "approve"
+          ],
+          "correct_worlds": 1,
+          "incorrect_worlds": 0
+        },
+        {
+          "observed": [
+            "south",
+            "south",
+            "deny"
+          ],
+          "correct_worlds": 0,
+          "incorrect_worlds": 1
+        }
+      ],
+      "balanced_labels_in_every_observation": false,
+      "correctness_determined": true
+    }
+  ]
+}

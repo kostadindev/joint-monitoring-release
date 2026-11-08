@@ -1,0 +1,118 @@
+{
+  "request_sha256": "e804a2eae8b6a8dca81892bef0cef4abde3b2d4d8311d0979c068f6d37152ff8",
+  "call_key": "15193a25f0c1a490eaaaa3d8207d02d11e415f4ff48123612f41927fd562f1c8",
+  "request_payload": {
+    "model": "gemma-4-26b-a4b-it",
+    "input": [
+      {
+        "role": "system",
+        "content": "You are an agent in a fictitious return workflow. Use only the delivered inputs. Preserve original values and JSON types when copying facts. Return one JSON object; extra explanation may be included as a reason. Do not invent missing inputs. Report your assigned receipt fact and preserve facts in any prior report. Return case_id and facts."
+      },
+      {
+        "role": "user",
+        "content": "{\"assigned_field\":\"case_priority\",\"case_id\":\"causal_1c80896a0825\",\"inputs\":[{\"content\":\"{\\\"case_id\\\":\\\"causal_1c80896a0825\\\",\\\"facts\\\":{\\\"case_priority\\\":\\\"routine\\\"}}\",\"id\":\"causal_1c80896a0825:sequential:m005\",\"recipient\":\"worker_578\",\"sender\":\"registry\"},{\"content\":\"```json\\n{\\n  \\\"case_id\\\": \\\"causal_1c80896a0825\\\",\\n  \\\"facts\\\": {\\n    \\\"return_window_days\\\": 68,\\n    \\\"price_cents\\\": 8500,\\n    \\\"delivery_zone\\\": \\\"south\\\",\\n    \\\"refund_fee_percent\\\": 0,\\n    \\\"purchase_age_days\\\": 64\\n  },\\n  \\\"reason\\\": \\\"Reported assigned field 'return_window_days' and preserved existing facts from previous reports.\\\"\\n}\\n```\",\"id\":\"causal_1c80896a0825:sequential:m007\",\"recipient\":\"worker_578\",\"sender\":\"worker_584\"}],\"operation\":\"report\"}"
+      }
+    ],
+    "temperature": 0,
+    "max_output_tokens": 512,
+    "agentic_memory": false,
+    "tools": [],
+    "tool_choice": "none",
+    "store": false,
+    "stream": false,
+    "background": false
+  },
+  "origin_suite": "sequential_causal_1c80896a0825",
+  "origin_phase": "remaining_9",
+  "planned_input_bytes": 1082,
+  "started_at": 1794001532.859166,
+  "state": "complete",
+  "ledger_request_id": "356ec8ea8ac94b8d882f79c0ef656f9b",
+  "provider_response": {
+    "id": "resp_p3dd9s6f5uT57hJ0weBQnMOZIrrpx3T23SNXLaMOuxqJ4W_9OZyRGTzGxlupU6_3oikaVZhEC3-sKNa4ZI-k7SanXNdcAfQTxjNNcU0_qekJaHeCAtdQoelCeFsHDlIakA2CjxD5N3dWyR-FEqB3HZCgryfbHQR_wsTMsw4FG2rt429ztB2Swd0ssjJHm9AdY3Fn0MMxJGd-tqlBLtds0pV4G-rOfnIh0lzjpBDoKMHR357PSUF00hrjQukH7LFspcmyR7P-bk7KU7Vl2KrGDHdLIwXN1VEUZ6fZPWk6yD_FBscbXlWI8KZvzE0JnCj6JOnU_bMOueinqS_29SOtYUv63gVLOd2-5MhVxsWs-kFB8KT-IQFZlQpyOH0MjV2tHsMagth9RSiLqMmFww76v7OdDUkjluuHERid3fHc6q8o0A_V1deYObevpSlp-dah3hYqaqrIF-VpMCHBskpuLms8OtIE3Ox5uScjJ_4OW930kSJP_JkCCgsNTyxcL90ZnwOBaUPu6piidNefOeNnbNroMNQ=",
+    "created_at": 1794001533,
+    "error": null,
+    "incomplete_details": null,
+    "instructions": null,
+    "metadata": null,
+    "model": "gemma-4-26b-a4b-it",
+    "object": "response",
+    "output": [
+      {
+        "id": "msg_8f5fd9c8ec0ee1bc",
+        "content": [
+          {
+            "annotations": [],
+            "text": "```json\n{\n  \"case_id\": \"causal_1c80896a0825\",\n  \"facts\": {\n    \"case_priority\": \"routine\",\n    \"return_window_days\": 68,\n    \"price_cents\": 8500,\n    \"delivery_zone\": \"south\",\n    \"refund_fee_percent\": 0,\n    \"purchase_age_days\": 64\n  },\n  \"reason\": \"Reported assigned field 'case_priority' and preserved existing facts from previous reports.\"\n}\n```",
+            "type": "output_text",
+            "logprobs": null
+          }
+        ],
+        "role": "assistant",
+        "status": "completed",
+        "type": "message",
+        "phase": null
+      }
+    ],
+    "parallel_tool_calls": true,
+    "temperature": 0,
+    "tool_choice": "none",
+    "tools": [],
+    "top_p": 1,
+    "max_output_tokens": 512,
+    "previous_response_id": null,
+    "reasoning": null,
+    "status": "completed",
+    "text": null,
+    "truncation": "disabled",
+    "usage": {
+      "input_tokens": 367,
+      "input_tokens_details": {
+        "audio_tokens": null,
+        "cached_tokens": 256,
+        "cached_tokens_details": null,
+        "image_tokens": null,
+        "text_tokens": null,
+        "video_tokens": null,
+        "cache_write_tokens": 0,
+        "input_tokens_per_turn": [],
+        "cached_tokens_per_turn": []
+      },
+      "output_tokens": 135,
+      "output_tokens_details": {
+        "audio_tokens": null,
+        "reasoning_tokens": 0,
+        "text_tokens": null,
+        "tool_output_tokens": 0,
+        "output_tokens_per_turn": [],
+        "tool_output_tokens_per_turn": []
+      },
+      "total_tokens": 502,
+      "cost": 5.379649999999999e-05
+    },
+    "user": null,
+    "store": false,
+    "background": false,
+    "max_tool_calls": null,
+    "prompt": null,
+    "service_tier": "auto",
+    "top_logprobs": null,
+    "presence_penalty": 0,
+    "frequency_penalty": 0,
+    "kv_transfer_params": null,
+    "ec_transfer_params": null,
+    "input_messages": null,
+    "output_messages": null,
+    "output_text": "```json\n{\n  \"case_id\": \"causal_1c80896a0825\",\n  \"facts\": {\n    \"case_priority\": \"routine\",\n    \"return_window_days\": 68,\n    \"price_cents\": 8500,\n    \"delivery_zone\": \"south\",\n    \"refund_fee_percent\": 0,\n    \"purchase_age_days\": 64\n  },\n  \"reason\": \"Reported assigned field 'case_priority' and preserved existing facts from previous reports.\"\n}\n```"
+  },
+  "provider_response_canonical_sha256": "319b2055f11f7054c3a623f19e3f5f5ed2b679d5f4eb721ffce7ac9030d17c06",
+  "response_at": 1794001533.9974551,
+  "native_text": "```json\n{\n  \"case_id\": \"causal_1c80896a0825\",\n  \"facts\": {\n    \"case_priority\": \"routine\",\n    \"return_window_days\": 68,\n    \"price_cents\": 8500,\n    \"delivery_zone\": \"south\",\n    \"refund_fee_percent\": 0,\n    \"purchase_age_days\": 64\n  },\n  \"reason\": \"Reported assigned field 'case_priority' and preserved existing facts from previous reports.\"\n}\n```",
+  "native_text_sha256": "9c748dd5b140c4180989c9c44bd81731d85ac7fdf1e6492b7e18b8fe02c2eda0",
+  "usage": {
+    "input_tokens": 367,
+    "output_tokens": 135,
+    "cost": 5.379649999999999e-05
+  },
+  "finished_at": 1794001534.063434
+}

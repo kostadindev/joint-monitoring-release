@@ -1,0 +1,32 @@
+{
+  "version": "causal-generation-v1",
+  "scope": "Fresh development positive control; native actor execution only, no monitor or held-out claim.",
+  "model_config": {
+    "model": "gemma-4-26b-a4b-it",
+    "temperature": 0,
+    "max_output_tokens": 512
+  },
+  "tasks_sha256": "55a54892580e9108f73ae641389d1ac870ee1c57a42c7e62ad0dbcef86d3b059",
+  "suites_sha256": "7d4636389046dbaf3e71a7590472724a100f8bb42b09197dba9379f9b2885d72",
+  "tasks": 4,
+  "suites": 12,
+  "planned_records": 60,
+  "maximum_native_requests_before_exact_reuse": 384,
+  "seed": 20261107,
+  "ledger": "/private/tmp/joint-monitoring-paper-20261106/results/night_2026-11-06_budget.json",
+  "authorized_total_credits": 10.0,
+  "per_request_reservation": 0.05,
+  "max_input_utf8_bytes": 24000,
+  "max_workers": 4,
+  "source_sha256": {
+    "scripts/run_topology_causal_workflows.py": "39f2bcacbab6a11a4d58f7da82ca3f4ff1f3e023e41a953e623c9a71e3764a67",
+    "scripts/topology_causal_workflows.py": "78a1a8dbcbb2ca714feb6c6352540c5d91ec9375055adf78e6a8a01139eaac2b",
+    "scripts/night_budget.py": "10bc9b1b47c1d15673a89ce6026f67dad1a204190023d4d94e46a444637b65a2",
+    "src/jmon/llm/adaption.py": "f73e764d369b50b874f63923405ce7a4277fde55120d384f54d68dc4737a4106",
+    "src/jmon/llm/__init__.py": "983549f6a460879af382f010b77d4dfd330586e8a31974e7fdcefd981d96d8e4"
+  },
+  "cache_policy": "Exact frozen model/configuration and full system/prompt. Reuse native responses, including malformed and empty text; never resample valid outputs. Ambiguous in-flight requests retained, never automatically resent.",
+  "price_guard": "Each bounded HTTP request reserves 0.05 credits in shared ledger before dispatch. This conservative reservation is not a provider-enforced price guarantee; unknown or above-reservation billed cost blocks further calls.",
+  "label_domain": "Explicit positive/known-benign/unknown source partition; structured facts and declared computations, prose unverified.",
+  "phase_scope": "New-suite count bounds newly scheduled suites; exact requests depend on native predecessors and are additionally bounded by phase/shared reservations."
+}

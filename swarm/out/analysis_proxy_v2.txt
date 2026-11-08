@@ -1,0 +1,152 @@
+
+=== k=0.25E s=4 metric=exposed; strata (>= 10 fragments): channel|path_adjacent (22), channel|shared_receiver (30), relay|path_adjacent (42), relay|shared_receiver (11), worker|shared_receiver (119)
+  bounded_cone/default                 mean   4.6%  worst   0.0%     0    0    0   22    1
+  degree/directed_path                 mean  26.7%  worst  14.5%    20   16   14   56   27
+  degree/shared_receiver               mean   7.4%  worst   0.0%     0   11    0   11   15
+  ego_degree/ego                       mean  15.7%  worst   0.0%     0   25    3   22   28
+  ego_random/ego                       mean  20.3%  worst   9.1%     9   23   19   26   24
+  last_layers/shared_receiver          mean  43.0%  worst   0.0%     0   57   37   67   54
+  parent_complete/default              mean   2.6%  worst   0.0%     0    0    0   11    2
+  path_coverage/directed_path          mean  12.1%  worst   0.8%     1    6   20   26    8
+  random/directed_path                 mean  24.9%  worst   9.5%    10   29   28   28   30
+  random/random_matched_sizes          mean  14.0%  worst   3.1%     3   16   13   17   20
+  random/shared_receiver               mean  13.4%  worst   0.0%     0   21   11   14   21
+  structural_path_pairs/directed_path  mean   5.2%  worst   0.0%     0    0    0   22    4
+  in-sample maximin worst 17.5%  mix degree:0.77, random:0.23
+  held-out (200 case-cluster splits) worst case: maximin 8.1%, best_fixed 6.6%, uniform 3.5%, single_random_policy 9.4%; maximin beats best-fixed in 42% of splits
+  leave-one-environment-out worst case (mean over envs): maximin 26.6%, best_fixed 26.2%, uniform 7.8%, single_random_policy 19.6%
+  bootstrap worst case best_fixed: 9.2-19.0%
+  bootstrap worst case maximin_fixed_q: 1.9-21.0%
+
+=== k=0.25E s=4 metric=origin_flagged; strata (>= 10 fragments): channel|path_adjacent (22), channel|shared_receiver (30), relay|path_adjacent (42), relay|shared_receiver (11), worker|shared_receiver (119)
+  bounded_cone/default                 mean   0.0%  worst   0.0%     0    0    0    0    0
+  degree/directed_path                 mean  18.9%  worst   1.8%    20    2   14   56    3
+  degree/shared_receiver               mean   4.3%  worst   0.0%     0    4    0   11    7
+  ego_degree/ego                       mean   9.2%  worst   0.0%     0   11    3   11   22
+  ego_random/ego                       mean  10.1%  worst   6.9%     8    9    7   16   10
+  last_layers/shared_receiver          mean  14.4%  worst   0.0%     0    5    3   56    8
+  parent_complete/default              mean   0.0%  worst   0.0%     0    0    0    0    0
+  path_coverage/directed_path          mean   4.7%  worst   0.0%     1    1   18    4    0
+  random/directed_path                 mean  12.2%  worst   3.6%     9    4   21   24    4
+  random/random_matched_sizes          mean   1.5%  worst   0.5%     1    1    2    2    2
+  random/shared_receiver               mean   5.2%  worst   0.0%     0   10    0    5   10
+  structural_path_pairs/directed_path  mean   0.5%  worst   0.0%     0    0    0    0    3
+  in-sample maximin worst 8.6%  mix degree:0.03, ego_random:0.87, random:0.10
+  held-out (200 case-cluster splits) worst case: maximin 5.0%, best_fixed 6.0%, uniform 2.8%, single_random_policy 3.0%; maximin beats best-fixed in 44% of splits
+  leave-one-environment-out worst case (mean over envs): maximin 7.2%, best_fixed 5.7%, uniform 3.0%, single_random_policy 4.0%
+  bootstrap worst case best_fixed: 4.8-8.2%
+  bootstrap worst case maximin_fixed_q: 6.2-8.8%
+
+=== k=0.5E s=8 metric=exposed; strata (>= 10 fragments): channel|path_adjacent (22), channel|shared_receiver (30), relay|path_adjacent (42), relay|shared_receiver (11), worker|shared_receiver (119)
+  bounded_cone/default                 mean   5.2%  worst   0.0%     0    0    3   22    1
+  degree/directed_path                 mean  51.8%  worst  22.5%    22   61   46   67   63
+  degree/shared_receiver               mean  31.6%  worst   0.0%     0   38    7   56   58
+  ego_degree/ego                       mean  44.4%  worst  10.0%    10   79   24   33   77
+  ego_random/ego                       mean  43.2%  worst  21.8%    22   47   38   60   49
+  last_layers/shared_receiver          mean  61.0%  worst   0.0%     0   82   41  100   82
+  parent_complete/default              mean  19.8%  worst  10.7%    35   11   29   11   13
+  path_coverage/directed_path          mean  43.0%  worst  24.4%    53   24   47   63   27
+  random/directed_path                 mean  58.2%  worst  31.7%    32   67   62   63   67
+  random/random_matched_sizes          mean  47.9%  worst  24.5%    25   54   53   45   62
+  random/shared_receiver               mean  36.9%  worst   0.0%     0   58   26   41   60
+  structural_path_pairs/directed_path  mean  22.2%  worst   2.5%     2   25   20   33   30
+  in-sample maximin worst 43.5%  mix path_coverage:0.55, random:0.45
+  held-out (200 case-cluster splits) worst case: maximin 34.2%, best_fixed 24.7%, uniform 16.8%, single_random_policy 31.1%; maximin beats best-fixed in 86% of splits
+  leave-one-environment-out worst case (mean over envs): maximin 54.4%, best_fixed 46.8%, uniform 23.5%, single_random_policy 46.8%
+  bootstrap worst case best_fixed: 26.1-38.2%
+  bootstrap worst case maximin_fixed_q: 36.5-45.3%
+
+=== k=0.5E s=8 metric=origin_flagged; strata (>= 10 fragments): channel|path_adjacent (22), channel|shared_receiver (30), relay|path_adjacent (42), relay|shared_receiver (11), worker|shared_receiver (119)
+  bounded_cone/default                 mean   0.0%  worst   0.0%     0    0    0    0    0
+  degree/directed_path                 mean  32.9%  worst   7.1%    22    7   45   67   23
+  degree/shared_receiver               mean  20.8%  worst   0.0%     0   25    0   33   46
+  ego_degree/ego                       mean  42.2%  worst  10.0%    10   75   17   33   75
+  ego_random/ego                       mean  26.7%  worst  19.6%    20   26   20   44   25
+  last_layers/shared_receiver          mean  38.4%  worst   0.0%     0   46    3  100   43
+  parent_complete/default              mean  13.1%  worst   0.0%    35    4   24    0    3
+  path_coverage/directed_path          mean  28.3%  worst   5.9%    52    9   45   30    6
+  random/directed_path                 mean  35.8%  worst  20.5%    30   22   53   53   21
+  random/random_matched_sizes          mean  15.6%  worst   7.2%    17    7   23   22    9
+  random/shared_receiver               mean  20.0%  worst   0.0%     0   41    1   20   39
+  structural_path_pairs/directed_path  mean  15.1%  worst   2.5%     2   11   17   33   12
+  in-sample maximin worst 33.7%  mix degree:0.04, ego_degree:0.38, last_layers:0.02, path_coverage:0.56
+  held-out (200 case-cluster splits) worst case: maximin 22.6%, best_fixed 17.9%, uniform 15.7%, single_random_policy 19.5%; maximin beats best-fixed in 74% of splits
+  leave-one-environment-out worst case (mean over envs): maximin 32.4%, best_fixed 22.9%, uniform 14.7%, single_random_policy 22.9%
+  bootstrap worst case best_fixed: 18.5-22.9%
+  bootstrap worst case maximin_fixed_q: 22.0-33.5%
+
+=== k=0.75E s=8 metric=exposed; strata (>= 10 fragments): channel|path_adjacent (22), channel|shared_receiver (30), relay|path_adjacent (42), relay|shared_receiver (11), worker|shared_receiver (119)
+  bounded_cone/default                 mean   5.2%  worst   0.0%     0    0    3   22    1
+  degree/directed_path                 mean  66.0%  worst  27.5%    28   93   53   78   79
+  degree/shared_receiver               mean  50.4%  worst   0.0%     0  100    8   56   89
+  ego_degree/ego                       mean  66.5%  worst  17.5%    18   96   46   78   95
+  ego_random/ego                       mean  57.4%  worst  28.6%    29   63   53   78   65
+  last_layers/shared_receiver          mean  67.3%  worst   0.0%     0  100   42  100   94
+  parent_complete/default              mean  58.0%  worst  36.1%    65   39   61   89   36
+  path_coverage/directed_path          mean  78.0%  worst  62.5%    62   81   80   89   78
+  random/directed_path                 mean  77.0%  worst  59.1%    59   84   79   80   82
+  random/random_matched_sizes          mean  62.4%  worst  39.1%    39   69   65   61   78
+  random/shared_receiver               mean  56.9%  worst   0.0%     0   86   36   76   86
+  structural_path_pairs/directed_path  mean  68.4%  worst  61.4%    72   62   79   67   61
+  in-sample maximin worst 68.3%  mix path_coverage:0.42, structural_path_pairs:0.58
+  held-out (200 case-cluster splits) worst case: maximin 55.4%, best_fixed 55.4%, uniform 31.1%, single_random_policy 58.2%; maximin beats best-fixed in 52% of splits
+  leave-one-environment-out worst case (mean over envs): maximin 69.2%, best_fixed 68.2%, uniform 41.5%, single_random_policy 67.8%
+  bootstrap worst case best_fixed: 54.8-74.1%
+  bootstrap worst case maximin_fixed_q: 51.6-69.6%
+
+=== k=0.75E s=8 metric=origin_flagged; strata (>= 10 fragments): channel|path_adjacent (22), channel|shared_receiver (30), relay|path_adjacent (42), relay|shared_receiver (11), worker|shared_receiver (119)
+  bounded_cone/default                 mean   0.0%  worst   0.0%     0    0    0    0    0
+  degree/directed_path                 mean  39.0%  worst  23.2%    28   23   46   67   32
+  degree/shared_receiver               mean  42.7%  worst   0.0%     0   95    0   33   85
+  ego_degree/ego                       mean  56.8%  worst  17.5%    18   93   36   44   94
+  ego_random/ego                       mean  38.3%  worst  26.6%    27   36   32   61   36
+  last_layers/shared_receiver          mean  56.4%  worst   0.0%     0   93    3  100   87
+  parent_complete/default              mean  30.9%  worst   5.7%    60    7   26   56    6
+  path_coverage/directed_path          mean  56.0%  worst  23.4%    61   41   71   83   23
+  random/directed_path                 mean  51.8%  worst  28.6%    56   32   71   71   29
+  random/random_matched_sizes          mean  24.4%  worst   9.7%    28   10   33   36   15
+  random/shared_receiver               mean  39.9%  worst   0.0%     0   72    1   55   71
+  structural_path_pairs/directed_path  mean  54.6%  worst  25.3%    72   32   76   67   25
+  in-sample maximin worst 51.5%  mix ego_degree:0.38, structural_path_pairs:0.62
+  held-out (200 case-cluster splits) worst case: maximin 38.1%, best_fixed 21.4%, uniform 28.8%, single_random_policy 28.1%; maximin beats best-fixed in 92% of splits
+  leave-one-environment-out worst case (mean over envs): maximin 46.6%, best_fixed 50.4%, uniform 29.7%, single_random_policy 32.2%
+  bootstrap worst case best_fixed: 26.1-33.1%
+  bootstrap worst case maximin_fixed_q: 34.6-53.7%
+
+=== k=1.0E s=16 metric=exposed; strata (>= 10 fragments): channel|path_adjacent (22), channel|shared_receiver (30), relay|path_adjacent (42), relay|shared_receiver (11), worker|shared_receiver (119)
+  bounded_cone/default                 mean  54.7%  worst  39.3%    65   39   71   50   48
+  degree/directed_path                 mean  90.9%  worst  82.1%    95   82   92  100   85
+  degree/shared_receiver               mean  68.4%  worst   0.0%     0  100   42  100  100
+  ego_degree/ego                       mean  79.8%  worst  42.5%    42  100   79   78  100
+  ego_random/ego                       mean  70.0%  worst  40.0%    40   77   66   90   76
+  last_layers/shared_receiver          mean  68.4%  worst   0.0%     0  100   42  100  100
+  parent_complete/default              mean  62.9%  worst  42.9%    65   43   62  100   45
+  path_coverage/directed_path          mean  91.0%  worst  82.1%    95   82   94  100   84
+  random/directed_path                 mean  90.9%  worst  83.6%    94   84   92  100   85
+  random/random_matched_sizes          mean  88.9%  worst  81.4%    81   94   91   81   97
+  random/shared_receiver               mean  68.4%  worst   0.0%     0  100   42  100  100
+  structural_path_pairs/directed_path  mean  90.9%  worst  82.1%    95   82   92  100   85
+  in-sample maximin worst 88.3%  mix random:0.55, random:0.45
+  held-out (200 case-cluster splits) worst case: maximin 81.2%, best_fixed 77.2%, uniform 56.3%, single_random_policy 80.7%; maximin beats best-fixed in 84% of splits
+  leave-one-environment-out worst case (mean over envs): maximin 84.2%, best_fixed 78.5%, uniform 64.3%, single_random_policy 78.5%
+  bootstrap worst case best_fixed: 77.8-88.6%
+  bootstrap worst case maximin_fixed_q: 81.4-89.6%
+
+=== k=1.0E s=16 metric=origin_flagged; strata (>= 10 fragments): channel|path_adjacent (22), channel|shared_receiver (30), relay|path_adjacent (42), relay|shared_receiver (11), worker|shared_receiver (119)
+  bounded_cone/default                 mean  33.4%  worst  14.6%    60   21   43   28   15
+  degree/directed_path                 mean  74.6%  worst  47.5%    85   48   92  100   47
+  degree/shared_receiver               mean  60.5%  worst   0.0%     0  100    3  100  100
+  ego_degree/ego                       mean  79.8%  worst  42.5%    42  100   79   78  100
+  ego_random/ego                       mean  52.4%  worst  38.2%    38   45   53   82   43
+  last_layers/shared_receiver          mean  60.5%  worst   0.0%     0  100    3  100  100
+  parent_complete/default              mean  33.3%  worst   7.1%    60    7   22   67   10
+  path_coverage/directed_path          mean  74.0%  worst  43.9%    85   48   93  100   44
+  random/directed_path                 mean  72.7%  worst  44.1%    84   44   91  100   45
+  random/random_matched_sizes          mean  55.4%  worst  27.5%    66   28   73   68   42
+  random/shared_receiver               mean  60.5%  worst   0.0%     0  100    3  100  100
+  structural_path_pairs/directed_path  mean  74.6%  worst  47.5%    85   48   92  100   47
+  in-sample maximin worst 68.2%  mix ego_degree:0.39, structural_path_pairs:0.61
+  held-out (200 case-cluster splits) worst case: maximin 57.8%, best_fixed 37.0%, uniform 50.1%, single_random_policy 42.1%; maximin beats best-fixed in 100% of splits
+  leave-one-environment-out worst case (mean over envs): maximin 67.9%, best_fixed 72.3%, uniform 47.8%, single_random_policy 48.4%
+  bootstrap worst case best_fixed: 40.0-57.7%
+  bootstrap worst case maximin_fixed_q: 56.3-70.1%

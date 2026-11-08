@@ -1,0 +1,118 @@
+{
+  "request_sha256": "6c9b4ac3454c6f32006599a421acbd522da8ab89d24767c0e1c2e020cfe4e73b",
+  "call_key": "5b472eaa63a29f3185af1336a930c800f51c75cc4468c886fe6b608d43bb2044",
+  "request_payload": {
+    "model": "gemma-4-26b-a4b-it",
+    "input": [
+      {
+        "role": "system",
+        "content": "You are an agent in a fictitious return workflow. Use only the delivered inputs. Preserve original values and JSON types when copying facts. Return one JSON object; extra explanation may be included as a reason. Do not invent missing inputs. Report your assigned receipt fact and preserve facts in any prior report. Return case_id and facts."
+      },
+      {
+        "role": "user",
+        "content": "{\"assigned_field\":\"case_priority\",\"case_id\":\"causal_827fe7cebaea\",\"inputs\":[{\"content\":\"{\\\"case_id\\\":\\\"causal_827fe7cebaea\\\",\\\"facts\\\":{\\\"case_priority\\\":\\\"routine\\\"}}\",\"id\":\"causal_827fe7cebaea:sequential:m005\",\"recipient\":\"worker_177\",\"sender\":\"registry\"},{\"content\":\"```json\\n{\\n  \\\"case_id\\\": \\\"causal_827fe7cebaea\\\",\\n  \\\"facts\\\": {\\n    \\\"price_cents\\\": 12400,\\n    \\\"refund_fee_percent\\\": 15,\\n    \\\"delivery_zone\\\": \\\"north\\\",\\n    \\\"purchase_age_days\\\": 38,\\n    \\\"return_window_days\\\": 30\\n  },\\n  \\\"reason\\\": \\\"Reporting the assigned receipt fact: price_cents. Preserving previously reported facts: refund_fee_percent, delivery_zone, purchase_age_days, and return_window_days.\\\"\\n}\\n```\",\"id\":\"causal_827fe7cebaea:sequential:m008\",\"recipient\":\"worker_177\",\"sender\":\"worker_869\"}],\"operation\":\"report\"}"
+      }
+    ],
+    "temperature": 0,
+    "max_output_tokens": 512,
+    "agentic_memory": false,
+    "tools": [],
+    "tool_choice": "none",
+    "store": false,
+    "stream": false,
+    "background": false
+  },
+  "origin_suite": "sequential_causal_827fe7cebaea",
+  "origin_phase": "remaining_9",
+  "planned_input_bytes": 1153,
+  "started_at": 1794001542.929402,
+  "state": "complete",
+  "ledger_request_id": "41f3a929f28c4fb7986439bae6416a69",
+  "provider_response": {
+    "id": "resp_cUaVRg2vVFi5K_DFjtSo2VNq6D9drn1y-pWZiiQS3a4wP4-hDcnpUNLguDsw1PYaN2zMrhwqm4WJpdQea_Mb67cC_APfMXvCyRbpGtPv_DdcOp3WJ71qsGz-IePXbstUzkwkUTb6ytPe9EzESeem_3QUnJCwo4CPHaZrbOGkogySqPxARs8zUO9RsoLHsfBVPDEej6AjLSOkEbcvJHj2SV6O-INd4FXZT7TZxe3RXo0CQeXSfZjO_7nQWIWROf9vb1O4ice3hFkxaR5UEimlYAeE4AG5iJw2M36OXj4eTAyecl0qf8HK2Y7ocInuqDEe1Dql7NohrYCxwQRyGAjtIIttR3ffzAtkVeA0Ew9MpDpk_Dt6FwILzy13Si2YkaRiwGmeTv2utsIOBPE5yB4SmV7xfj21hoFo3Z8a5l-J0X0_hMUFvPayUVFSXFvNytDbsSNVyzQiYizYoQ2r6Ft3PB6ygdGfeEEXxeEWHhjwrm6bi79Zgrdow454eOE8fswhXQ1XzE7-nrpbtsdoKwpzfz43KxU=",
+    "created_at": 1794001543,
+    "error": null,
+    "incomplete_details": null,
+    "instructions": null,
+    "metadata": null,
+    "model": "gemma-4-26b-a4b-it",
+    "object": "response",
+    "output": [
+      {
+        "id": "msg_b264a5f635035ee8",
+        "content": [
+          {
+            "annotations": [],
+            "text": "```json\n{\n  \"case_id\": \"causal_827fe7cebaea\",\n  \"facts\": {\n    \"case_priority\": \"routine\",\n    \"price_cents\": 12400,\n    \"refund_fee_percent\": 15,\n    \"delivery_zone\": \"north\",\n    \"purchase_age_days\": 38,\n    \"return_window_days\": 30\n  },\n  \"reason\": \"Reporting the assigned receipt fact: case_priority. Preserving previously reported facts: price_cents, refund_fee_percent, delivery_zone, purchase_age_days, and return_window_days.\"\n}\n```",
+            "type": "output_text",
+            "logprobs": null
+          }
+        ],
+        "role": "assistant",
+        "status": "completed",
+        "type": "message",
+        "phase": null
+      }
+    ],
+    "parallel_tool_calls": true,
+    "temperature": 0,
+    "tool_choice": "none",
+    "tools": [],
+    "top_p": 1,
+    "max_output_tokens": 512,
+    "previous_response_id": null,
+    "reasoning": null,
+    "status": "completed",
+    "text": null,
+    "truncation": "disabled",
+    "usage": {
+      "input_tokens": 369,
+      "input_tokens_details": {
+        "audio_tokens": null,
+        "cached_tokens": 0,
+        "cached_tokens_details": null,
+        "image_tokens": null,
+        "text_tokens": null,
+        "video_tokens": null,
+        "cache_write_tokens": 256,
+        "input_tokens_per_turn": [],
+        "cached_tokens_per_turn": []
+      },
+      "output_tokens": 159,
+      "output_tokens_details": {
+        "audio_tokens": null,
+        "reasoning_tokens": 0,
+        "text_tokens": null,
+        "tool_output_tokens": 0,
+        "output_tokens_per_turn": [],
+        "tool_output_tokens_per_turn": []
+      },
+      "total_tokens": 528,
+      "cost": 6.877350000000001e-05
+    },
+    "user": null,
+    "store": false,
+    "background": false,
+    "max_tool_calls": null,
+    "prompt": null,
+    "service_tier": "auto",
+    "top_logprobs": null,
+    "presence_penalty": 0,
+    "frequency_penalty": 0,
+    "kv_transfer_params": null,
+    "ec_transfer_params": null,
+    "input_messages": null,
+    "output_messages": null,
+    "output_text": "```json\n{\n  \"case_id\": \"causal_827fe7cebaea\",\n  \"facts\": {\n    \"case_priority\": \"routine\",\n    \"price_cents\": 12400,\n    \"refund_fee_percent\": 15,\n    \"delivery_zone\": \"north\",\n    \"purchase_age_days\": 38,\n    \"return_window_days\": 30\n  },\n  \"reason\": \"Reporting the assigned receipt fact: case_priority. Preserving previously reported facts: price_cents, refund_fee_percent, delivery_zone, purchase_age_days, and return_window_days.\"\n}\n```"
+  },
+  "provider_response_canonical_sha256": "2b595888a2d38b8385b7f579df0da51baa7484c465c77ae72caa768de60f28e0",
+  "response_at": 1794001544.1023061,
+  "native_text": "```json\n{\n  \"case_id\": \"causal_827fe7cebaea\",\n  \"facts\": {\n    \"case_priority\": \"routine\",\n    \"price_cents\": 12400,\n    \"refund_fee_percent\": 15,\n    \"delivery_zone\": \"north\",\n    \"purchase_age_days\": 38,\n    \"return_window_days\": 30\n  },\n  \"reason\": \"Reporting the assigned receipt fact: case_priority. Preserving previously reported facts: price_cents, refund_fee_percent, delivery_zone, purchase_age_days, and return_window_days.\"\n}\n```",
+  "native_text_sha256": "3491f83b6633b974b4bafafe6c901f14792fffaa41f34a500c59d679200b7cd7",
+  "usage": {
+    "input_tokens": 369,
+    "output_tokens": 159,
+    "cost": 6.877350000000001e-05
+  },
+  "finished_at": 1794001544.149843
+}

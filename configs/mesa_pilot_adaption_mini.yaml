@@ -1,0 +1,23 @@
+name: mesa_pilot_adaption_mini
+master_seed: 0
+topology: centralized
+n_tasks: 20
+conditions:
+- clean
+- overt
+- a_only
+- b_only
+- ab
+- mismatched
+overt_edge_role: policy
+provider:
+  kind: adaption
+  model: gemma-4-26b-a4b-it
+  temperature: 0.0
+  max_output_tokens: 1024
+  cost:
+    allow_live: true
+    max_calls: 1400
+    max_tokens: 2500000
+    max_credits: 1.5
+out_dir: results/mesa_pilot_adaption_mini_gemma

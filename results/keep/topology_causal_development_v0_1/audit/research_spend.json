@@ -1,0 +1,15 @@
+{
+  "generation": {
+    "confirmed_credits": 0.009641414000000001,
+    "uncertain_retained_credits": 0.0,
+    "active_reserved_credits": 0.0,
+    "actual_ledger_requests": 207
+  },
+  "monitor": {
+    "confirmed_credits": 0.18115141999999998,
+    "uncertain_retained_credits": 0.0,
+    "active_reserved_credits": 0.0,
+    "actual_ledger_requests": 1420
+  },
+  "unlinked_ledger_requests_retained": []
+}
