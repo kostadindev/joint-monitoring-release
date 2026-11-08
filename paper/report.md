@@ -26,7 +26,7 @@ appeared legitimate when evaluated in isolation", and detection came from "the
 sustained nature of the attack", an aggregate signal [@anthropic2025gtg1002;
 @mitre2026c0062] (Figure 2, Appendix B). Monitors miss more attacks when they are split across subagents [@brown2026stateful] or agents [@kitaoka2026minilab], and clustering transcripts by content improves detection [@brown2026stateful].
 
-We extend MESA's formulation to include channel grouping.
+MESA uses the communication graph to select individual channels [@li2026mesa]; we extend its formulation to include channel grouping.
 Under a **monitoring budget** $k$ (MESA's defense budget), the defender selects which channels to inspect (**selection**); under a **context budget** $s$, it decides which of them share each monitor call (**grouping**). Like MESA's static score, we make both choices from the structure of the
 communication graph alone, before any message is read: the allocator sees who sends to whom, but no roles, message contents or labels. We ask: when a monitor cannot read
 every channel at once, which channels should it read together?
@@ -38,7 +38,7 @@ after reading them [@brown2026stateful]. To our knowledge, no prior work uses on
 **Contributions.**
 
 1. **Formulation.** Joint monitoring as two choices made from the communication graph
-   alone: which channels to inspect under a monitoring budget $k$ (MESA's problem) and
+   alone: which channels to inspect under a monitoring budget $k$, as MESA selects individual channels from the graph [@li2026mesa], and
    which to read together under a context budget $s$ (Section 2).
 2. **Dataset.** 660 multi-agent episodes with over 15,000 stored monitor calls, from
    executed agents (a customer-service benchmark and three workflow shapes) and
