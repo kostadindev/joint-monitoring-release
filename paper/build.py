@@ -1,13 +1,13 @@
-"""Build the Apart Research submission (LaTeX) from paper_v2/report.md.
+"""Build the submitted PDF (main.pdf, Apart Research template) from report.md.
 
 Restructures the Markdown into the Apart template's section order, converts it with pandoc
-(--natbib), and compiles main.tex with latexmk. Run from paper_apart/:  python3 build.py
+(--natbib), and compiles main.tex with latexmk. Run from paper/:  python3 build.py
 """
 import re, subprocess
 from pathlib import Path
 
 HERE = Path(__file__).resolve().parent
-SRC = (HERE.parent / "paper_v2" / "report.md").read_text()
+SRC = (HERE / "report.md").read_text()
 
 def sections(text):
     parts = re.split(r"(?m)^(# .*)$", text)

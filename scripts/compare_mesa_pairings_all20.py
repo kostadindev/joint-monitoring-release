@@ -1,4 +1,4 @@
-"""Sample-size expansion of the MESA four-channel replay (paper_v2 revision, 2026-11-07).
+"""Sample-size expansion of the MESA four-channel replay (2026-11-07).
 
 Identical to compare_mesa_pairings.py (same prompts, views, provider and parser), except
 that attacked episodes of all 20 tasks are scored, not only the 10 test tasks. With the

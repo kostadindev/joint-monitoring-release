@@ -18,13 +18,20 @@ results/*
 # MESA's code is not redistributed (no licence); see vendor/README.md
 vendor/mesa/
 
-# Intermediate files that paper_apart/build.py regenerates from paper_v2/report.md
-paper_apart/abstract.*
-paper_apart/body.*
-paper_apart/appendix.*
+# Intermediate files that paper/build.py regenerates from paper/report.md
+paper/abstract.*
+paper/body.*
+paper/appendix.*
+paper/*.aux
+paper/*.log
+paper/*.bbl
+paper/*.blg
+paper/*.fls
+paper/*.fdb_latexmk
+paper/*.out
 
 # Preview images the figure scripts write next to each PDF
-paper_v2/figures/*.png
+paper/figures/*.png
 
 # Swarm testbed: model-response caches and raw run folders (summaries are tracked)
 swarm/out/llm_cache/
