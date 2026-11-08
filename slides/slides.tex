@@ -8,7 +8,7 @@
 \pgfplotsset{compat=1.18}
 \usetikzlibrary{arrows.meta,positioning,fit,calc}
 \graphicspath{{../paper/figures/}{../paper/}}
-\newcommand{\src}[1]{\par\vfill{\raggedright\scriptsize\color{mute}#1\par}\vspace{2pt}}
+\newcommand{\src}[1]{\par\vfill{\raggedright\footnotesize\color{mute}#1\par}\vspace{2pt}}
 
 \definecolor{ink}{HTML}{1F2328}
 \definecolor{mute}{HTML}{6E7781}
@@ -76,17 +76,17 @@ Apart Research Swarm Alignment Hackathon, November 2026}
       {\color{mute}\small Brown et al.\ 2026; Kitaoka et al.\ 2026}
 \item Longer inputs do not make LLM monitors more discriminative.\\
       {\color{mute}\small Han et al.\ 2026}
-\item MESA picks which channels to protect under a budget, one channel at a time.\\
+\item MESA selects individual channels under a budget.\\
       {\color{mute}\small Li et al.\ 2026}
 \end{itemize}
 \vspace{18pt}
-{\large So a monitor must choose which channels to read, \textbf{and which to read together}.}
+{\large Choose \textbf{which channels to read} and \textbf{which to read together}.}
 \end{frame}
 
 % ---------------------------------------------------------------------------
 \begin{frame}{Same budget, only the right pair catches the lie}
 \centering
-\includegraphics[width=\textwidth]{overview.png}
+\makebox[\textwidth][c]{\includegraphics[width=1.06\textwidth]{overview.png}}
 \src{A compromised database agent says the purchase was 65 days ago; billing says 20. Illustration on MESA's customer-service topology (Li et al.\ 2026).}
 \end{frame}
 
@@ -98,7 +98,7 @@ Apart Research Swarm Alignment Hackathon, November 2026}
 inspect up to $k$ channels\\{\color{mute}\small MESA selects individual channels from the graph (Li et al.\ 2026)}
 \par\vspace{10pt}
 \textbf{Grouping}\par
-at most $s$ channels per monitor call {\color{mute}(new)}
+up to $s$ channels per call {\color{mute}(new)}
 \par\vspace{10pt}
 {\color{mute}Input: the anonymous communication graph.\\No roles, contents or labels.}
 \end{column}
@@ -122,7 +122,7 @@ at most $s$ channels per monitor call {\color{mute}(new)}
 \begin{tikzpicture}
 \begin{axis}[
   ylabel={false origins caught},ylabel style={font=\small},
-  width=9cm,height=4.6cm,
+  width=10.2cm,height=4.8cm,
   ybar=5pt,bar width=13pt,
   ymin=0,ymax=60,ytick={0,20,40,60},
   yticklabel={\pgfmathprintnumber{\tick}\%},
@@ -133,6 +133,7 @@ at most $s$ channels per monitor call {\color{mute}(new)}
   tick label style={font=\small},
   nodes near coords,nodes near coords style={font=\scriptsize},
   point meta=explicit symbolic,
+  nodes near coords style={font=\small},
   area legend,
   legend style={draw=none,font=\small,at={(0.5,-0.24)},anchor=north,legend columns=-1,
     /tikz/every even column/.append style={column sep=10pt}},
@@ -155,14 +156,15 @@ at most $s$ channels per monitor call {\color{mute}(new)}
   xmin=0,xmax=20,xtick={0,5,10,15,20},
   xticklabel={\pgfmathprintnumber{\tick}\%},
   xlabel={worst case over the two evidence routes},xlabel style={font=\small},
-  symbolic y coords={Rotation,Best fixed rule},ytick=data,
+  symbolic y coords={Rotation,Best fixed rule},ytick={Rotation,Best fixed rule},
   enlarge y limits=0.5,
   axis line style={line},tick style={draw=none},
   xmajorgrids,grid style={line},axis y line*=left,axis x line*=bottom,
   tick label style={font=\small},
   nodes near coords,nodes near coords style={font=\scriptsize},
 ]
-\addplot[fill=acc,draw=none] coordinates {(13.7,Rotation) (8.3,Best fixed rule)};
+\addplot[fill=acc,draw=none,bar shift=0pt,nodes near coords={\pgfmathprintnumber{\pgfplotspointmeta}\%},nodes near coords style={font=\small}] coordinates {(13.7,Rotation)};
+\addplot[fill=mute,draw=none,bar shift=0pt,nodes near coords={\pgfmathprintnumber{\pgfplotspointmeta}\%},nodes near coords style={font=\small}] coordinates {(8.3,Best fixed rule)};
 \end{axis}
 \end{tikzpicture}
 \par\vspace{6pt}
@@ -171,7 +173,7 @@ at most $s$ channels per monitor call {\color{mute}(new)}
 \end{frame}
 
 % ---------------------------------------------------------------------------
-\begin{frame}{Takeaways}
+\begin{frame}{What monitors read together decides what they catch}
 \begin{itemize}
 \item What a monitor reads \emph{together} decides what it can catch.
 \item The graph says which channels to pair, but only when evidence follows it.
