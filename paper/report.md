@@ -18,13 +18,13 @@ that are each benign [@arif2026conjunctive; @hu2026local]. Local decisions disca
 
 Figure 1 shows a stylized contradiction based on a benchmark customer-service task (Figure 3 in Appendix C shows a recorded case): a compromised database agent reports a false purchase date, an honest policy agent repeats it, and billing and shipping carry the true date. A topology-only rule that pairs channels meeting at the same agent exposes the contradiction in one monitor call.
 
-![**Reading the right channels together exposes a contradiction (illustration, not executed).** The honest policy agent repeats the compromised database agent's false purchase date, while the true date reaches the decision along other routes. A topology-only rule pairs each false date with the channel that contradicts it (calls 1 and 2); at a budget of two channels, only reading the malicious and honest channels together (c) flags the attack.](figures/network_big.pdf){width=80%}
+![**Reading the right channels together exposes a contradiction (illustration).** The honest policy agent repeats the compromised database agent's false purchase date, while the true date reaches the decision along other routes. A topology-only rule pairs each false date with the channel that contradicts it (calls 1 and 2); at a budget of two channels, only reading the malicious and honest channels together (c) flags the attack.](figures/network_big.pdf){width=80%}
 
 Both failure modes are documented outside our testbeds. In the GTG-1002 espionage
 campaign, Claude sub-agents executed "discrete technical tasks [...] each of which
 appeared legitimate when evaluated in isolation", and detection came from "the
 sustained nature of the attack", an aggregate signal [@anthropic2025gtg1002;
-@mitre2026c0062] (Appendix B). Monitors miss more attacks when they are split across subagents [@brown2026stateful] or agents [@kitaoka2026minilab], and clustering transcripts by content improves detection [@brown2026stateful].
+@mitre2026c0062] (Figure 2, Appendix B). Monitors miss more attacks when they are split across subagents [@brown2026stateful] or agents [@kitaoka2026minilab], and clustering transcripts by content improves detection [@brown2026stateful].
 
 We extend MESA's formulation to include channel grouping.
 Under a **monitoring budget** $k$ (MESA's defense budget), the defender selects which channels to inspect (**selection**); under a **context budget** $s$, it decides which of them share each monitor call (**grouping**). Like MESA's static score, we make both choices from the structure of the
@@ -63,7 +63,7 @@ S \subseteq E,\quad 1\le |S| \le k, \qquad
 \mathcal{P}=\{P_1,\dots,P_m\}\ \text{a partition of } S,\quad |P_j| \le s.
 \tag{1}
 $$
-Each group $P_j$ is one monitor call. The allocator is a function of the anonymous topology, the budgets and a random seed only.
+Each group $P_j$ is one monitor call. The allocator is a function of the anonymous topology, the budgets and a random seed only (Figure 4 shows these inputs for the workflow-shape panel).
 
 **Monitor and recall.** A call on $P_j$ reads the transcripts $\{x_e(\omega): e\in P_j\}$
 together and gives each channel it reads a score $m_e(\omega)\in[0,1]$ (the monitor's 0–100 suspicion score divided by 100). The accused channels and the recall over attacked episodes are
@@ -92,7 +92,7 @@ the maximin linear program of security games [@korzhyk2010complexity;
 
 # 3. Experimental Setup
 
-Agents are Gemma-4-26B and the monitor is Gemma-4-31B, both at temperature 0; the monitor reads its group's messages with sender, recipient and order.
+Agents are Gemma-4-26B and the monitor is Gemma-4-31B, both at temperature 0; the monitor reads its group's messages with sender, recipient and order (prompts in Appendix D).
 
 **Dataset.** 660 recorded episodes and over 15,000 stored monitor calls across four testbeds (breakdown in Appendix E).
 
@@ -179,7 +179,7 @@ with approximation guarantees [@nemhauser1978analysis; @krause2008near;
 
 **Implications for AI safety.** Monitoring protocols are usually evaluated per action, transcript or agent [@greenblatt2023control; @makins2026control]. Our results show why grouping matters: a monitor can score each message as benign while missing their combined attack (Sections 4.1 and 4.2). Evaluations of multi-agent monitors should therefore report how channels are grouped, not only which are inspected. The best grouping depends on where evidence travels (F1), and on our two designed routes a mixture of groupings fitted to the recorded runs raised expected worst-case recall from 8.3% to 13.7%, at some loss of aligned recall (F2).
 
-**Limitations.**
+**Limitations.** Dual-use and ethical considerations are in Appendix @A.
 
 - *Constructed logs.* The 13-channel workflow and the decomposed violations are generated from templates, so their messages are cleaner than real agent traffic; F1 and F2 are demonstrations on controlled data, not estimates for deployed systems.
 - *Designed evidence placement.* We choose the evidence routes, so F1 and F2 do not show how often each route occurs, and the mixture is fitted to these two routes. On a larger executed swarm testbed in our repository (720 runs), the mixture did not reliably beat the best fixed rule on held-out cases (32% against 30% worst-case exposure, ahead in half of the splits).

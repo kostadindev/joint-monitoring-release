@@ -25,6 +25,7 @@ def strip_sub(md):  # "## 4.1 Title" -> "## Title"; "## C.1 Title" -> "## Title"
     return re.sub(r"(?m)^## (?:\d+\.\d+|[A-Z]\.\d+) ", "## ", md)
 
 def remap(md):
+    # Source appendix letters follow report.md; 'Appendix @X' is passed through as 'Appendix X'.
     md = re.sub(r"\(Section 2\)", "(Section 3.1)", md)
     md = re.sub(r"\(Section 3\)", "(Section 3.2)", md)
     md = re.sub(r"environments of Section 2\b", "environments of Section 3.1", md)
