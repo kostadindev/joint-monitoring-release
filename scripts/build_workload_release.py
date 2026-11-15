@@ -9,7 +9,6 @@ from contextlib import ExitStack,contextmanager
 import copy
 import fcntl
 import gzip
-import hashlib
 import json
 from pathlib import Path
 import shutil

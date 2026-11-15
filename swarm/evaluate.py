@@ -10,7 +10,14 @@ Metrics: origin recall (flagged origin channels / all origin channels, unselecte
 false accusations among inspected non-origin channels, and the decision-level 'attack exposed'
 (any origin flagged)."""
 from __future__ import annotations
-import argparse, collections, concurrent.futures as cf, hashlib, json, math, os, random, sys
+import argparse
+import collections
+import concurrent.futures as cf
+import json
+import math
+import os
+import random
+import sys
 ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 sys.path.insert(0, os.path.join(ROOT, "scripts")); sys.path.insert(0, ROOT); sys.path.insert(0, os.path.join(ROOT, "src"))
 from swarm.structural import POLICIES, allocate

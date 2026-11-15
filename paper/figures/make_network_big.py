@@ -9,7 +9,7 @@ import math
 import matplotlib
 matplotlib.use("Agg")
 import matplotlib.pyplot as plt
-from matplotlib.patches import Circle, FancyArrowPatch, FancyBboxPatch
+from matplotlib.patches import Circle, FancyArrowPatch
 
 RED, GOLD, DARK, GREEN, GREY, ORANGE = "#c0392b", "#c9930c", "#222222", "#1e8449", "#a6a6a6", "#e67e22"
 CALLC = {1: "#16a085", 2: "#7d3c98"}

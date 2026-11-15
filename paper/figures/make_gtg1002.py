@@ -4,11 +4,10 @@ orchestrator sent against one target together. Facts and quotes come from the re
 (PDF pages cited). The report does not publish the messages; task labels quote or closely
 paraphrase its task descriptions."""
 from pathlib import Path
-import math
 import matplotlib
 matplotlib.use("Agg")
 import matplotlib.pyplot as plt
-from matplotlib.patches import Circle, FancyArrowPatch, FancyBboxPatch
+from matplotlib.patches import FancyArrowPatch, FancyBboxPatch
 
 RED, DARK, GREEN, BLUE, GOLD = "#c0392b", "#222222", "#1e8449", "#2471a3", "#b9770e"
 GROUP = "#c0392b"

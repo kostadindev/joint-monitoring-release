@@ -7,7 +7,6 @@ from __future__ import annotations
 import argparse
 from collections import Counter
 import gzip
-import hashlib
 import json
 from pathlib import Path
 import random
@@ -18,7 +17,7 @@ import sys
 import tempfile
 
 from verify_workload_release import (canonical,digest,read_rows,unique,
-    validate_dataset,prompt,RETRY,expected_weights)
+    validate_dataset,prompt,RETRY)
 
 ANALYSIS_FILES=('metrics.jsonl','summary.json','primary_contrast.json','development_ranking.json',
                 'allocation_oracle.json','research_spend.json','reliability.json','ledger_snapshot.json')

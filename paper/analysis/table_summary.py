@@ -6,7 +6,6 @@ results/keep/topology_causal_development_v0_1. Writes table_summary.tex. No mode
 import json, re
 from pathlib import Path
 
-import os
 from release_rows import native_panel, rows as release_rows
 HERE = Path(__file__).resolve().parent; ROOT = HERE.parents[1]
 def src(rel):

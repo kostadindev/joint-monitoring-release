@@ -8,7 +8,7 @@ import json, math
 import matplotlib
 matplotlib.use("Agg")
 import matplotlib.pyplot as plt
-from matplotlib.patches import Circle, FancyArrowPatch, FancyBboxPatch
+from matplotlib.patches import Circle, FancyArrowPatch
 
 ROOT = Path(__file__).resolve().parents[2]
 ORA = json.load(open(ROOT / "results/keep/oracle_allocation_fixed0.5.json"))["static"]

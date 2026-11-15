@@ -11,7 +11,6 @@ import hashlib
 import json
 from pathlib import Path
 import random
-import shutil
 import threading
 import time
 

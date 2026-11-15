@@ -1,5 +1,4 @@
 """Local release/replay tests using fake transports only; no actual run outputs."""
-import copy
 import json
 from pathlib import Path
 import sys

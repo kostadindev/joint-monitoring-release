@@ -6,7 +6,6 @@ new judge calls, no threshold tuning, no claims of independent validation.
 """
 import argparse
 from collections import defaultdict
-import hashlib
 import json
 import math
 from pathlib import Path

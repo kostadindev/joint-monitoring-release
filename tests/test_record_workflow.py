@@ -2,7 +2,7 @@ from pathlib import Path
 import sys,json
 sys.path.insert(0,str(Path(__file__).resolve().parents[1]/'scripts'))
 import pytest
-from record_workflow import case,target_changes,expected,layout,FIELDS,ENVIRONMENTS,WorkflowRun
+from record_workflow import case, target_changes, expected, FIELDS, ENVIRONMENTS, WorkflowRun
 
 def test_coordinated_rule_requires_both_changes():
     for seed in range(500):

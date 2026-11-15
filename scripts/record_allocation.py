@@ -11,7 +11,6 @@ import fcntl
 import hashlib
 from itertools import combinations
 import json
-import math
 from pathlib import Path
 import shutil
 import threading

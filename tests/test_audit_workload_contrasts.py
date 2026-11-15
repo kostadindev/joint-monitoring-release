@@ -1,11 +1,10 @@
 import copy
 import itertools
-import json
 from pathlib import Path
 import sys
 import pytest
 sys.path.insert(0,str(Path(__file__).resolve().parents[1]/'scripts'))
-from audit_workload_contrasts import require_coverage,background_overlap,paired_contrasts,citation_counts,condition_arm
+from audit_workload_contrasts import require_coverage, background_overlap, paired_contrasts, citation_counts
 from record_audit_workloads import workload
 from monitor_record_workflows import edge_ids
 from record_audit_analysis import parse_claim

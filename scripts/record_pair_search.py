@@ -16,7 +16,7 @@ from pathlib import Path
 import random
 import networkx as nx
 import numpy as np
-from record_strategies import graph_of, policy_id
+from record_strategies import graph_of
 from record_allocation import view_key, policy_scores, measure, summarize, truth_sets
 from record_policy_extensions import extended_metrics
 

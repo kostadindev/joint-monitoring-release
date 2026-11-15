@@ -6,7 +6,7 @@ import numpy as np
 import pytest
 sys.path.insert(0,str(Path(__file__).resolve().parents[1]/'scripts'))
 import train_topology_pair_model as training
-from topology_only_policies import FEATURES,pair_features
+from topology_only_policies import FEATURES
 from record_allocation import view_key
 from monitor_record_workflows import edge_ids
 

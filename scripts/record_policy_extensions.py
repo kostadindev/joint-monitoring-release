@@ -6,7 +6,6 @@ prior. Receipt matching localizes false origin under the declared trust model;
 it cannot distinguish malicious falsification from an honest error.
 """
 from itertools import combinations
-import math
 from record_allocation import view_key, counts, truth_sets
 from record_strategies import rule_judge
 

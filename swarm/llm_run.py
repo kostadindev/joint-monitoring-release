@@ -9,7 +9,12 @@ in-transit channel attack rewrites one message after it is sent (as in MESA).
 Message format: {"text": prose, "facts": {name: value}, "checks": {check: "pass"|"fail"}}.
 """
 from __future__ import annotations
-import argparse, concurrent.futures as cf, json, os, random, re, sys
+import argparse
+import concurrent.futures as cf
+import json
+import os
+import random
+import sys
 import networkx as nx
 
 ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))

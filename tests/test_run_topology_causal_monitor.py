@@ -9,7 +9,6 @@ import run_topology_causal_monitor as runner
 import run_topology_causal_workflows as generation
 from topology_causal_workflows import task_manifest,run_record,digest
 from topology_causal_monitor import plan_library
-from monitor_record_workflows import view_prompt
 from night_budget import NightBudget
 from test_topology_causal_workflows import ScriptedProvider
 

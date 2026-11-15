@@ -23,7 +23,6 @@ B the second; each alone leaves HOLD. A fragment is placed anywhere on the route
 Placements that do not flip the decision when combined are rejected and counted.
 """
 from __future__ import annotations
-import random
 import networkx as nx
 from .topology import SOURCES, function_of
 
