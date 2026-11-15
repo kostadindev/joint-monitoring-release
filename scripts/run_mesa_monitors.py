@@ -32,7 +32,7 @@ from jmon.graphs import CommGraph
 from jmon.simulate import Episode
 from jmon.allocation import Assignment
 from jmon.evaluation import monitor_episode, aggregate_scores
-from jmon.evaluation.metrics import summarize, mcnemar_counts, binomial_ci
+from jmon.evaluation.metrics import summarize, mcnemar_counts
 from jmon.monitors import LLMMonitor
 from jmon.llm import make_provider
 

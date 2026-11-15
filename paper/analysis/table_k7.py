@@ -5,7 +5,10 @@ table_k7.tex next to this file. No model calls.
 
 Cells are recall of false-origin channels (%) in the aligned / shuffled environments,
 sixteen-case workload, 72 false-report runs per environment."""
-import collections, json, os, sqlite3, zlib
+import collections
+import json
+import sqlite3
+import zlib
 from pathlib import Path
 
 from release_rows import catalog_path, columns, rows as release_rows

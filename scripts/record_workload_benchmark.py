@@ -5,7 +5,6 @@ explicit infeasibility and missing coverage. All cases remain development.
 """
 from __future__ import annotations
 import argparse
-from collections import defaultdict
 from concurrent.futures import ThreadPoolExecutor,wait,FIRST_COMPLETED
 import fcntl
 import hashlib
@@ -15,7 +14,7 @@ import random
 import shutil
 import threading
 import time
-from record_audit_policies import group_selected,byte_profile
+from record_audit_policies import group_selected
 from record_audit_analysis import rule_flags
 from record_strategies import select,policy_id
 from record_workflow import canonical

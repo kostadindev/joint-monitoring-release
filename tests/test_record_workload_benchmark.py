@@ -1,7 +1,6 @@
 from pathlib import Path
 import sys,json,copy
 sys.path.insert(0,str(Path(__file__).resolve().parents[1]/'scripts'))
-import pytest
 from record_audit_workloads import workload
 from record_workload_benchmark import policies,plan_library,parse_workload,EVIDENCE,analyze
 from monitor_record_workflows import SYSTEM,edge_ids

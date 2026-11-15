@@ -12,7 +12,7 @@ from __future__ import annotations
 import glob, hashlib, json, math, os, random, sys
 ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 sys.path.insert(0, ROOT)
-from swarm.case import check_results, CHECKS
+from swarm.case import check_results
 from swarm.topology import FAMILIES, SOURCES
 from swarm.llm_run import norm_check
 

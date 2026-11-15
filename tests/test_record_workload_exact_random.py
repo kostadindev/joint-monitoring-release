@@ -2,8 +2,6 @@ from collections import Counter
 import copy
 from fractions import Fraction
 import hashlib
-from itertools import combinations
-import math
 from pathlib import Path
 import sys
 import pytest

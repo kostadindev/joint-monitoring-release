@@ -1,6 +1,8 @@
 """Persistent credit ledger for the swarm track (separate from Codex's ledgers).
 Every paid call appends one JSON line; spending stops at CEILING across processes."""
-import json, os, threading, time
+import json
+import threading
+import time
 from pathlib import Path
 
 CEILING = 50.0

@@ -11,7 +11,7 @@ from __future__ import annotations
 from dataclasses import dataclass, field
 
 from jmon.allocation.assignment import Assignment
-from jmon.monitors.views import build_view, View, Observation
+from jmon.monitors.views import build_view, View
 from jmon.simulate import Episode
 from .ledger import BudgetLedger
 

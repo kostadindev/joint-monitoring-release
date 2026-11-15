@@ -1,7 +1,7 @@
 from pathlib import Path
 import sys
 sys.path.insert(0,str(Path(__file__).resolve().parents[1]/'scripts'))
-from record_audit_workloads import workload,preflight
+from record_audit_workloads import workload
 from record_audit_analysis import rule_flags
 from monitor_record_workflows import view_prompt
 

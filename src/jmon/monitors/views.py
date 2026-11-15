@@ -10,7 +10,7 @@ from __future__ import annotations
 from dataclasses import dataclass, field
 import copy
 
-from jmon.messages import Message, MessageLog, Edge
+from jmon.messages import MessageLog, Edge
 
 
 @dataclass(frozen=True)

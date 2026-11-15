@@ -1,5 +1,5 @@
 """Shared drawing helper: a 'judge card' shows what one judge call reads and its outcome."""
-from matplotlib.patches import FancyBboxPatch, FancyArrowPatch
+from matplotlib.patches import FancyBboxPatch
 
 RED, GOLD, GREEN, GREYTXT = "#c0392b", "#c9930c", "#1e8449", "#555555"
 

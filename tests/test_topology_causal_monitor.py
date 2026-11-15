@@ -8,8 +8,8 @@ import pytest
 sys.path.insert(0,str(Path(__file__).resolve().parents[1]/'scripts'))
 from test_topology_causal_workflows import ScriptedProvider
 from topology_causal_workflows import task_manifest, run_record, run_suite
-from topology_causal_monitor import (SYSTEM_TEXT, policies, plan_library, source_masks,
-    evaluate_assignment, evaluate_expected, schema_preflight, acquired_record_matching)
+from topology_causal_monitor import (policies, plan_library, source_masks, evaluate_assignment,
+    evaluate_expected, schema_preflight, acquired_record_matching)
 from monitor_record_workflows import edge_ids, view_prompt
 from record_exact_grouping import partitions
 

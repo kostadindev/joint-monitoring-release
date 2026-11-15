@@ -6,8 +6,8 @@ import sys
 
 import pytest
 sys.path.insert(0, str(Path(__file__).resolve().parents[1] / 'scripts'))
-from topology_causal_workflows import (FIELDS, TOPOLOGIES, task_manifest, layout,
-                                      run_record, run_suite, canonical, expected)
+from topology_causal_workflows import (task_manifest, run_record, run_suite, canonical,
+                                      expected)
 from monitor_record_workflows import view_prompt
 from topology_workload_plan import anonymize_graph
 from topology_only_policies import allocate

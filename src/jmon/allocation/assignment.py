@@ -9,7 +9,7 @@ Constraints (configurable; see research/research_proposal.md section 4):
 """
 from __future__ import annotations
 
-from dataclasses import dataclass, field, asdict
+from dataclasses import dataclass, field
 
 from jmon.messages import Edge
 
